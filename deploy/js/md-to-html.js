@@ -74,8 +74,9 @@ function convertMarkdownToHtml(mdFilePath) {
     <meta name="description" content="${metadata.description || ''}">
     <meta property="og:title" content="${metadata.title || 'Blog Post'}">
     <meta property="og:description" content="${metadata.description || ''}">
-    <meta property="og:url" content="https://glenneth.org/${mdFilePath.replace(/\.md$/, '.html')}">
+    <meta property="og:url" content="https://glenneth.org${mdFilePath.replace(/\.md$/, '')}">
     <title>${metadata.title || 'Blog Post'} - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
     <link href="../../dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -130,16 +131,16 @@ function convertMarkdownToHtml(mdFilePath) {
     </style>
 </head>
 <body class="bg-base-bg text-palenight-50">
-    <nav class="fixed w-full bg-base-darker/80 backdrop-blur-sm shadow-sm z-50 border-b border-palenight-400/20">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <a href="/" class="flex items-center font-serif text-xl font-bold text-accent-purple">Glenn Thompson</a>
-                </div>
-                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a href="/#about" class="nav-link text-accent-blue hover:text-accent-cyan">About</a>
-                    <a href="/#blog" class="nav-link text-accent-blue hover:text-accent-cyan">Blog</a>
-                    <a href="/#projects" class="nav-link text-accent-blue hover:text-accent-cyan">Projects</a>
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>${metadata.tags || 'Tech'}</span>
+                    <span>•</span>
+                    <time datetime="${metadata.date}">${new Date(metadata.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+                    <span>•</span>
+                    <span>${readTime} min read</span>
                 </div>
             </div>
         </div>
@@ -148,16 +149,6 @@ function convertMarkdownToHtml(mdFilePath) {
     <main class="pt-24 pb-16 px-4">
         <div class="max-w-4xl mx-auto">
             <div class="content text-palenight-100 space-y-6">
-                <div class="flex items-center justify-between mb-8">
-                    <a href="/" class="inline-flex items-center text-accent-blue hover:text-accent-cyan transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-                        </svg>
-                        Back to Home
-                    </a>
-                    <time datetime="${metadata.date || ''}" class="text-palenight-300">${metadata.date || ''}</time>
-                </div>
-
                 <header class="mb-8">
                     <h1 class="text-4xl font-serif font-bold text-accent-yellow">${metadata.title || 'Blog Post'}</h1>
                     <div class="flex items-center gap-4 text-palenight-300 mt-4">
@@ -167,6 +158,12 @@ function convertMarkdownToHtml(mdFilePath) {
                         <span>•</span>
                         <span>By ${metadata.author || 'Glenn Thompson'}</span>
                     </div>
+                    ${metadata.tags ? `
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        ${metadata.tags.split(',').map(tag => 
+                            `<span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">${tag.trim()}</span>`
+                        ).join('')}
+                    </div>` : ''}
                 </header>
 
                 <article class="prose prose-palenight max-w-none">

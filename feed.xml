@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Glenn Thompson's Blog</title>
+        <description>Personal blog about programming, technology, and other interests</description>
+        <link>https://glenneth.org</link>
+        <atom:link href="https://glenneth.org/feed.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Tue, 03 Dec 2024 03:17:13 GMT</lastBuildDate>
+        
+        <item>
+            <title>Aesthetic Meets Ergonomics: My Deep Dive into the Glove80 Keyboard</title>
+            <description>As my career trajectory veered from being an integral member of an electrical engineering team to assuming the role of Deputy Project Manager, the nature of my daily activities underwent a significant transformation. The hands-on tasks of yesteryears were gradually replaced by a deluge of documentations—writing, reviewing, and endless typing. This shift brought with it an unwelcome companion: discomfort in my hands and wrists, a stark reminder of the ergonomic pitfalls of conventional keyboards. It was in this context that my quest for a more ergonomic typing solution began, leading me towards the world of ALICE layout keyboards, with the [Q10 Pro by Keychron](https://www.keychron.com/products/keychron-q10-pro-alice-layout-qmk-via-wireless-custom-mechanical-keyboard) being my initial foray into this new realm.</description>
+            <content:encoded><![CDATA[<h2>In the quest for the ultimate ergonomic keyboard, aesthetics often take a backseat to functionality. Yet, when I first laid eyes on the Glove80, I was struck by its elegant design—a refreshing departure from the utilitarian look typical of many ergonomic keyboards. Unlike the retro vibes of the Kinesis Advantage or the DIY aesthetics of most Dactyls, the Glove80 boasts a modern, sleek appearance that complements the contemporary design language of Apple, Google, and LG devices. With its clean lines and visually appealing legends, the Glove80 not only promises ergonomic comfort but does so with style, standing out amidst a sea of competitors.</h2>
+<p>As my career trajectory veered from being an integral member of an electrical engineering team to assuming the role of Deputy Project Manager, the nature of my daily activities underwent a significant transformation. The hands-on tasks of yesteryears were gradually replaced by a deluge of documentations—writing, reviewing, and endless typing. This shift brought with it an unwelcome companion: discomfort in my hands and wrists, a stark reminder of the ergonomic pitfalls of conventional keyboards. It was in this context that my quest for a more ergonomic typing solution began, leading me towards the world of ALICE layout keyboards, with the <a href="https://www.keychron.com/products/keychron-q10-pro-alice-layout-qmk-via-wireless-custom-mechanical-keyboard"><strong>Q10 Pro</strong> by Keychron</a> being my initial foray into this new realm.</p>
+<p>However, the relief was partial, and the shadow of wrist strain persisted, urging me to delve deeper into the ergonomic keyboard universe. My search for a truly ergonomic solution brought me to the doorstep of the <a href="https://www.moergo.com"><strong>Glove80</strong> by MoErgo</a>. Boasting a unique split design, concave key wells, and a commitment to ergonomics that seemed almost tailor-made for my situation, the Glove80 held the promise of being the oasis I was desperately seeking in the desert of my wrist discomfort.</p>
+<p>This journey from an ALICE layout keyboard user to a Glove80 enthusiast was not just about finding a better typing tool; it was about embracing a healthier typing posture and redefining my interaction with computers. After a month of integrating the Glove80 into my workflow, I&#39;m ready to share my insights and experiences. This review will explore the initial adaptation period, the impact on my wrist health, and whether the Glove80 lives up to its promise as an ergonomic game-changer.</p>
+<h3>First Impressions: Feel and Experience</h3>
+<p>Upon beginning my typing journey with the Glove80, two aspects immediately stood out. The unique choc spacing, combined with finger-specific curves for each key column, facilitated effortless access to the bottom and number rows, as well as several function keys—without the need to move my hands. This ease of reach extended to the thumb keys, thoughtfully laid out in an arc to match the natural movement of my thumbs. Additionally, the keyboard&#39;s low profile on the desk encouraged a neutral wrist position, enhancing comfort during long typing sessions. These features converged to create a typing experience that was not just comfortable but intuitively aligned with natural hand movements.</p>
+<h4>The Details That Matter</h4>
+<h5>Ergonomics at Its Core</h5>
+<p>The hallmark of the Glove80 is its ergonomics, designed to seamlessly integrate with the user&#39;s hand movements. After fine-tuning the tenting and tilting angles—made possible by the adjustable feet on each half of the keyboard—my hands naturally fell into the optimal typing position. The thoughtfully designed key layout meant that reaching for higher rows required merely straightening or curling my fingers, aided by the keyboard&#39;s choc spacing. Each column&#39;s unique height and curve catered to the different lengths of my fingers, further minimizing strain.</p>
+<h5>Key Innovations</h5>
+<p>The Glove80 introduces keycaps with a novel MCC profile, featuring raised sides and a central cylindrical channel, made from a slick POM material. This design supports the natural sliding of fingers across keys, reducing the need to lift hands while typing. The keyboard&#39;s thumb clusters are another highlight, offering six easily accessible keys per hand. This ergonomic layout ensures that most keys are within reach without stretching, a testament to the keyboard&#39;s user-centric design.</p>
+<h5>Beyond Typing: Features and Flexibility</h5>
+<ul>
+<li><strong>Tenting and Adjustability:</strong> The Glove80&#39;s customizable tenting angles, enhanced by sturdy locking nuts, ensure a tailored typing experience that can be finely adjusted to individual preferences.</li>
+<li><strong>Comfortable Palm Rest:</strong> The integrated, detachable palm rest offers additional comfort, catering to different typing styles with ease.</li>
+<li><strong>Switch Selection:</strong> While the standard Kailh choc switches are adequate, enthusiasts might prefer customizing their keyboard with preferred switches for an optimized typing feel. I opted for the lighter Kailh Choc V1, Red Pro Linear 35gf switches.</li>
+<li><strong>Keycaps:</strong> The high-quality POM keycaps, combined with attractive and durable legends, enhance the keyboard&#39;s tactile and visual appeal.</li>
+<li><strong>Tech-Savvy Features:</strong> From its easy-to-use firmware updates via a web interface to seamless Bluetooth connectivity and impressive battery life, the Glove80 is designed for a modern, wireless world.</li>
+<li><strong>RGB Lighting:</strong> While currently limited in customization, the RGB LEDs offer aesthetic versatility to match any setup.</li>
+</ul>
+<h3>Concluding Thoughts</h3>
+<p>The Glove80 keyboard represents a significant leap forward in ergonomic design, marrying aesthetics with unmatched comfort and functionality. Its thoughtful features—from the infinitely adjustable tenting to the innovative keycap design—set a new standard for what ergonomic keyboards can be. While there&#39;s room for improvement in switch selection and RGB customization, these are minor quibbles in an otherwise outstanding product. For those in search of ergonomic excellence without compromising on style or performance, the Glove80 is an investment worth making, promising a typing experience that&#39;s not just comfortable but truly enjoyable.</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2024-04-08-glove80-review.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-04-08-glove80-review.html</guid>
+            <pubDate>Invalid Date</pubDate>
+            <author>"Glenn Thompson"</author>
+            <category>["personal", "tech", "keyboards", "glove80"]</category>
+        </item>
+        
+        <item>
+            <title>Beyond Theory: Building Practical Tools with Guile Scheme</title>
+            <description>Introduction</description>
+            <content:encoded><![CDATA[<h1>Beyond Theory: Building Practical Tools with Guile Scheme</h1>
+<h2>Introduction</h2>
+<p>A few months ago, I shared my journey into learning Scheme through building <code>stash</code>, a symlink manager. Since then, I&#39;ve discovered that the gap between learning Scheme and applying it to real-world problems is where the most valuable lessons emerge. This post explores what I&#39;ve learned about building practical tools with Guile Scheme, sharing both successes and challenges along the way.</p>
+<h2>The Power of Modular Design</h2>
+<p>One of the most important lessons I learned was the value of modular design. Breaking down a program into focused, single-responsibility modules not only makes the code more maintainable but also helps in reasoning about the program&#39;s behavior. Here&#39;s how I structured <code>stash</code>:</p>
+<pre><code class="language-scheme">(use-modules (ice-9 getopt-long)
+             (stash help)         ;; Help module
+             (stash colors)       ;; ANSI colors
+             (stash log)          ;; Logging module
+             (stash paths)        ;; Path handling module
+             (stash conflict)     ;; Conflict resolution module
+             (stash file-ops))    ;; File and symlink operations module
+</code></pre>
+<p>Each module has a specific responsibility:</p>
+<ul>
+<li><code>colors.scm</code>: Handles ANSI color formatting for terminal output</li>
+<li><code>conflict.scm</code>: Manages conflict resolution when files already exist</li>
+<li><code>file-ops.scm</code>: Handles file system operations</li>
+<li><code>help.scm</code>: Provides usage information</li>
+<li><code>log.scm</code>: Manages logging operations</li>
+<li><code>paths.scm</code>: Handles path manipulation and normalization</li>
+</ul>
+<h2>Robust Path Handling</h2>
+<p>One of the first challenges in building a file management tool is handling paths correctly. Here&#39;s how I approached it:</p>
+<pre><code class="language-scheme">(define (expand-home path)
+  &quot;Expand ~ to the user&#39;s home directory.&quot;
+  (if (string-prefix? &quot;~&quot; path)
+      (string-append (getenv &quot;HOME&quot;) (substring path 1))
+      path))
+
+(define (concat-path base path)
+  &quot;Concatenate two paths, ensuring there are no double slashes.&quot;
+  (if (string-suffix? &quot;/&quot; base)
+      (string-append (string-drop-right base 1) &quot;/&quot; path)
+      (string-append base &quot;/&quot; path)))
+
+(define (ensure-config-path target-dir)
+  &quot;Ensure that the target directory has .config appended, avoiding double slashes.&quot;
+  (let ((target-dir (expand-home target-dir)))
+    (if (string-suffix? &quot;/&quot; target-dir)
+        (set! target-dir (string-drop-right target-dir 1)))
+    (if (not (string-suffix? &quot;/.config&quot; target-dir))
+        (string-append target-dir &quot;/.config&quot;)
+        target-dir)))
+</code></pre>
+<p>This approach ensures that:</p>
+<ul>
+<li>Home directory references (<code>~</code>) are properly expanded</li>
+<li>Path concatenation doesn&#39;t create double slashes</li>
+<li>Configuration paths are consistently structured</li>
+</ul>
+<h2>Interactive Conflict Resolution</h2>
+<p>Real-world tools often need to handle conflicts. I implemented an interactive conflict resolution system:</p>
+<pre><code class="language-scheme">(define (prompt-user-for-action)
+  &quot;Prompt the user to decide how to handle a conflict: overwrite (o), skip (s), or cancel (c).&quot;
+  (display (color-message 
+    &quot;A conflict was detected. Choose action - Overwrite (o), Skip (s), or Cancel (c): &quot; 
+    yellow-text))
+  (let ((response (read-line)))
+    (cond
+      ((string-ci=? response &quot;o&quot;) &#39;overwrite)
+      ((string-ci=? response &quot;s&quot;) &#39;skip)
+      ((string-ci=? response &quot;c&quot;) &#39;cancel)
+      (else
+       (display &quot;Invalid input. Please try again.\n&quot;)
+       (prompt-user-for-action)))))
+</code></pre>
+<p>This provides a user-friendly interface for resolving conflicts while maintaining data safety.</p>
+<h2>Logging for Debugging and Auditing</h2>
+<p>Proper logging is crucial for debugging and auditing. I implemented a simple but effective logging system:</p>
+<pre><code class="language-scheme">(define (current-timestamp)
+  &quot;Return the current date and time as a formatted string.&quot;
+  (let* ((time (current-time))
+         (seconds (time-second time)))
+    (strftime &quot;%Y-%m-%d-%H-%M-%S&quot; (localtime seconds))))
+
+(define (log-action message)
+  &quot;Log an action with a timestamp to the stash.log file.&quot;
+  (let ((log-port (open-file &quot;stash.log&quot; &quot;a&quot;)))
+    (display (color-message 
+      (string-append &quot;[&quot; (current-timestamp) &quot;] &quot; message) 
+      green-text) log-port)
+    (newline log-port)
+    (close-port log-port)))
+</code></pre>
+<p>This logging system:</p>
+<ul>
+<li>Timestamps each action</li>
+<li>Uses color coding for better readability</li>
+<li>Maintains a persistent log file</li>
+<li>Properly handles file operations</li>
+</ul>
+<h2>File Operations with Safety</h2>
+<p>When dealing with file system operations, safety is paramount. Here&#39;s how I handle moving directories:</p>
+<pre><code class="language-scheme">(define (move-source-to-target source-dir target-dir)
+  &quot;Move the entire source directory to the target directory, ensuring .config in the target path.&quot;
+  (let* ((target-dir (ensure-config-path target-dir))
+         (source-dir (expand-home source-dir))
+         (source-name (basename source-dir))
+         (target-source-dir (concat-path target-dir source-name)))
+    (if (not (file-exists? target-dir))
+        (mkdir target-dir #o755))
+    (if (file-exists? target-source-dir)
+        (handle-conflict target-source-dir source-dir delete-directory log-action)
+        (begin
+          (rename-file source-dir target-source-dir)
+          (display (format #f &quot;Moved ~a to ~a\n&quot; source-dir target-source-dir))
+          (log-action (format #f &quot;Moved ~a to ~a&quot; source-dir target-source-dir))))
+    target-source-dir))
+</code></pre>
+<p>This implementation:</p>
+<ul>
+<li>Ensures paths are properly formatted</li>
+<li>Creates necessary directories</li>
+<li>Handles conflicts gracefully</li>
+<li>Logs all operations</li>
+<li>Returns the new path for further operations</li>
+</ul>
+<h2>Lessons Learned</h2>
+<h3>What Worked Well</h3>
+<ol>
+<li><strong>Modular Design</strong>: Breaking the code into focused modules made it easier to maintain and test</li>
+<li><strong>Functional Approach</strong>: Using pure functions where possible made the code more predictable</li>
+<li><strong>Interactive Interface</strong>: Providing clear user prompts and colored output improved usability</li>
+<li><strong>Robust Logging</strong>: Detailed logging helped with debugging and understanding program flow</li>
+</ol>
+<h3>Challenges Faced</h3>
+<ol>
+<li><strong>Path Handling</strong>: Dealing with different path formats and edge cases required careful attention</li>
+<li><strong>Error States</strong>: Managing various error conditions while keeping the code clean</li>
+<li><strong>User Interface</strong>: Balancing between automation and user control</li>
+<li><strong>Documentation</strong>: Writing clear documentation that helps users understand the tool</li>
+</ol>
+<h2>Moving Forward</h2>
+<p>Building <code>stash</code> has taught me that while functional programming principles are valuable, pragmatism is equally important. The key is finding the right balance between elegant functional code and practical solutions.</p>
+<h2>Resources</h2>
+<ol>
+<li><a href="https://www.gnu.org/software/guile/manual/">Guile Manual</a></li>
+<li><a href="/content/posts/scheme-journey.html">My Previous Scheme Journey Post</a></li>
+<li><a href="https://systemcrafters.net/community">System Crafters Community</a></li>
+<li><a href="https://codeberg.org/glenneth/stash">Stash on Codeberg</a></li>
+</ol>
+<p>The code examples in this post are from my actual implementation of <code>stash</code>. Feel free to explore, use, and improve upon them!</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2024-12-03-practical-scheme.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-12-03-practical-scheme.html</guid>
+            <pubDate>Tue, 03 Dec 2024 07:00:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>tech, guile, scheme, development, functional-programming</category>
+        </item>
+        
+        <item>
+            <title>A Journey into Scheme</title>
+            <description>The course took me through the basics of Scheme, from simple expressions to more complex concepts like functions, recursion, and working with files. This structured learning environment gave me the confidence to start building stash.</description>
+            <content:encoded><![CDATA[<h1>My Journey into Scheme: Building a Simple Symlink Manager with Guile Scheme</h1>
+<h2>Introduction</h2>
+<p>I&#39;ve spent my career as an electrical engineer, not a software developer. However, my recent journey in to GNU/Liniux required a tool for managing symlinks, and that&#39;s how I began learning Scheme—specifically Guile Scheme. I&#39;m writing this post to share how I built <code>stash</code>, a utility that mimics GNU Stow&#39;s functionality, and how my learning journey was shaped by David Wilson&#39;s &quot;Hands-On Guile Scheme for Beginners&quot; course from System Crafters, more about this below.</p>
+<h2>How I Started with Scheme</h2>
+<p>My programming background was <em>VERY</em> limited, I produce documents in (La)Tex but I decided to take the plunge into learning Scheme, thanks to a course led by David Wilson from System Crafters. The course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a>, was incredibly helpful in making Scheme accessible even for someone like me, without a traditional programming background.  I know (La)Tex isn&#39;t a programming language, it&#39;s typesetting.  But how hard can it be?  Right?</p>
+<p>The course took me through the basics of Scheme, from simple expressions to more complex concepts like functions, recursion, and working with files. This structured learning environment gave me the confidence to start building <code>stash</code>.</p>
+<p>The course was &quot;instructor-led&quot; with live meet-up sessions weekly.  David has since made this course on-demand, and will be, if not already, available at the above link.  Highly recommended if you are interested in taking your first steps with scheme.</p>
+<h2>Why Build Stash?</h2>
+<p>After completing David Wilson&#39;s course, I wanted to put my newly found Guile Scheme skills into practice with a real project. It wasn&#39;t enough just to understand the language conceptually—I needed to build something tangible that solved a problem I encountered regularly in my workflow. Writing <code>stash</code> gave me that opportunity. It allowed me to apply what I&#39;d learned while also deepening my understanding of file manipulation, command-line tools, and conflict resolution—all within the Guile Scheme environment.</p>
+<p>After migrating to GNU/Linux and speaking with other <a href="https://systemcrafters.net/community">System Crafters Community</a> members, I found I needed a way to manage symbolic links and organize directories. Existing tools like GNU Stow helped, but I wanted to learn how such tools are built. I decided to write my own version using Guile Scheme to enhance my understanding of the language and to have more control over the functionality.</p>
+<p>The goal of <code>stash</code> is simple: allow users to move directories and create symlinks with conflict resolution, offering options to overwrite, back up, skip, or cancel the operation.</p>
+<h2>Breaking Down Stash</h2>
+<p>The core of <code>stash</code> revolves around:</p>
+<ol>
+<li><strong>Moving Directories</strong>: Using Scheme&#39;s file manipulation functions, I learned how to move directories and files around. </li>
+<li><strong>Creating Symlinks</strong>: I implemented functions to create symlinks to the moved directories, ensuring that the original structure remains accessible.</li>
+<li><strong>Conflict Resolution</strong>: One of the key features I wanted was handling conflicts when a file or symlink already exists at the target location. This required prompting the user for input and responding accordingly (backup, overwrite, skip, or cancel).</li>
+</ol>
+<p>Here&#39;s an excerpt of the core functionality that handles moving a source directory and creating a symlink:</p>
+<pre><code class="language-scheme">;;; Helper function to move source to target
+(define (move-source-to-target source-dir target-dir)
+  &quot;Move the entire source directory to the target directory.&quot;
+  (let* ((source-dir (expand-home source-dir))
+         (target-dir (expand-home target-dir))
+         (source-name (basename source-dir))
+         (target-source-dir (string-append target-dir &quot;/&quot; source-name)))
+    (if (file-exists? target-source-dir)
+        ;; Conflict handling here...
+        ...)
+    (rename-file source-dir target-source-dir)
+    (display (format #f &quot;Moved ~a to ~a\n&quot; source-dir target-source-dir))))
+</code></pre>
+<h2>What I Learned</h2>
+<p>This project taught me a lot about not just Scheme, but programming in general:</p>
+<ul>
+<li><strong>File and Directory Manipulation</strong>: Scheme&#39;s file handling functions were different from what I had experienced before, but they allowed for powerful manipulation of file systems.</li>
+<li><strong>Command-Line Utilities</strong>: Scheme isn&#39;t just a language for academic exercises; you can write real, useful command-line tools with it.</li>
+<li><strong>Problem Solving</strong>: From parsing command-line arguments to resolving conflicts with existing files, every part of the program required careful thought and consideration of edge cases.</li>
+</ul>
+<h2>Guile Scheme Support Resources</h2>
+<ol>
+<li><p><strong><a href="https://www.gnu.org/software/guile/docs/">Guile Scheme Documentation</a></strong><br>The official documentation for Guile Scheme, which includes tutorials, references, and the Guile Manual.</p>
+</li>
+<li><p><strong><a href="https://www.gnu.org/software/guile/manual/html_node/">Guile Reference Manual</a></strong><br>A comprehensive manual covering core language concepts, libraries, and functions available in Guile Scheme.</p>
+</li>
+<li><p><strong><a href="http://community.schemewiki.org/">Scheme Wiki</a></strong><br>A community-maintained wiki that covers various Scheme dialects, including Guile Scheme, with tutorials, guides, and general information on Scheme programming.</p>
+</li>
+<li><p><strong><a href="http://schemers.org/">Guile at Schemers.org</a></strong><br>A site dedicated to Scheme with resources, libraries, tools, and documentation for Scheme and its implementations, including Guile.</p>
+</li>
+<li><p><strong><a href="https://systemcrafters.net/">System Crafters</a></strong><br>Led by David Wilson, System Crafters provides tutorials and blog posts on Guile Scheme and other GNU tools.</p>
+</li>
+<li><p><strong><a href="https://lists.gnu.org/mailman/listinfo/guile-user">Guile Users Mailing List</a></strong><br>Join the Guile mailing list to ask questions and engage with the Guile Scheme community.</p>
+</li>
+<li><p><strong><a href="https://github.com/artyom-poptsov/guile-cookbook">Guile Cookbook</a></strong><br>An unofficial GitHub repository with practical code snippets and tips for Guile Scheme, covering various common use cases and tasks.</p>
+</li>
+<li><p><strong><a href="https://libera.chat/">#guile and #scheme on Libera Chat IRC</a></strong><br>A helpful IRC channel where you can connect with other Guile users for real-time support and advice.</p>
+</li>
+<li><p><strong><a href="https://Libera.chat/">#systemcrafters on Libera Chat IRC</a></strong><br>A <em>SUPER</em> helpful IRC channel not only for guile and scheme, there are a huge variety of different people here.  Tell them glenneth sent you.</p>
+</li>
+</ol>
+<h2>Next Steps</h2>
+<p>I am still refining <code>stash</code>, especially around its conflict resolution system and the way it handles symbolic links. But it&#39;s in a usable state, and I&#39;m excited to continue iterating on it. You can check out the code <a href="https://codeberg.org/glenneth/stash">on Codeberg</a>.</p>
+<p>If you&#39;re curious about Scheme and how it can be used practically, I highly recommend checking out David Wilson&#39;s course. It&#39;s been instrumental in helping me grasp the concepts I needed to build this tool.  Here&#39;s the link, again :) <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a></p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2024-09-24-scheme-journey.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-09-24-scheme-journey.html</guid>
+            <pubDate>Tue, 24 Sep 2024 06:30:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>personal, tech, guile, scheme, gnu, development</category>
+        </item>
+        
+        <item>
+            <title>A Journey Through GNU Guix: From Installation to Returning to Arch Linux</title>
+            <description>As a long-time user of Arch Linux, I decided to explore the world of GNU Guix to see if it could better suit my needs, especially with my growing interest in functional package management. The journey was insightful, filled with learning experiences, but ultimately led me back to the reliable shores of Arch. Here's a detailed account of my venture into GNU Guix, adding non-GNU channels, dealing with Nvidia drivers, running SwayWM, and the eventual retreat to Arch.</description>
+            <content:encoded><![CDATA[<h1>A Journey Through GNU Guix: From Installation to Returning to Arch Linux</h1>
+<p>As a long-time user of Arch Linux, I decided to explore the world of GNU Guix to see if it could better suit my needs, especially with my growing interest in functional package management. The journey was insightful, filled with learning experiences, but ultimately led me back to the reliable shores of Arch. Here&#39;s a detailed account of my venture into GNU Guix, adding non-GNU channels, dealing with Nvidia drivers, running SwayWM, and the eventual retreat to Arch.</p>
+<h2>Installation of GNU Guix</h2>
+<p>The installation process of GNU Guix was straightforward, thanks to the well-documented guide provided on their official website. Here&#39;s a quick rundown of the steps I followed:</p>
+<ol>
+<li><strong>Downloading the Installation Image</strong>: I started by downloading the latest ISO image from the <a href="https://guix.gnu.org/">GNU Guix website</a>.</li>
+<li><strong>Creating a Bootable USB</strong>: Using <code>dd</code>, I created a bootable USB stick to install GNU Guix on my system.</li>
+<li><strong>Booting into the Installer</strong>: Booting from the USB was smooth, and I was greeted with the GNU Guix installer. The installer&#39;s simplicity reminded me of early days with Arch, where a minimalistic approach is preferred.</li>
+<li><strong>Partitioning and Setting Up File Systems</strong>: I partitioned my drive using <code>fdisk</code> and set up my file systems. I opted for ext4 for simplicity.</li>
+<li><strong>Configuring the System</strong>: Following the partition setup, I proceeded to configure my system by selecting the required packages and services. I decided to go with the Sway window manager as it&#39;s my preferred choice on Arch.</li>
+</ol>
+<h2>System Configuration</h2>
+<p>During the installation process a window appears informing you that the <code>config.scm</code> file is located at <code>/etc/config.scm</code>. The first time I installed gnu guix on my work laptop I missed this message (pilot error) and I had to ask in the <a href="https://systemcrafters.net">System Crafters</a> IRC channel at <code>irc.libera.chat</code>, <code>#systemcrafters</code>. Come and join. It&#39;s a great place to be and the community there are an absolute treasure. Use your favourite IRC client or join through the webchat <a href="https://web.libera.chat/?channel=#systemcrafters">here</a>. We would be glad to see you. Tell them glenneth sent you :).</p>
+<p>My point is, I missed some vital information, so to the guix manual online it was. This can be found <a href="https://guix.gnu.org/manual/devel/en/guix.html">here</a>. This link will take you to the dev version of the manual. Something else they don&#39;t tell you. This version has a little more detail than the standard manual, and I believe details extra features and may even be a little more up to date.</p>
+<h2>Adding Non-GNU Channels</h2>
+<p>One of the standout features of GNU Guix is the ability to add non-GNU channels to access a wider array of software packages. Here&#39;s how I did it:</p>
+<ol>
+<li><strong>Editing Channels</strong>: I edited the <code>~/.config/guix/channels.scm</code> file to include non-GNU channels.<pre><code class="language-scheme">(cons* (channel
+        (name &#39;non-gnu)
+        (url &quot;https://example.com/non-gnu-channel.git&quot;))
+       %default-channels)
+</code></pre>
+</li>
+<li><strong>Updating Channels</strong>: Running <code>guix pull</code> updated my system to include packages from the non-GNU channel.</li>
+</ol>
+<h2>Installing Nvidia Drivers</h2>
+<p>Being a gamer and someone who requires GPU acceleration for certain tasks, Nvidia drivers were a must. Here&#39;s the process I followed:</p>
+<ol>
+<li><strong>Adding Nvidia Channel</strong>: Added a channel that includes Nvidia drivers.</li>
+<li><strong>Installing Drivers</strong>: Installed the drivers using <code>guix package -i nvidia-driver</code>.</li>
+<li><strong>Configuring the System</strong>: I had to manually configure Xorg to use the Nvidia drivers, which involved editing the Xorg configuration files.</li>
+</ol>
+<h2>Creating My Home Environment</h2>
+<p>To personalize my setup further, I used <code>guix home import</code> to create my own home environment and add packages. This allowed me to have a consistent environment across different machines. I also edited the <code>config.scm</code> file to include the latest Linux kernels and Nvidia drivers.</p>
+<p>Additionally, I used the <code>syncthing home-service-type</code> in my <code>home-configuration.scm</code> file to install and configure Syncthing. This setup ensured my files were always in sync across devices, which is crucial for my workflow.</p>
+<h2>GNOME</h2>
+<p>All was good and I had a solid desktop environment running, even though it was gnome desktop. I had never used gnome, and I am more at home with a keyboard driven workflow. I had come from hyprland on Arch and wanted to get back to that workflow. The option I was presented with, in order to continue using wayland, pipewire etc. was SwayWM.</p>
+<h2>Sway</h2>
+<p>Installing SwayWM and it&#39;s dependencies and nice to haves was relatively straightforward. add the required packages, sway, swaybg, swayidle, swaylock, to my home-configuration.scm gile and run <code>guix home reconfigure</code> easy! The packages were installed and we were good to go.</p>
+<p>The first issue I encountered was that sway does not run with the proprietary nvidia drivers, this was on the work laptop. I could get it to run but only after adding the <code>--unsupported-gpu</code> flag to <code>exec sway</code>. Lo and behold, we had a default sway window manager running.</p>
+<h2>Challenges with SwayWM and SMB Shares</h2>
+<p>With the system set up, I ran into a major roadblock: accessing SMB shares in a file manager while running SwayWM.</p>
+<ol>
+<li><strong>Thunar and GNOME Files</strong>: Neither Thunar nor the GNOME Files application could access SMB shares. This was crucial for my workflow as I frequently access network shares.</li>
+<li><strong>Troubleshooting</strong>: I tried various solutions, including installing additional packages and tweaking configurations, but nothing seemed to work.</li>
+<li><strong>Community Support</strong>: I reached out to the GNU Guix community for help. While they were supportive, the solutions provided didn&#39;t resolve my issues.</li>
+</ol>
+<p>To ensure that the problem was not hardware-related, I went out and purchased a Lenovo ThinkPad E16 Gen 1. I upgraded the RAM to 48GB and installed a Lenovo 2TB SSD to make it my personal laptop. However, even on this new setup, I faced the same issues accessing SMB shares and some networking services just wouldn&#39;t work.</p>
+<p>I tried deleting the <code>gdm</code> login manager in my system configuration file, but after rebooting it was still showing the gnome login window. This was after reading somewhere online that sway was not on friendly terms with the gdm login manager.</p>
+<h2>Returning to Arch Linux</h2>
+<p>After several days of troubleshooting and not being able to access my SMB shares reliably, I made the difficult decision to revert to Arch Linux. The steps were:</p>
+<ol>
+<li><strong>Reinstalling Arch</strong>: I reinstalled Arch Linux using my tried-and-tested setup process.</li>
+<li><strong>Configuring SwayWM</strong>: Set up SwayWM and ensured all my applications were running smoothly.</li>
+<li><strong>Accessing SMB Shares</strong>: Accessing SMB shares was seamless, just as it was before my experiment with GNU Guix.</li>
+</ol>
+<h2>Conclusion</h2>
+<p>I am still running GNU guix on the work laptop, I had to cave on my personal laptop and revert to Arch. My journey with GNU Guix was both enlightening and challenging. While I appreciate the functional package management and the philosophy behind GNU Guix, certain practical issues, like accessing SMB shares, were deal-breakers for my workflow. Arch Linux continues to be my go-to distribution, providing the flexibility and reliability I need for my daily tasks. So, at the moment I am using my personal laptop for work and still trying to figure out the issues I am having on my work laptop. But, to be honest, I prefer working on the thinkpad over working on the MSI laptop that work handed out :).</p>
+<p>If you&#39;re an enthusiast looking to explore new package management paradigms, I highly recommend giving GNU Guix a try. Just be prepared for a few hiccups along the way, and always have a backup plan!</p>
+<hr>
+<p>Feel free to share your thoughts and experiences with GNU Guix or any other distributions you&#39;ve tried. Let&#39;s keep the conversation going!</p>
+<h2>Shameless plug</h2>
+<p>Go <a href="https://systemcrafters.net/community/">here</a> to find all the ways you can engage with the SystemCrafters community. It&#39;s a great place to hang out and discuss all thing craftery. You will also notice the Craftering ring that I am a part of. Click the links and see blogs by some of the community members. Always interesting to read what other Crafters are up to.</p>
+<p>Thanks for taking the time to read my blog post. It is greatly appreciated, and I hope you come back.</p>
+<p>Happy Hacking!!</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2024-07-26-gnu-guix-journey.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-07-26-gnu-guix-journey.html</guid>
+            <pubDate>Fri, 26 Jul 2024 07:30:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>personal, tech, gnu, guix, swaywm, nvidia</category>
+        </item>
+        
+        <item>
+            <title>Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix</title>
+            <description>Hello there! I'm Glenn Thompson, and today, I want to share a significant part of my recent journey into the world of Scheme, GNU Guix, and static site generation.</description>
+            <content:encoded><![CDATA[<h1>Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix</h1>
+<p>Hello there! I&#39;m Glenn Thompson, and today, I want to share a significant part of my recent journey into the world of Scheme, GNU Guix, and static site generation.</p>
+<h2>Discovering Scheme with System Crafters</h2>
+<p>My journey began with a desire to dive deeper into programming languages and their ecosystems. I am a member of the <a href="https://systemcrafters.net/community/">System Crafters Community</a>, and its founder, David Wilson, announced a short four week course as an introduction to Guile Scheme. The course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">Hands-On Guile Scheme for Beginners</a>, provided me with a robust introduction to Guile Scheme, a language that emphasizes simplicity and elegance. David&#39;s clear explanations and practical examples made learning Scheme both engaging and approachable.</p>
+<h2>The Move to GNU Guix</h2>
+<p>Inspired by the principles of Scheme, I decided to take a leap further into the open-source world by transitioning from Arch Linux to GNU Guix. The Guix community, particularly the folks in the <code>#systemcrafters</code> channel on <code>irc.libera.chat</code>, were incredibly supportive and instrumental in helping me navigate this new environment. Their guidance made the switch smooth and rewarding, reinforcing the power and flexibility of GNU Guix as a functional package manager and operating system.  More about that experience in another post.</p>
+<p>There are too many individuals to name here that have helped with the installation and configuration on Gnu guix to mention here.  You all have been an incredible help for which I am extremely grateful.  Thank you all , for enduring my ignorance, and for your patience and your help.</p>
+<h2>From Hugo to Haunt</h2>
+<p>As I settled into Guix, I faced a challenge: Hugo, the static site generator I previously used, was not available as a Guix package. This led me to explore alternatives and eventually discover <a href="https://dthompson.us/projects/haunt.html">Haunt</a>, a Scheme-based static site generator that aligns perfectly with my newfound appreciation for Scheme and Guix.</p>
+<h2>Overcoming Challenges with Haunt</h2>
+<p>Transitioning to Haunt wasn&#39;t without its challenges. There are no readily available templating systems available for haunt like there are for hugo, but there are plenty of examples <a href="https://awesome.haunt.page/">here</a>. One of my own primary difficulties was creating a custom template that matched my site&#39;s aesthetic requirements and functionality needs. Initially, I struggled with configuring the theme layout and ensuring the CSS was applied correctly. Another hurdle was generating the correct URLs for posts and ensuring that summaries appeared as intended on the front page.</p>
+<p>Thankfully, the Haunt manual proved to be an invaluable resource throughout this process. The comprehensive documentation provided clear guidance on using various modules, functions, and procedures. By carefully studying the examples and explanations, I was able to overcome the obstacles and achieve the desired results for my site. The manual&#39;s detailed descriptions of Haunt&#39;s inner workings were particularly helpful in understanding how to leverage the flexibility of Scheme to customize my blog.</p>
+<h2>Crafting My Own Template</h2>
+<p>Moving from Hugo to Haunt required me to create my own template and customize my site&#39;s appearance. This was an exciting opportunity to apply the skills I had learned from David&#39;s course and experiment with Scheme in a practical context.</p>
+<h4>Creating the Template</h4>
+<p>Haunt&#39;s flexibility allowed me to define my own theme layout and structure. Here&#39;s a snippet of my <code>haunt.scm</code> file, where I defined the theme layout and added custom footer content:</p>
+<pre><code class="language-scheme">(use-modules (haunt asset)
+             (haunt builder blog)
+             (haunt builder atom)
+             (haunt builder assets)
+             (haunt reader commonmark)
+             (haunt site)
+             (haunt post)
+             (sxml simple)    ; For HTML generation
+             (srfi srfi-1)
+             (srfi srfi-19))  ; For date and time procedures
+
+;; Load custom templates
+(load &quot;templates/post.scm&quot;)
+
+(define (format-date date)
+  (date-&gt;string date &quot;~Y-~m-~d&quot;))
+
+;; Define a function to generate the URL for a post
+(define (post-url post)
+  (string-append &quot;/&quot; (post-slug post) &quot;.html&quot;))
+
+;; Define a function to extract a summary from the post content
+(define (post-summary post)
+  (let ((content (post-sxml post)))
+    (if (null? content)
+        &quot;&quot;
+        (let ((first-paragraph (car content)))
+          (if (string? first-paragraph)
+              (substring first-paragraph 0 (min 200 (string-length first-paragraph)))
+              (sxml-&gt;string first-paragraph))))))
+
+;; Define the theme layout
+(define (theme-layout site title content)
+  (let ((current-year (number-&gt;string (date-year (current-date)))))
+    `(html
+      (head
+       (meta (@ (charset &quot;utf-8&quot;)))
+       (meta (@ (name &quot;viewport&quot;) (content &quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;)))
+       (link (@ (rel &quot;stylesheet&quot;) (href &quot;/assets/palenight.css&quot;)))
+       (style
+        &quot; .craftering {
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        .webring-text {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .craftering a {
+            color: #dddddd;
+        }
+        .webring-text a {
+            color: #dddddd;
+        }&quot;)
+       (title ,title))
+      (body
+       (header (h1 ,(site-title site)))
+       (main ,content)
+       (footer (@ (class &quot;bg-black bottom-0 w-100 pa3&quot;) (role &quot;contentinfo&quot;))
+               (div (@ (class &quot;flex justify-between&quot;))
+                    (div (@ (class &quot;webring-text&quot;))
+                         (p &quot;I am part of the &quot; (a (@ (href &quot;https://systemcrafters.net&quot;) (target &quot;_blank&quot;)) &quot;System Crafters&quot;) &quot; webring:&quot;))
+                    (div (@ (class &quot;craftering&quot;))
+                         (a (@ (href &quot;https://craftering.systemcrafters.net/@glenneth/previous&quot;)) &quot;←&quot;)
+                         (a (@ (href &quot;https://craftering.systemcrafters.net/&quot;)) &quot;craftering&quot;)
+                         (a (@ (href &quot;https://craftering.systemcrafters.net/@glenneth/next&quot;)) &quot;→&quot;))))))))
+
+;; Define the custom theme with a consistent layout for index
+(define my-theme
+  (theme #:name &quot;My Custom Theme&quot;
+         #:layout theme-layout
+         #:post-template post-template
+         #:collection-template
+         (lambda (site title posts prefix)
+           `(div (@ (class &quot;content&quot;))
+              (h2 ,title)
+              (ul
+                ,@(map (lambda (post)
+                         `(li
+                            (article
+                              (header
+                               (h3 (a (@ (href ,(post-url post))) ,(post-title post))))
+                              (p ,(format-date (post-date post)))
+                              (p ,(post-summary post))
+                              (p (a (@ (href ,(post-url post))) &quot;Read more...&quot;)))))
+                       posts))))))
+
+;; Site configuration
+(site #:title &quot;Just Another Personal Blog&quot;
+      #:domain &quot;glenneth.srht.site&quot;
+      #:default-metadata
+      &#39;((author . &quot;Glenn Thompson&quot;)
+        (email  . &quot;glenn@kirstol.org&quot;))
+      #:readers (list commonmark-reader)
+      #:builders (list
+                  (blog #:theme my-theme)
+                  (atom-feed)
+                  (atom-feeds-by-tag)
+                  (static-directory &quot;images&quot;)
+                  (static-directory &quot;assets&quot;)))
+</code></pre>
+<h3>Customizing the CSS</h3>
+<p>To give my site a personalized touch, I crafted a CSS stylesheet that matched my aesthetic preferences. Here’s an excerpt from my <code>palenight.css</code> file:</p>
+<pre><code class="language-css">body {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.content, header, footer, main {
+  max-width: 90%;
+  padding: 0 5%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #292d3e;
+  color: #d0d0d0;
+}
+
+a {
+  color: #82aaff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #c792ea;
+}
+
+.content {
+  background-color: #1e1e2e;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+article {
+  background-color: #282a36;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+article header {
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #6272a4;
+  font-size: 0.9em;
+}
+
+/* Additional styles for the craftering */
+.craftering {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.webring-text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.craftering a {
+  color: #dddddd;
+}
+
+.webring-text a {
+  color: #dddddd;
+}
+
+/* Additions for mobile device readability */
+
+meta {
+  name: viewport;
+  content: width=device-width, initial-scale=1, shrink-to-fit=no;
+}
+
+@media screen and (max-width: 767px) {
+  /* Customize styles for smaller screens */
+  .logo {
+    max-width: 200px;
+  }
+
+}
+</code></pre>
+<p>I use the <code>doom-palenight</code> theme in Emacs, my preferred text editor, and I wanted my site to match that aesthetic.</p>
+<h3>Publishing with Haunt and Hut</h3>
+<p>In addition to using Haunt, I adopted hut, a set of command-line tools for interacting with SourceHut, to publish my blog. This streamlined my workflow, making it easier to manage and deploy my site directly from my local environment.</p>
+<h3>Conclusion</h3>
+<p>Transitioning from Hugo to Haunt, learning Scheme, and embracing GNU Guix has been an enriching experience. It&#39;s not just about using new tools; it&#39;s about joining a community that values simplicity, transparency, and collaboration. If you&#39;re curious about Scheme or GNU Guix, I highly recommend checking out David Wilson&#39;s course on System Crafters and joining the discussions on IRC.</p>
+<p>I am not a developer of any kind, and learning Scheme has opened my eyes as to how I can craft an environment that I want to work in, and not endure a working environment that the computer is forcing upon me.</p>
+<p>Thank you for reading, and stay tuned for more updates on my journey!</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2024-05-15-hugo-to-haunt.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-05-15-hugo-to-haunt.html</guid>
+            <pubDate>Wed, 15 May 2024 07:30:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>personal, tech, keyboards, glove80</category>
+        </item>
+        
+        <item>
+            <title>A Rollercoaster Week:  From Amman to Newcastle, and back again</title>
+            <description>The Journey Begins</description>
+            <content:encoded><![CDATA[<p>Two weeks ago was a whirlwind of events, taking me from the conforting embrace of Amman, Jordan to the vibrant streets of Newcastle, England. It was a journey filled with highs and lows, professional achievements, and personal challenges.</p>
+<h2>The Journey Begins</h2>
+<p>It all started on a Monday morning in Amman as I embarked on a journey to attend a Quality Control (QC) conference in Newcastle. The anticipation of presenting my work at an international forum filled me with excitement and nerves. The conference was scheduled for just one day, but the impact it had on me would last much longer.</p>
+<h2>A Successful Presentation</h2>
+<p>Tuesday arrived, and with it came the day of the conference. Armed with a PowerPoint presentation comprising over 130 slides, I delved into four hours of intense presenting. Despite the pressure, the conference was a resounding success. My project received positive feedback, and I felt a sense of accomplishment as I shared my work with colleagues from around the world.</p>
+<h2>The Toll of Travel</h2>
+<p>However, as I returned to Amman on Wednesday, I couldn&#39;t shake off a sense of exhaustion. Little did I know that the toll of travel would soon manifest itself in a most unexpected manner. </p>
+<p>Thursday morning greeted me with heavy flu-like symptoms. It hit me like a ton of bricks. The combination of jet lag, long hours of presenting, and exposure to new environments had taken its toll on my immune system. I was bedridden, grappling with a chesty cough that seemed relentless.</p>
+<h2>The Show Must Go On</h2>
+<p>Despite my illness, there was no time for rest. The following week demanded my presence at a site meeting where I was tasked with condensing my extensive slide deck into a concise presentation of just 12 slides. The challenge was daunting, but I tackled it with determination.</p>
+<h2>Reflecting on the Journey</h2>
+<p>As I look back on the rollercoaster week that was, I&#39;m struck by the juxtaposition of success and struggle. From the heights of presenting at an international conference to the lows of battling illness, it was a journey that tested my resilience and resolve.</p>
+<p>But through it all, one thing remains clear: adversity only serves to make us stronger. Each obstacle we overcome, whether professional or personal, contributes to our growth and development.</p>
+<p>So here&#39;s to the rollercoaster weeks, the ones filled with ups and downs, twists and turns. For it is in those moments of challenge that we discover the true extent of our capabilities.</p>
+<p>As I upload this blog post using Hugo, I do so with a renewed sense of gratitude for the journey and all it has taught me. Here&#39;s to embracing the ride, wherever it may take us.</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2024-05-01-amman-newcastle-journey.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-05-01-amman-newcastle-journey.html</guid>
+            <pubDate>Wed, 01 May 2024 14:40:58 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>work, travel</category>
+        </item>
+    </channel>
+</rss>

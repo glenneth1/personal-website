@@ -6,8 +6,9 @@
     <meta name="description" content="">
     <meta property="og:title" content="Beyond Theory: Building Practical Tools with Guile Scheme">
     <meta property="og:description" content="">
-    <meta property="og:url" content="https://glenneth.org/content/posts/2024-12-03-practical-scheme.html">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2024-12-03-practical-scheme">
     <title>Beyond Theory: Building Practical Tools with Guile Scheme - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
     <link href="../../dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -62,16 +63,16 @@
     </style>
 </head>
 <body class="bg-base-bg text-palenight-50">
-    <nav class="fixed w-full bg-base-darker/80 backdrop-blur-sm shadow-sm z-50 border-b border-palenight-400/20">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex">
-                    <a href="/" class="flex items-center font-serif text-xl font-bold text-accent-purple">Glenn Thompson</a>
-                </div>
-                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a href="/#about" class="nav-link text-accent-blue hover:text-accent-cyan">About</a>
-                    <a href="/#blog" class="nav-link text-accent-blue hover:text-accent-cyan">Blog</a>
-                    <a href="/#projects" class="nav-link text-accent-blue hover:text-accent-cyan">Projects</a>
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>tech, guile, scheme, development, functional-programming</span>
+                    <span>•</span>
+                    <time datetime="2024-12-03 10:00">December 3, 2024</time>
+                    <span>•</span>
+                    <span>5 min read</span>
                 </div>
             </div>
         </div>
@@ -80,16 +81,6 @@
     <main class="pt-24 pb-16 px-4">
         <div class="max-w-4xl mx-auto">
             <div class="content text-palenight-100 space-y-6">
-                <div class="flex items-center justify-between mb-8">
-                    <a href="/" class="inline-flex items-center text-accent-blue hover:text-accent-cyan transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-                        </svg>
-                        Back to Home
-                    </a>
-                    <time datetime="2024-12-03 10:00" class="text-palenight-300">2024-12-03 10:00</time>
-                </div>
-
                 <header class="mb-8">
                     <h1 class="text-4xl font-serif font-bold text-accent-yellow">Beyond Theory: Building Practical Tools with Guile Scheme</h1>
                     <div class="flex items-center gap-4 text-palenight-300 mt-4">
@@ -98,6 +89,10 @@
                         <span>5 min read</span>
                         <span>•</span>
                         <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tech</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guile</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">scheme</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">development</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">functional-programming</span>
                     </div>
                 </header>
 
