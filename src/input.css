@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-palenight-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply inline-flex items-center px-1 pt-1 text-sm font-medium text-accent-blue hover:text-accent-cyan transition-colors;
+  }
+
+  .blog-card {
+    @apply bg-base-bg rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border border-palenight-400/20;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center px-6 py-3 border border-accent-blue text-base font-medium rounded-md text-accent-blue hover:bg-accent-blue hover:text-base-bg transition-colors;
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+.prose img {
+  @apply rounded-lg shadow-md;
+}

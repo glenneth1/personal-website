@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A journey through GNU Guix and the eventual return to Arch Linux">
+    <meta property="og:title" content="A Journey Through GNU Guix: From Installation to Returning to Arch Linux">
+    <meta property="og:description" content="An exploration into GNU Guix, its challenges, and the eventual return to Arch Linux">
+    <meta property="og:url" content="https://glenneth.org/content/posts/gnu-guix-journey">
+    <title>GNU Guix Journey - Glenn Thompson</title>
+    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="fixed w-full bg-base-darker/80 backdrop-blur-sm shadow-sm z-50 border-b border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a href="/" class="flex items-center font-serif text-xl font-bold text-accent-purple">Glenn Thompson</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="/#about" class="nav-link text-accent-blue hover:text-accent-cyan">About</a>
+                    <a href="/#blog" class="nav-link text-accent-blue hover:text-accent-cyan">Blog</a>
+                    <a href="/#projects" class="nav-link text-accent-blue hover:text-accent-cyan">Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <article class="prose prose-palenight">
+                    <div class="flex items-center justify-between mb-8">
+                        <a href="/" class="inline-flex items-center text-accent-blue hover:text-accent-cyan transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                            </svg>
+                            Back to Home
+                        </a>
+                        <time datetime="2024-07-26T10:30:00" class="text-palenight-300">July 26, 2024</time>
+                    </div>
+
+                    <header class="mb-8">
+                        <h1 class="text-4xl font-serif font-bold text-accent-yellow">A Journey Through GNU Guix: From Installation to Returning to Arch Linux</h1>
+                        <div class="flex items-center gap-4 text-palenight-300">
+                            <time datetime="2024-07-26T10:30:00">July 26, 2024</time>
+                            <span>•</span>
+                            <span>By Glenn Thompson</span>
+                        </div>
+                    </header>
+
+                    <p class="mb-6">As a long-time user of Arch Linux, I decided to explore the world of GNU Guix to see if it could better suit my needs, especially with my growing interest in functional package management. The journey was insightful, filled with learning experiences, but ultimately led me back to the reliable shores of Arch. Here's a detailed account of my venture into GNU Guix, adding non-GNU channels, dealing with Nvidia drivers, running SwayWM, and the eventual retreat to Arch.</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Installation of GNU Guix</h2>
+
+                    <p class="mb-4">The installation process of GNU Guix was straightforward, thanks to the well-documented guide provided on their official website. Here's a quick rundown of the steps I followed:</p>
+
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li class="mb-2"><strong class="text-accent-purple">Downloading the Installation Image</strong>: I started by downloading the latest ISO image from the <a href="https://guix.gnu.org/" class="text-accent-blue hover:text-accent-cyan">GNU Guix website</a>.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Creating a Bootable USB</strong>: Using <code class="text-accent-purple">dd</code>, I created a bootable USB stick to install GNU Guix on my system.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Booting into the Installer</strong>: Booting from the USB was smooth, and I was greeted with the GNU Guix installer. The installer's simplicity reminded me of early days with Arch, where a minimalistic approach is preferred.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Partitioning and Setting Up File Systems</strong>: I partitioned my drive using <code class="text-accent-purple">fdisk</code> and set up my file systems. I opted for ext4 for simplicity.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Configuring the System</strong>: Following the partition setup, I proceeded to configure my system by selecting the required packages and services. I decided to go with the Sway window manager as it's my preferred choice on Arch.</li>
+                    </ol>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">System Configuration</h2>
+
+                    <p class="mb-4">During the installation process a window appears informing you that the <code class="text-accent-purple">config.scm</code> file is located at <code class="text-accent-purple">/etc/config.scm</code>. The first time I installed gnu guix on my work laptop I missed this message (pilot error) and I had to ask in the <a href="https://systemcrafters.net" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> IRC channel at <code class="text-accent-purple">irc.libera.chat</code>, <code class="text-accent-purple">#systemcrafters</code>. Come and join. It's a great place to be and the community there are an absolute treasure. Use your favourite IRC client or join through the webchat <a href="https://web.libera.chat/?channel=#systemcrafters" class="text-accent-blue hover:text-accent-cyan">here</a>. We would be glad to see you. Tell them glenneth sent you :).</p>
+
+                    <p class="mb-4">My point is, I missed some vital information, so to the guix manual online it was. This can be found <a href="https://guix.gnu.org/manual/devel/en/guix.html" class="text-accent-blue hover:text-accent-cyan">here</a>. This link will take you to the dev version of the manual. Something else they don't tell you. This version has a little more detail than the standard manual, and I believe details extra features and may even be a little more up to date.</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Adding Non-GNU Channels</h2>
+
+                    <p class="mb-4">One of the standout features of GNU Guix is the ability to add non-GNU channels to access a wider array of software packages. Here's how I did it:</p>
+
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li class="mb-2"><strong class="text-accent-purple">Editing Channels</strong>: I edited the <code class="text-accent-purple">~/.config/guix/channels.scm</code> file to include non-GNU channels.</li>
+                    </ol>
+
+                    <pre class="bg-base-darker p-4 rounded-lg overflow-x-auto mb-4"><code class="text-palenight-100 font-mono text-sm">(cons* (channel
+        (name 'non-gnu)
+        (url "https://example.com/non-gnu-channel.git"))
+       %default-channels)</code></pre>
+
+                    <ol class="list-decimal pl-6 mb-6" start="2">
+                        <li class="mb-2"><strong class="text-accent-purple">Updating Channels</strong>: Running <code class="text-accent-purple">guix pull</code> updated my system to include packages from the non-GNU channel.</li>
+                    </ol>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Installing Nvidia Drivers</h2>
+
+                    <p class="mb-4">Being a gamer and someone who requires GPU acceleration for certain tasks, Nvidia drivers were a must. Here's the process I followed:</p>
+
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li class="mb-2"><strong class="text-accent-purple">Adding Nvidia Channel</strong>: Added a channel that includes Nvidia drivers.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Installing Drivers</strong>: Installed the drivers using <code class="text-accent-purple">guix package -i nvidia-driver</code>.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Configuring the System</strong>: I had to manually configure Xorg to use the Nvidia drivers, which involved editing the Xorg configuration files.</li>
+                    </ol>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Creating My Home Environment</h2>
+
+                    <p class="mb-4">To personalize my setup further, I used <code class="text-accent-purple">guix home import</code> to create my own home environment and add packages. This allowed me to have a consistent environment across different machines. I also edited the <code class="text-accent-purple">config.scm</code> file to include the latest Linux kernels and Nvidia drivers.</p>
+
+                    <p class="mb-4">Additionally, I used the <code class="text-accent-purple">syncthing home-service-type</code> in my <code class="text-accent-purple">home-configuration.scm</code> file to install and configure Syncthing. This setup ensured my files were always in sync across devices, which is crucial for my workflow.</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">GNOME</h2>
+
+                    <p class="mb-4">All was good and I had a solid desktop environment running, even though it was gnome desktop. I had never used gnome, and I am more at home with a keyboard driven workflow. I had come from hyprland on Arch and wanted to get back to that workflow. The option I was presented with, in order to continue using wayland, pipewire etc. was SwayWM.</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Sway</h2>
+
+                    <p class="mb-4">Installing SwayWM and it's dependencies and nice to haves was relatively straightforward. add the required packages, sway, swaybg, swayidle, swaylock, to my home-configuration.scm gile and run <code class="text-accent-purple">guix home reconfigure</code> easy! The packages were installed and we were good to go.</p>
+
+                    <p class="mb-4">The first issue I encountered was that sway does not run with the proprietary nvidia drivers, this was on the work laptop. I could get it to run but only after adding the <code class="text-accent-purple">--unsupported-gpu</code> flag to <code class="text-accent-purple">exec sway</code>. Lo and behold, we had a default sway window manager running.</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Challenges with SwayWM and SMB Shares</h2>
+
+                    <p class="mb-4">With the system set up, I ran into a major roadblock: accessing SMB shares in a file manager while running SwayWM.</p>
+
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li class="mb-2"><strong class="text-accent-purple">Thunar and GNOME Files</strong>: Neither Thunar nor the GNOME Files application could access SMB shares. This was crucial for my workflow as I frequently access network shares.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Troubleshooting</strong>: I tried various solutions, including installing additional packages and tweaking configurations, but nothing seemed to work.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Community Support</strong>: I reached out to the GNU Guix community for help. While they were supportive, the solutions provided didn't resolve my issues.</li>
+                    </ol>
+
+                    <p class="mb-4">To ensure that the problem was not hardware-related, I went out and purchased a Lenovo ThinkPad E16 Gen 1. I upgraded the RAM to 48GB and installed a Lenovo 2TB SSD to make it my personal laptop. However, even on this new setup, I faced the same issues accessing SMB shares and some networking services just wouldn't work.</p>
+
+                    <p class="mb-4">I tried deleting the <code class="text-accent-purple">gdm</code> login manager in my system configuration file, but after rebooting it was still showing the gnome login window. This was after reading somewhere online that sway was not on friendly terms with the gdm login manager.</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Returning to Arch Linux</h2>
+
+                    <p class="mb-4">After several days of troubleshooting and not being able to access my SMB shares reliably, I made the difficult decision to revert to Arch Linux. The steps were:</p>
+
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li class="mb-2"><strong class="text-accent-purple">Reinstalling Arch</strong>: I reinstalled Arch Linux using my tried-and-tested setup process.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Configuring SwayWM</strong>: Set up SwayWM and ensured all my applications were running smoothly.</li>
+                        <li class="mb-2"><strong class="text-accent-purple">Accessing SMB Shares</strong>: Accessing SMB shares was seamless, just as it was before my experiment with GNU Guix.</li>
+                    </ol>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Conclusion</h2>
+
+                    <p class="mb-4">I am still running GNU guix on the work laptop, I had to cave on my personal laptop and revert to Arch. My journey with GNU Guix was both enlightening and challenging. While I appreciate the functional package management and the philosophy behind GNU Guix, certain practical issues, like accessing SMB shares, were deal-breakers for my workflow. Arch Linux continues to be my go-to distribution, providing the flexibility and reliability I need for my daily tasks. So, at the moment I am using my personal laptop for work and still trying to figure out the issues I am having on my work laptop. But, to be honest, I prefer working on the thinkpad over working on the MSI laptop that work handed out :).</p>
+
+                    <p class="mb-4">If you're an enthusiast looking to explore new package management paradigms, I highly recommend giving GNU Guix a try. Just be prepared for a few hiccups along the way, and always have a backup plan!</p>
+
+                    <hr class="my-8 border-palenight-400">
+
+                    <p class="mb-4">Feel free to share your thoughts and experiences with GNU Guix or any other distributions you've tried. Let's keep the conversation going!</p>
+
+                    <h2 class="text-2xl font-serif font-bold text-accent-yellow mt-8 mb-4">Shameless plug</h2>
+
+                    <p class="mb-4">Go <a href="https://systemcrafters.net/community/" class="text-accent-blue hover:text-accent-cyan">here</a> to find all the ways you can engage with the SystemCrafters community. It's a great place to hang out and discuss all thing craftery. You will also notice the Craftering ring that I am a part of. Click the links and see blogs by some of the community members. Always interesting to read what other Crafters are up to.</p>
+
+                    <p class="mb-4">Thanks for taking the time to read my blog post. It is greatly appreciated, and I hope you come back.</p>
+
+                    <p class="mb-4">Happy Hacking!!</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">←</a>
+                    <a href="https://craftering.systemcrafters.net/" class="hover:text-accent-cyan">craftering</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">→</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

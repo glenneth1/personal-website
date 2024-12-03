@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Glenn Thompson's personal blog about technology, engineering, and travel experiences in the Middle East">
+    <meta property="og:title" content="Glenn Thompson - Technology, Engineering & Travel">
+    <meta property="og:description"
+        content="Exploring the intersection of electrical engineering, technology, and cultural experiences from two decades in the Middle East">
+    <meta property="og:url" content="https://glenneth.org">
+    <title>Glenn Thompson - Technology, Engineering & Travel</title>
+    <link href="./dist/styles.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script defer src="./src/js/main.js"></script>
+</head>
+
+<body class="bg-base-bg text-palenight-50">
+    <nav class="fixed w-full bg-base-darker/80 backdrop-blur-sm shadow-sm z-50 border-b border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <a href="#" class="flex items-center font-serif text-xl font-bold text-accent-purple">Glenn
+                        Thompson</a>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#about" class="nav-link text-accent-blue hover:text-accent-cyan">About</a>
+                    <a href="#blog" class="nav-link text-accent-blue hover:text-accent-cyan">Blog</a>
+                    <a href="#projects" class="nav-link text-accent-blue hover:text-accent-cyan">Projects</a>
+                    <a href="#contact" class="nav-link text-accent-blue hover:text-accent-cyan">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-24 pb-16 px-4 sm:pt-32 sm:pb-24 bg-base-bg">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h1 class="text-4xl font-serif font-bold tracking-tight text-accent-yellow sm:text-6xl">
+                        Technology, Engineering & Travel
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-palenight-100 max-w-2xl mx-auto">
+                        Exploring the intersection of electrical engineering, technology, and cultural experiences from
+                        two decades in the Middle East.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Posts -->
+        <section id="blog" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-serif font-bold text-accent-yellow mb-8">Blog Posts</h2>
+                <div class="grid gap-8 md:grid-cols-2">
+                    <!-- Scheme Journey Post -->
+                    <article
+                        class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <div class="flex items-center gap-2 text-accent-cyan text-sm mb-2">
+                            <span>Tech</span>
+                            <span>•</span>
+                            <time datetime="2024-09-24T09:30:00">September 24, 2024</time>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">
+                            <a href="/content/posts/scheme-journey.html"
+                                class="hover:text-accent-cyan transition-colors">
+                                A Journey into Scheme: Building a Simple Symlink Manager
+                            </a>
+                        </h3>
+                        <p class="text-palenight-100 mb-4">Learning Guile Scheme and building a practical tool for
+                            managing symlinks...</p>
+                        <div class="flex gap-2">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">scheme</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">guile</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">gnu</span>
+                        </div>
+                    </article>
+                    <!-- GNU Guix Journey Post -->
+                    <article
+                        class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <div class="flex items-center gap-2 text-accent-cyan text-sm mb-2">
+                            <span>Tech</span>
+                            <span>•</span>
+                            <time datetime="2024-07-26T10:30:00">July 26, 2024</time>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">
+                            <a href="/content/posts/gnu-guix-journey.html"
+                                class="hover:text-accent-cyan transition-colors">
+                                A Journey Through GNU Guix: From Installation to Returning to Arch Linux
+                            </a>
+                        </h3>
+                        <p class="text-palenight-100 mb-4">An exploration into GNU Guix, its challenges, and the
+                            eventual return to Arch Linux...</p>
+                        <div class="flex gap-2">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">tech</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">gnu</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">linux</span>
+                        </div>
+                    </article>
+                    <!-- Hugo to Haunt Post -->
+                    <article
+                        class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <div class="flex items-center gap-2 text-accent-cyan text-sm mb-2">
+                            <span>Tech</span>
+                            <span>•</span>
+                            <time datetime="2024-05-15T10:30:00">May 15, 2024</time>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">
+                            <a href="/content/posts/hugo-to-haunt.html"
+                                class="hover:text-accent-cyan transition-colors">
+                                Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix
+                            </a>
+                        </h3>
+                        <p class="text-palenight-100 mb-4">A journey into the world of Scheme, GNU Guix, and static site
+                            generation...</p>
+                        <div class="flex gap-2">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">personal</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">tech</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">scheme</span>
+                        </div>
+                    </article>
+
+                    <!-- Amman to Newcastle Journey -->
+                    <article
+                        class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <div class="flex items-center gap-2 text-accent-cyan text-sm mb-2">
+                            <span>Personal</span>
+                            <span>•</span>
+                            <time datetime="2024-05-01T17:40:58+03:00">May 1, 2024</time>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">
+                            <a href="/content/posts/amman-newcastle-journey.html"
+                                class="hover:text-accent-cyan transition-colors">
+                                A Rollercoaster Week: From Amman to Newcastle, and back again
+                            </a>
+                        </h3>
+                        <p class="text-palenight-100 mb-4">A journey filled with conference presentations, international
+                            travel, and unexpected challenges...</p>
+                        <div class="flex gap-2">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">work</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">travel</span>
+                        </div>
+                    </article>
+
+                    <!-- Glove80 Review -->
+                    <article
+                        class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <div class="flex items-center gap-2 text-accent-cyan text-sm mb-2">
+                            <span>Tech</span>
+                            <span>•</span>
+                            <time datetime="2024-04-08">April 8, 2024</time>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">
+                            <a href="/content/posts/glove80-review.html"
+                                class="hover:text-accent-cyan transition-colors">
+                                Aesthetic Meets Ergonomics: My Deep Dive into the Glove80 Keyboard
+                            </a>
+                        </h3>
+                        <p class="text-palenight-100 mb-4">An in-depth review exploring the unique design, features, and
+                            impact on typing comfort of the Glove80 ergonomic keyboard...</p>
+                        <div class="flex gap-2">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">keyboards</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-bg text-xs">tech</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-base-darker">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-serif font-bold text-accent-yellow mb-8">Projects</h2>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Personal Website Project -->
+                    <article
+                        class="bg-base-bg p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">Personal Website</h3>
+                        <p class="text-palenight-100 mb-4">A modern, responsive personal website built with HTML,
+                            TailwindCSS, and JavaScript. Features a dark theme and blog functionality.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-darker text-xs">HTML</span>
+                            <span
+                                class="text-palenight-300 px-2 py-1 rounded-full bg-base-darker text-xs">TailwindCSS</span>
+                            <span
+                                class="text-palenight-300 px-2 py-1 rounded-full bg-base-darker text-xs">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/glenneth1/personal-website"
+                            class="text-accent-cyan hover:text-accent-purple transition-colors">View Source →</a>
+                    </article>
+
+                    <!-- Symlink Manager Project -->
+                    <article
+                        class="bg-base-bg p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">Scheme Symlink Manager</h3>
+                        <p class="text-palenight-100 mb-4">A command-line tool built with Guile Scheme for managing
+                            symbolic links in Unix-like systems. Simplifies dotfile management.</p>
+                        <div class="flex gap-2 mb-4">
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-darker text-xs">Scheme</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-darker text-xs">Guile</span>
+                            <span class="text-palenight-300 px-2 py-1 rounded-full bg-base-darker text-xs">CLI</span>
+                        </div>
+                        <a href="#" class="text-accent-cyan hover:text-accent-purple transition-colors">Coming Soon
+                            →</a>
+                    </article>
+
+                    <!-- Add Project Card -->
+                    <article
+                        class="bg-base-bg p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors flex items-center justify-center">
+                        <div class="text-center">
+                            <p class="text-palenight-100 mb-2">More projects coming soon!</p>
+                            <p class="text-accent-cyan">Stay tuned...</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-base-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-serif font-bold text-accent-purple mb-6">About Me</h2>
+                        <p class="text-palenight-100 mb-4">
+                            With over 20 years in the electrical engineering field, I've had the privilege of working on
+                            groundbreaking projects across the Middle East. My journey has been marked by continuous
+                            learning, cultural exploration, and technological innovation.
+                        </p>
+                        <p class="text-palenight-100 mb-4">
+                            Beyond my professional work, I'm passionate about technology, particularly static site
+                            generation, Scheme programming, and tools like GNU Guix and Haunt. This blog is where I
+                            share my experiences, insights, and the lessons learned along the way.
+                        </p>
+                    </div>
+                    <div class="bg-base-darker p-8 rounded-lg shadow-md border border-palenight-400/20">
+                        <h3 class="text-xl font-bold text-accent-yellow mb-4">Areas of Focus</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-palenight-100">
+                                <svg class="w-5 h-5 text-accent-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Electrical Engineering
+                            </li>
+                            <li class="flex items-center text-palenight-100">
+                                <svg class="w-5 h-5 text-accent-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Static Site Generation
+                            </li>
+                            <li class="flex items-center text-palenight-100">
+                                <svg class="w-5 h-5 text-accent-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Scheme Programming
+                            </li>
+                            <li class="flex items-center text-palenight-100">
+                                <svg class="w-5 h-5 text-accent-blue mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Middle Eastern Culture
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-base-darker">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-serif font-bold text-accent-purple mb-6">Get in Touch</h2>
+                    <p class="text-palenight-100 mb-8">
+                        Interested in connecting? Feel free to reach out for discussions about technology, engineering,
+                        or sharing travel stories.
+                    </p>
+                    <a href="mailto:glenn@glenneth.org"
+                        class="inline-flex items-center px-6 py-3 border border-accent-blue text-base font-medium rounded-md text-accent-blue hover:bg-accent-blue hover:text-base-bg transition-colors">
+                        Send a Message
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank"
+                            class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous"
+                        class="hover:text-accent-cyan">←</a>
+                    <a href="https://craftering.systemcrafters.net/" class="hover:text-accent-cyan">craftering</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">→</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org"
+                        class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> |
+                    <a href="https://glenneth.org"
+                        class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

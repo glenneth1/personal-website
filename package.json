@@ -1,0 +1,29 @@
+{
+  "name": "glenneth-org",
+  "version": "1.0.0",
+  "description": "Personal website and blog of Glenn Thompson - https://glenneth.org",
+  "scripts": {
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve\"",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
+    "serve": "live-server --port=3000 --no-browser",
+    "convert": "node src/js/md-to-html.js"
+  },
+  "keywords": [
+    "blog",
+    "personal-website",
+    "engineering",
+    "technology",
+    "glenneth.org"
+  ],
+  "author": "Glenn Thompson <glenn@glenneth.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.0.1",
+    "live-server": "^1.2.2",
+    "marked": "^11.1.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.0"
+  }
+}
