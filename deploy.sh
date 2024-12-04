@@ -16,6 +16,7 @@ node src/js/generate-rss.js
 # Copy necessary files
 echo "Copying files..."
 cp index.html deploy/
+cp favicon.svg deploy/
 cp -r dist deploy/
 cp -r src/js deploy/js
 
