@@ -3,35 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="A Journey into Scheme">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2024-09-24-scheme-journey">
     <title>A Journey into Scheme - Glenn Thompson</title>
-    <link href="/dist/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
 </head>
-<body class="bg-base-bg text-palenight-200 font-sans">
-    <header class="bg-base-darker border-b border-palenight-400/20">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-2xl font-serif font-bold text-accent-yellow hover:text-accent-cyan transition-colors">Glenn Thompson</a>
-                <div class="flex space-x-6">
-                    <a href="/" class="text-palenight-200 hover:text-accent-cyan transition-colors">Home</a>
-                    <a href="/#blog" class="text-palenight-200 hover:text-accent-cyan transition-colors">Blog</a>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>personal, tech, guile, scheme, gnu, development</span>
+                    <span>•</span>
+                    <time datetime="2024-09-24 09:30">September 24, 2024</time>
+                    <span>•</span>
+                    <span>5 min read</span>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <article class="prose prose-invert prose-palenight max-w-none">
-                <h1>A Journey into Scheme</h1>
-                <div class="flex items-center gap-2 text-accent-cyan text-sm mb-8">
-                    <span>Blog</span>
-                    <span>•</span>
-                    <time datetime="2024-09-24 09:30">2024-09-24 09:30</time>
-                </div>
-                <h1>My Journey into Scheme: Building a Simple Symlink Manager with Guile Scheme</h1>
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">A Journey into Scheme</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2024-09-24 09:30">2024-09-24 09:30</time>
+                        <span>•</span>
+                        <span>5 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">personal</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tech</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guile</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">scheme</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">gnu</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">development</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h1>My Journey into Scheme: Building a Simple Symlink Manager with Guile Scheme</h1>
 <h2>Introduction</h2>
 <p>I&#39;ve spent my career as an electrical engineer, not a software developer. However, my recent journey in to GNU/Liniux required a tool for managing symlinks, and that&#39;s how I began learning Scheme—specifically Guile Scheme. I&#39;m writing this post to share how I built <code>stash</code>, a utility that mimics GNU Stow&#39;s functionality, and how my learning journey was shaped by David Wilson&#39;s &quot;Hands-On Guile Scheme for Beginners&quot; course from System Crafters, more about this below.</p>
 <h2>How I Started with Scheme</h2>
@@ -72,39 +138,31 @@
 </ul>
 <h2>Guile Scheme Support Resources</h2>
 <ol>
-<li><p><strong><a href="https://www.gnu.org/software/guile/docs/">Guile Scheme Documentation</a></strong>
-The official documentation for Guile Scheme, which includes tutorials, references, and the Guile Manual.</p>
+<li><p><strong><a href="https://www.gnu.org/software/guile/docs/">Guile Scheme Documentation</a></strong><br>The official documentation for Guile Scheme, which includes tutorials, references, and the Guile Manual.</p>
 </li>
-<li><p><strong><a href="https://www.gnu.org/software/guile/manual/html_node/">Guile Reference Manual</a></strong>
-A comprehensive manual covering core language concepts, libraries, and functions available in Guile Scheme.</p>
+<li><p><strong><a href="https://www.gnu.org/software/guile/manual/html_node/">Guile Reference Manual</a></strong><br>A comprehensive manual covering core language concepts, libraries, and functions available in Guile Scheme.</p>
 </li>
-<li><p><strong><a href="http://community.schemewiki.org/">Scheme Wiki</a></strong>
-A community-maintained wiki that covers various Scheme dialects, including Guile Scheme, with tutorials, guides, and general information on Scheme programming.</p>
+<li><p><strong><a href="http://community.schemewiki.org/">Scheme Wiki</a></strong><br>A community-maintained wiki that covers various Scheme dialects, including Guile Scheme, with tutorials, guides, and general information on Scheme programming.</p>
 </li>
-<li><p><strong><a href="http://schemers.org/">Guile at Schemers.org</a></strong>
-A site dedicated to Scheme with resources, libraries, tools, and documentation for Scheme and its implementations, including Guile.</p>
+<li><p><strong><a href="http://schemers.org/">Guile at Schemers.org</a></strong><br>A site dedicated to Scheme with resources, libraries, tools, and documentation for Scheme and its implementations, including Guile.</p>
 </li>
-<li><p><strong><a href="https://systemcrafters.net/">System Crafters</a></strong>
-Led by David Wilson, System Crafters provides tutorials and blog posts on Guile Scheme and other GNU tools.</p>
+<li><p><strong><a href="https://systemcrafters.net/">System Crafters</a></strong><br>Led by David Wilson, System Crafters provides tutorials and blog posts on Guile Scheme and other GNU tools.</p>
 </li>
-<li><p><strong><a href="https://lists.gnu.org/mailman/listinfo/guile-user">Guile Users Mailing List</a></strong>
-Join the Guile mailing list to ask questions and engage with the Guile Scheme community.</p>
+<li><p><strong><a href="https://lists.gnu.org/mailman/listinfo/guile-user">Guile Users Mailing List</a></strong><br>Join the Guile mailing list to ask questions and engage with the Guile Scheme community.</p>
 </li>
-<li><p><strong><a href="https://github.com/artyom-poptsov/guile-cookbook">Guile Cookbook</a></strong>
-An unofficial GitHub repository with practical code snippets and tips for Guile Scheme, covering various common use cases and tasks.</p>
+<li><p><strong><a href="https://github.com/artyom-poptsov/guile-cookbook">Guile Cookbook</a></strong><br>An unofficial GitHub repository with practical code snippets and tips for Guile Scheme, covering various common use cases and tasks.</p>
 </li>
-<li><p><strong><a href="https://libera.chat/">#guile and #scheme on Libera Chat IRC</a></strong>
-A helpful IRC channel where you can connect with other Guile users for real-time support and advice.</p>
+<li><p><strong><a href="https://libera.chat/">#guile and #scheme on Libera Chat IRC</a></strong><br>A helpful IRC channel where you can connect with other Guile users for real-time support and advice.</p>
 </li>
-<li><p><strong><a href="https://Libera.chat/">#systemcrafters on Libera Chat IRC</a></strong>
-A <em>SUPER</em> helpful IRC channel not only for guile and scheme, there are a huge variety of different people here.  Tell them glenneth sent you.</p>
+<li><p><strong><a href="https://Libera.chat/">#systemcrafters on Libera Chat IRC</a></strong><br>A <em>SUPER</em> helpful IRC channel not only for guile and scheme, there are a huge variety of different people here.  Tell them glenneth sent you.</p>
 </li>
 </ol>
 <h2>Next Steps</h2>
 <p>I am still refining <code>stash</code>, especially around its conflict resolution system and the way it handles symbolic links. But it&#39;s in a usable state, and I&#39;m excited to continue iterating on it. You can check out the code <a href="https://codeberg.org/glenneth/stash">on Codeberg</a>.</p>
 <p>If you&#39;re curious about Scheme and how it can be used practically, I highly recommend checking out David Wilson&#39;s course. It&#39;s been instrumental in helping me grasp the concepts I needed to build this tool.  Here&#39;s the link, again :) <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a></p>
 
-            </article>
+                </article>
+            </div>
         </div>
     </main>
     <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
@@ -115,9 +173,9 @@ A <em>SUPER</em> helpful IRC channel not only for guile and scheme, there are a 
                     <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
                 </div>
                 <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
-                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">←</a>
-                    <a href="https://craftering.systemcrafters.net/" class="hover:text-accent-cyan">craftering</a>
-                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">→</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
                 </div>
                 <p class="text-palenight-300 mt-2">
                     <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 

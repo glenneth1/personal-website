@@ -1,10 +1,25 @@
 #!/bin/bash
 
-# Create a deploy directory if it doesn't exist
-mkdir -p deploy
+# Ensure deploy directory structure exists
+mkdir -p deploy/content/posts
 
-# Clean up any previous deploy files
+# Temporarily save the posts
+if [ -d "deploy/content/posts" ]; then
+    mkdir -p .tmp_posts
+    mv deploy/content/posts/* .tmp_posts/ 2>/dev/null || true
+fi
+
+# Clean up deploy directory
 rm -rf deploy/*
+
+# Restore the directory structure
+mkdir -p deploy/content/posts
+
+# Restore the posts if they existed
+if [ -d ".tmp_posts" ]; then
+    mv .tmp_posts/* deploy/content/posts/ 2>/dev/null || true
+    rm -rf .tmp_posts
+fi
 
 # Run build process to ensure latest CSS
 echo "Building CSS..."
@@ -19,18 +34,12 @@ cp index.html deploy/
 cp favicon.svg deploy/
 cp -r dist deploy/
 cp -r src/js deploy/js
-
-# Copy feed.xml
 cp feed.xml deploy/
 
-# Copy content directory excluding markdown files
-echo "Copying content (excluding markdown files)..."
-find content -type f ! -name "*.md" -exec cp --parents {} deploy/ \;
-
-# Create a zip file for easy upload
+# Create deployment package
 echo "Creating zip archive..."
-cd deploy
-zip -r ../website-deploy.zip ./*
+cd deploy && zip -r ../website-deploy.zip ./*
+cd ..
 
 echo "Deployment package created successfully!"
 echo "Your files are ready in the 'website-deploy.zip' file"

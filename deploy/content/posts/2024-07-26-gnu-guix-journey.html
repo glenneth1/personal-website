@@ -3,35 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Journey Through GNU Guix - Glenn Thompson</title>
-    <link href="/dist/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="">
+    <meta property="og:title" content="A Journey Through GNU Guix: From Installation to Returning to Arch Linux">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2024-07-26-gnu-guix-journey">
+    <title>A Journey Through GNU Guix: From Installation to Returning to Arch Linux - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
 </head>
-<body class="bg-base-bg text-palenight-200 font-sans">
-    <header class="bg-base-darker border-b border-palenight-400/20">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex justify-between items-center">
-                <a href="/" class="text-2xl font-serif font-bold text-accent-yellow hover:text-accent-cyan transition-colors">Glenn Thompson</a>
-                <div class="flex space-x-6">
-                    <a href="/" class="text-palenight-200 hover:text-accent-cyan transition-colors">Home</a>
-                    <a href="/#blog" class="text-palenight-200 hover:text-accent-cyan transition-colors">Blog</a>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>personal, tech, gnu, guix, swaywm, nvidia</span>
+                    <span>•</span>
+                    <time datetime="2024-07-26 10:30">July 26, 2024</time>
+                    <span>•</span>
+                    <span>7 min read</span>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <article class="prose prose-invert prose-palenight max-w-none">
-                <h1>A Journey Through GNU Guix</h1>
-                <div class="flex items-center gap-2 text-accent-cyan text-sm mb-8">
-                    <span>Blog</span>
-                    <span>•</span>
-                    <time datetime="2024-07-26 10:30">2024-07-26 10:30</time>
-                </div>
-                <h1>A Journey Through GNU Guix: From Installation to Returning to Arch Linux</h1>
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">A Journey Through GNU Guix: From Installation to Returning to Arch Linux</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2024-07-26 10:30">2024-07-26 10:30</time>
+                        <span>•</span>
+                        <span>7 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">personal</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tech</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">gnu</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guix</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">swaywm</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">nvidia</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h1>A Journey Through GNU Guix: From Installation to Returning to Arch Linux</h1>
 <p>As a long-time user of Arch Linux, I decided to explore the world of GNU Guix to see if it could better suit my needs, especially with my growing interest in functional package management. The journey was insightful, filled with learning experiences, but ultimately led me back to the reliable shores of Arch. Here&#39;s a detailed account of my venture into GNU Guix, adding non-GNU channels, dealing with Nvidia drivers, running SwayWM, and the eventual retreat to Arch.</p>
 <h2>Installation of GNU Guix</h2>
 <p>The installation process of GNU Guix was straightforward, thanks to the well-documented guide provided on their official website. Here&#39;s a quick rundown of the steps I followed:</p>
@@ -97,7 +163,8 @@
 <p>Thanks for taking the time to read my blog post. It is greatly appreciated, and I hope you come back.</p>
 <p>Happy Hacking!!</p>
 
-            </article>
+                </article>
+            </div>
         </div>
     </main>
     <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
@@ -108,9 +175,9 @@
                     <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
                 </div>
                 <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
-                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">←</a>
-                    <a href="https://craftering.systemcrafters.net/" class="hover:text-accent-cyan">craftering</a>
-                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">→</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
                 </div>
                 <p class="text-palenight-300 mt-2">
                     <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 

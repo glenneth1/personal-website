@@ -18,9 +18,9 @@ const footer = `
                     <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
                 </div>
                 <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
-                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">←</a>
-                    <a href="https://craftering.systemcrafters.net/" class="hover:text-accent-cyan">craftering</a>
-                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">→</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
                 </div>
                 <p class="text-palenight-300 mt-2">
                     <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
@@ -32,41 +32,43 @@ const footer = `
 </body>
 </html>`;
 
-function convertMarkdownToHtml(mdFilePath) {
-    // Read markdown file
-    const markdown = fs.readFileSync(mdFilePath, 'utf-8');
-    
-    // Extract metadata from markdown (assuming front matter)
-    const metadata = {};
-    const content = markdown.replace(/^---\n([\s\S]*?)\n---\n/, (_, frontMatter) => {
-        frontMatter.split('\n').forEach(line => {
-            const [key, ...valueParts] = line.split(':');
-            if (key && valueParts.length > 0) {
-                metadata[key.trim()] = valueParts.join(':').trim();
-            }
+// Function to convert markdown to HTML
+async function convertMarkdownToHtml(mdFilePath, outputPath) {
+    try {
+        // Read markdown file
+        const markdown = await fs.promises.readFile(mdFilePath, 'utf8');
+        
+        // Extract metadata from markdown (assuming front matter)
+        const metadata = {};
+        const content = markdown.replace(/^---\n([\s\S]*?)\n---\n/, (_, frontMatter) => {
+            frontMatter.split('\n').forEach(line => {
+                const [key, ...valueParts] = line.split(':');
+                if (key && valueParts.length > 0) {
+                    metadata[key.trim()] = valueParts.join(':').trim();
+                }
+            });
+            return '';
         });
-        return '';
-    });
 
-    // Configure marked options for proper heading rendering
-    const markedOptions = {
-        headerIds: true,
-        gfm: true,
-        breaks: true,
-        pedantic: false,
-        smartLists: true,
-        smartypants: true
-    };
+        // Configure marked options for proper heading rendering
+        const markedOptions = {
+            headerIds: true,
+            gfm: true,
+            breaks: true,
+            pedantic: false,
+            smartLists: true,
+            smartypants: true
+        };
 
-    // Convert markdown to HTML
-    const articleContent = marked.parse(content, markedOptions);
+        // Convert markdown to HTML
+        const articleContent = marked.parse(content, markedOptions);
 
-    // Calculate read time (rough estimate: 200 words per minute)
-    const wordCount = content.trim().split(/\s+/).length;
-    const readTime = Math.ceil(wordCount / 200);
+        // Calculate read time (rough estimate: 200 words per minute)
+        const wordCount = content.trim().split(/\s+/).length;
+        const readTime = Math.ceil(wordCount / 200);
 
-    // Create full HTML document
-    const html = `<!DOCTYPE html>
+        // Create full HTML document
+        const html = `<!DOCTYPE html>
 <html lang="en" class="bg-base-bg">
 <head>
     <meta charset="UTF-8">
@@ -173,18 +175,24 @@ function convertMarkdownToHtml(mdFilePath) {
         </div>
     </main>${footer}`;
 
-    // Write HTML file
-    const htmlFilePath = mdFilePath.replace(/\.md$/, '.html');
-    fs.writeFileSync(htmlFilePath, html);
-    console.log(`Converted ${path.basename(mdFilePath)} to HTML`);
+        // Write HTML file
+        const htmlPath = outputPath || mdFilePath.replace('.md', '.html');
+        await fs.promises.writeFile(htmlPath, html);
+        
+        console.log(`Converted ${mdFilePath} to ${htmlPath}`);
+    } catch (error) {
+        console.error('Error converting markdown to HTML:', error);
+        process.exit(1);
+    }
 }
 
 // If running from command line
 if (require.main === module) {
     const mdFilePath = process.argv[2];
+    const outputPath = process.argv[3];
     if (!mdFilePath) {
         console.error('Please provide a markdown file path');
         process.exit(1);
     }
-    convertMarkdownToHtml(mdFilePath);
+    convertMarkdownToHtml(mdFilePath, outputPath);
 }
