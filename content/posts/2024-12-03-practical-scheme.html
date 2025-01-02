@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="Beyond Theory: Building Practical Tools with Guile Scheme">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2024-12-03-practical-scheme">
+    <title>Beyond Theory: Building Practical Tools with Guile Scheme - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>tech, guile, scheme, development, functional-programming</span>
+                    <span>•</span>
+                    <time datetime="2024-12-03 10:00">December 3, 2024</time>
+                    <span>•</span>
+                    <span>5 min read</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">Beyond Theory: Building Practical Tools with Guile Scheme</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2024-12-03 10:00">2024-12-03 10:00</time>
+                        <span>•</span>
+                        <span>5 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tech</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guile</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">scheme</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">development</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">functional-programming</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h1>Beyond Theory: Building Practical Tools with Guile Scheme</h1>
+<h2>Introduction</h2>
+<p>A few months ago, I shared my journey into learning Scheme through building <code>stash</code>, a symlink manager. Since then, I&#39;ve discovered that the gap between learning Scheme and applying it to real-world problems is where the most valuable lessons emerge. This post explores what I&#39;ve learned about building practical tools with Guile Scheme, sharing both successes and challenges along the way.</p>
+<h2>The Power of Modular Design</h2>
+<p>One of the most important lessons I learned was the value of modular design. Breaking down a program into focused, single-responsibility modules not only makes the code more maintainable but also helps in reasoning about the program&#39;s behavior. Here&#39;s how I structured <code>stash</code>:</p>
+<pre><code class="language-scheme">(use-modules (ice-9 getopt-long)
+             (stash help)         ;; Help module
+             (stash colors)       ;; ANSI colors
+             (stash log)          ;; Logging module
+             (stash paths)        ;; Path handling module
+             (stash conflict)     ;; Conflict resolution module
+             (stash file-ops))    ;; File and symlink operations module
+</code></pre>
+<p>Each module has a specific responsibility:</p>
+<ul>
+<li><code>colors.scm</code>: Handles ANSI color formatting for terminal output</li>
+<li><code>conflict.scm</code>: Manages conflict resolution when files already exist</li>
+<li><code>file-ops.scm</code>: Handles file system operations</li>
+<li><code>help.scm</code>: Provides usage information</li>
+<li><code>log.scm</code>: Manages logging operations</li>
+<li><code>paths.scm</code>: Handles path manipulation and normalization</li>
+</ul>
+<h2>Robust Path Handling</h2>
+<p>One of the first challenges in building a file management tool is handling paths correctly. Here&#39;s how I approached it:</p>
+<pre><code class="language-scheme">(define (expand-home path)
+  &quot;Expand ~ to the user&#39;s home directory.&quot;
+  (if (string-prefix? &quot;~&quot; path)
+      (string-append (getenv &quot;HOME&quot;) (substring path 1))
+      path))
+
+(define (concat-path base path)
+  &quot;Concatenate two paths, ensuring there are no double slashes.&quot;
+  (if (string-suffix? &quot;/&quot; base)
+      (string-append (string-drop-right base 1) &quot;/&quot; path)
+      (string-append base &quot;/&quot; path)))
+
+(define (ensure-config-path target-dir)
+  &quot;Ensure that the target directory has .config appended, avoiding double slashes.&quot;
+  (let ((target-dir (expand-home target-dir)))
+    (if (string-suffix? &quot;/&quot; target-dir)
+        (set! target-dir (string-drop-right target-dir 1)))
+    (if (not (string-suffix? &quot;/.config&quot; target-dir))
+        (string-append target-dir &quot;/.config&quot;)
+        target-dir)))
+</code></pre>
+<p>This approach ensures that:</p>
+<ul>
+<li>Home directory references (<code>~</code>) are properly expanded</li>
+<li>Path concatenation doesn&#39;t create double slashes</li>
+<li>Configuration paths are consistently structured</li>
+</ul>
+<h2>Interactive Conflict Resolution</h2>
+<p>Real-world tools often need to handle conflicts. I implemented an interactive conflict resolution system:</p>
+<pre><code class="language-scheme">(define (prompt-user-for-action)
+  &quot;Prompt the user to decide how to handle a conflict: overwrite (o), skip (s), or cancel (c).&quot;
+  (display (color-message 
+    &quot;A conflict was detected. Choose action - Overwrite (o), Skip (s), or Cancel (c): &quot; 
+    yellow-text))
+  (let ((response (read-line)))
+    (cond
+      ((string-ci=? response &quot;o&quot;) &#39;overwrite)
+      ((string-ci=? response &quot;s&quot;) &#39;skip)
+      ((string-ci=? response &quot;c&quot;) &#39;cancel)
+      (else
+       (display &quot;Invalid input. Please try again.\n&quot;)
+       (prompt-user-for-action)))))
+</code></pre>
+<p>This provides a user-friendly interface for resolving conflicts while maintaining data safety.</p>
+<h2>Logging for Debugging and Auditing</h2>
+<p>Proper logging is crucial for debugging and auditing. I implemented a simple but effective logging system:</p>
+<pre><code class="language-scheme">(define (current-timestamp)
+  &quot;Return the current date and time as a formatted string.&quot;
+  (let* ((time (current-time))
+         (seconds (time-second time)))
+    (strftime &quot;%Y-%m-%d-%H-%M-%S&quot; (localtime seconds))))
+
+(define (log-action message)
+  &quot;Log an action with a timestamp to the stash.log file.&quot;
+  (let ((log-port (open-file &quot;stash.log&quot; &quot;a&quot;)))
+    (display (color-message 
+      (string-append &quot;[&quot; (current-timestamp) &quot;] &quot; message) 
+      green-text) log-port)
+    (newline log-port)
+    (close-port log-port)))
+</code></pre>
+<p>This logging system:</p>
+<ul>
+<li>Timestamps each action</li>
+<li>Uses color coding for better readability</li>
+<li>Maintains a persistent log file</li>
+<li>Properly handles file operations</li>
+</ul>
+<h2>File Operations with Safety</h2>
+<p>When dealing with file system operations, safety is paramount. Here&#39;s how I handle moving directories:</p>
+<pre><code class="language-scheme">(define (move-source-to-target source-dir target-dir)
+  &quot;Move the entire source directory to the target directory, ensuring .config in the target path.&quot;
+  (let* ((target-dir (ensure-config-path target-dir))
+         (source-dir (expand-home source-dir))
+         (source-name (basename source-dir))
+         (target-source-dir (concat-path target-dir source-name)))
+    (if (not (file-exists? target-dir))
+        (mkdir target-dir #o755))
+    (if (file-exists? target-source-dir)
+        (handle-conflict target-source-dir source-dir delete-directory log-action)
+        (begin
+          (rename-file source-dir target-source-dir)
+          (display (format #f &quot;Moved ~a to ~a\n&quot; source-dir target-source-dir))
+          (log-action (format #f &quot;Moved ~a to ~a&quot; source-dir target-source-dir))))
+    target-source-dir))
+</code></pre>
+<p>This implementation:</p>
+<ul>
+<li>Ensures paths are properly formatted</li>
+<li>Creates necessary directories</li>
+<li>Handles conflicts gracefully</li>
+<li>Logs all operations</li>
+<li>Returns the new path for further operations</li>
+</ul>
+<h2>Lessons Learned</h2>
+<h3>What Worked Well</h3>
+<ol>
+<li><strong>Modular Design</strong>: Breaking the code into focused modules made it easier to maintain and test</li>
+<li><strong>Functional Approach</strong>: Using pure functions where possible made the code more predictable</li>
+<li><strong>Interactive Interface</strong>: Providing clear user prompts and colored output improved usability</li>
+<li><strong>Robust Logging</strong>: Detailed logging helped with debugging and understanding program flow</li>
+</ol>
+<h3>Challenges Faced</h3>
+<ol>
+<li><strong>Path Handling</strong>: Dealing with different path formats and edge cases required careful attention</li>
+<li><strong>Error States</strong>: Managing various error conditions while keeping the code clean</li>
+<li><strong>User Interface</strong>: Balancing between automation and user control</li>
+<li><strong>Documentation</strong>: Writing clear documentation that helps users understand the tool</li>
+</ol>
+<h2>Moving Forward</h2>
+<p>Building <code>stash</code> has taught me that while functional programming principles are valuable, pragmatism is equally important. The key is finding the right balance between elegant functional code and practical solutions.</p>
+<h2>Resources</h2>
+<ol>
+<li><a href="https://www.gnu.org/software/guile/manual/">Guile Manual</a></li>
+<li><a href="/content/posts/scheme-journey.html">My Previous Scheme Journey Post</a></li>
+<li><a href="https://systemcrafters.net/community">System Crafters Community</a></li>
+<li><a href="https://codeberg.org/glenneth/stash">Stash on Codeberg</a></li>
+</ol>
+<p>The code examples in this post are from my actual implementation of <code>stash</code>. Feel free to explore, use, and improve upon them!</p>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

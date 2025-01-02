@@ -1,6 +1,7 @@
 const { marked } = require('marked');
 const fs = require('fs');
 const path = require('path');
+const cheerio = require('cheerio');
 
 // Configure marked options
 const options = {
@@ -79,7 +80,7 @@ async function convertMarkdownToHtml(mdFilePath, outputPath) {
     <meta property="og:url" content="https://glenneth.org${mdFilePath.replace(/\.md$/, '')}">
     <title>${metadata.title || 'Blog Post'} - Glenn Thompson</title>
     <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
-    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="/dist/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .prose-palenight {
@@ -185,6 +186,149 @@ async function convertMarkdownToHtml(mdFilePath, outputPath) {
         process.exit(1);
     }
 }
+
+// Function to extract summary from markdown content
+function extractSummary(content, maxLength = 200) {
+    // Remove frontmatter
+    const contentWithoutFrontmatter = content.replace(/^---\n[\s\S]*?\n---\n/, '');
+    
+    // Parse the markdown to HTML
+    const html = marked.parse(contentWithoutFrontmatter);
+    
+    // Use cheerio to extract text from the first paragraph
+    const $ = cheerio.load(html);
+    const firstParagraph = $('p').first().text();
+    
+    // Truncate to maxLength and add ellipsis if needed
+    if (firstParagraph.length <= maxLength) {
+        return firstParagraph;
+    }
+    return firstParagraph.substring(0, maxLength).trim() + '...';
+}
+
+// Function to update index.html with blog post summaries
+async function updateIndexWithSummaries() {
+    try {
+        const postsDir = path.join(process.cwd(), 'content', 'posts');
+        const indexPath = path.join(process.cwd(), 'index.html');
+        
+        // Read all markdown files
+        const files = await fs.promises.readdir(postsDir);
+        const posts = [];
+        
+        for (const file of files) {
+            if (file.endsWith('.md')) {
+                const filePath = path.join(postsDir, file);
+                const content = await fs.promises.readFile(filePath, 'utf8');
+                
+                // Extract metadata
+                const metadata = {};
+                content.replace(/^---\n([\s\S]*?)\n---\n/, (_, frontMatter) => {
+                    frontMatter.split('\n').forEach(line => {
+                        const [key, ...valueParts] = line.split(':');
+                        if (key && valueParts.length > 0) {
+                            metadata[key.trim()] = valueParts.join(':').trim();
+                        }
+                    });
+                    return '';
+                });
+                
+                // Extract summary
+                const summary = extractSummary(content);
+                
+                // Parse and format the date
+                let formattedDate = '';
+                let isoDate = '';
+                try {
+                    // Handle date formats like "2024-04-08 16:50" or "2024-04-08"
+                    const dateStr = metadata.date.split(' ')[0];
+                    const date = new Date(dateStr);
+                    formattedDate = date.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+                    isoDate = dateStr;
+                } catch (e) {
+                    console.error(`Error parsing date for ${file}:`, e);
+                }
+                
+                // Parse tags
+                let tags = [];
+                if (metadata.tags) {
+                    // Remove square brackets and split by commas
+                    tags = metadata.tags.replace(/[\[\]]/g, '').split(',').map(t => t.trim().replace(/"/g, ''));
+                }
+                
+                posts.push({
+                    title: metadata.title?.replace(/"/g, '') || 'Untitled',
+                    date: formattedDate,
+                    isoDate,
+                    summary,
+                    tags,
+                    url: `/content/posts/${path.basename(file, '.md')}.html`
+                });
+            }
+        }
+        
+        // Sort posts by date (newest first)
+        posts.sort((a, b) => new Date(b.isoDate) - new Date(a.isoDate));
+        
+        // Read index.html
+        let indexHtml = await fs.promises.readFile(indexPath, 'utf8');
+        
+        // Create the HTML for blog posts
+        const postsHtml = posts.map(post => `
+                    <article class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
+                        <div class="flex items-center gap-2 text-accent-yellow text-sm mb-2 font-bold">
+                            <span>Tech</span>
+                            ${post.tags.map(tag => `<span>•</span><span>${tag}</span>`).join('')}
+                            <span>•</span>
+                            <time datetime="${post.isoDate}">${post.date}</time>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-accent-yellow mb-3">
+                            <a href="${post.url}" class="hover:text-accent-cyan transition-colors">
+                                ${post.title}
+                            </a>
+                        </h3>
+                        <p class="text-palenight-100 mb-4">${post.summary}</p>
+                        <div class="flex gap-2">
+                            ${post.tags.map(tag => `<span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">${tag}</span>`).join('')}
+                        </div>
+                    </article>
+        `).join('\n');
+        
+        // Find the blog posts section and replace its content
+        const blogSectionStart = indexHtml.indexOf('<div class="grid gap-8 md:grid-cols-2">');
+        const blogSectionEnd = indexHtml.indexOf('</div><!-- End blog posts -->') + '</div><!-- End blog posts -->'.length;
+        
+        if (blogSectionStart === -1 || blogSectionEnd === -1) {
+            console.error('Could not find blog posts section in index.html');
+            return;
+        }
+        
+        // Replace the content between the markers
+        indexHtml = indexHtml.substring(0, blogSectionStart) +
+            '<div class="grid gap-8 md:grid-cols-2">\n' +
+            postsHtml + '\n' +
+            '                </div><!-- End blog posts -->' +
+            indexHtml.substring(blogSectionEnd);
+        
+        // Write the updated index.html
+        await fs.promises.writeFile(indexPath, indexHtml);
+        
+        console.log('Successfully updated index.html with blog post summaries');
+    } catch (error) {
+        console.error('Error updating index.html:', error);
+        throw error;
+    }
+}
+
+// Export functions
+module.exports = {
+    convertMarkdownToHtml,
+    updateIndexWithSummaries
+};
 
 // If running from command line
 if (require.main === module) {

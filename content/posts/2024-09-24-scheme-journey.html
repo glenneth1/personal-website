@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="A Journey into Scheme">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2024-09-24-scheme-journey">
+    <title>A Journey into Scheme - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>personal, tech, guile, scheme, gnu, development</span>
+                    <span>•</span>
+                    <time datetime="2024-09-24 09:30">September 24, 2024</time>
+                    <span>•</span>
+                    <span>5 min read</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">A Journey into Scheme</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2024-09-24 09:30">2024-09-24 09:30</time>
+                        <span>•</span>
+                        <span>5 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">personal</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tech</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guile</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">scheme</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">gnu</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">development</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h1>My Journey into Scheme: Building a Simple Symlink Manager with Guile Scheme</h1>
+<h2>Introduction</h2>
+<p>I&#39;ve spent my career as an electrical engineer, not a software developer. However, my recent journey in to GNU/Liniux required a tool for managing symlinks, and that&#39;s how I began learning Scheme—specifically Guile Scheme. I&#39;m writing this post to share how I built <code>stash</code>, a utility that mimics GNU Stow&#39;s functionality, and how my learning journey was shaped by David Wilson&#39;s &quot;Hands-On Guile Scheme for Beginners&quot; course from System Crafters, more about this below.</p>
+<h2>How I Started with Scheme</h2>
+<p>My programming background was <em>VERY</em> limited, I produce documents in (La)Tex but I decided to take the plunge into learning Scheme, thanks to a course led by David Wilson from System Crafters. The course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a>, was incredibly helpful in making Scheme accessible even for someone like me, without a traditional programming background.  I know (La)Tex isn&#39;t a programming language, it&#39;s typesetting.  But how hard can it be?  Right?</p>
+<p>The course took me through the basics of Scheme, from simple expressions to more complex concepts like functions, recursion, and working with files. This structured learning environment gave me the confidence to start building <code>stash</code>.</p>
+<p>The course was &quot;instructor-led&quot; with live meet-up sessions weekly.  David has since made this course on-demand, and will be, if not already, available at the above link.  Highly recommended if you are interested in taking your first steps with scheme.</p>
+<h2>Why Build Stash?</h2>
+<p>After completing David Wilson&#39;s course, I wanted to put my newly found Guile Scheme skills into practice with a real project. It wasn&#39;t enough just to understand the language conceptually—I needed to build something tangible that solved a problem I encountered regularly in my workflow. Writing <code>stash</code> gave me that opportunity. It allowed me to apply what I&#39;d learned while also deepening my understanding of file manipulation, command-line tools, and conflict resolution—all within the Guile Scheme environment.</p>
+<p>After migrating to GNU/Linux and speaking with other <a href="https://systemcrafters.net/community">System Crafters Community</a> members, I found I needed a way to manage symbolic links and organize directories. Existing tools like GNU Stow helped, but I wanted to learn how such tools are built. I decided to write my own version using Guile Scheme to enhance my understanding of the language and to have more control over the functionality.</p>
+<p>The goal of <code>stash</code> is simple: allow users to move directories and create symlinks with conflict resolution, offering options to overwrite, back up, skip, or cancel the operation.</p>
+<h2>Breaking Down Stash</h2>
+<p>The core of <code>stash</code> revolves around:</p>
+<ol>
+<li><strong>Moving Directories</strong>: Using Scheme&#39;s file manipulation functions, I learned how to move directories and files around. </li>
+<li><strong>Creating Symlinks</strong>: I implemented functions to create symlinks to the moved directories, ensuring that the original structure remains accessible.</li>
+<li><strong>Conflict Resolution</strong>: One of the key features I wanted was handling conflicts when a file or symlink already exists at the target location. This required prompting the user for input and responding accordingly (backup, overwrite, skip, or cancel).</li>
+</ol>
+<p>Here&#39;s an excerpt of the core functionality that handles moving a source directory and creating a symlink:</p>
+<pre><code class="language-scheme">;;; Helper function to move source to target
+(define (move-source-to-target source-dir target-dir)
+  &quot;Move the entire source directory to the target directory.&quot;
+  (let* ((source-dir (expand-home source-dir))
+         (target-dir (expand-home target-dir))
+         (source-name (basename source-dir))
+         (target-source-dir (string-append target-dir &quot;/&quot; source-name)))
+    (if (file-exists? target-source-dir)
+        ;; Conflict handling here...
+        ...)
+    (rename-file source-dir target-source-dir)
+    (display (format #f &quot;Moved ~a to ~a\n&quot; source-dir target-source-dir))))
+</code></pre>
+<h2>What I Learned</h2>
+<p>This project taught me a lot about not just Scheme, but programming in general:</p>
+<ul>
+<li><strong>File and Directory Manipulation</strong>: Scheme&#39;s file handling functions were different from what I had experienced before, but they allowed for powerful manipulation of file systems.</li>
+<li><strong>Command-Line Utilities</strong>: Scheme isn&#39;t just a language for academic exercises; you can write real, useful command-line tools with it.</li>
+<li><strong>Problem Solving</strong>: From parsing command-line arguments to resolving conflicts with existing files, every part of the program required careful thought and consideration of edge cases.</li>
+</ul>
+<h2>Guile Scheme Support Resources</h2>
+<ol>
+<li><p><strong><a href="https://www.gnu.org/software/guile/docs/">Guile Scheme Documentation</a></strong><br>The official documentation for Guile Scheme, which includes tutorials, references, and the Guile Manual.</p>
+</li>
+<li><p><strong><a href="https://www.gnu.org/software/guile/manual/html_node/">Guile Reference Manual</a></strong><br>A comprehensive manual covering core language concepts, libraries, and functions available in Guile Scheme.</p>
+</li>
+<li><p><strong><a href="http://community.schemewiki.org/">Scheme Wiki</a></strong><br>A community-maintained wiki that covers various Scheme dialects, including Guile Scheme, with tutorials, guides, and general information on Scheme programming.</p>
+</li>
+<li><p><strong><a href="http://schemers.org/">Guile at Schemers.org</a></strong><br>A site dedicated to Scheme with resources, libraries, tools, and documentation for Scheme and its implementations, including Guile.</p>
+</li>
+<li><p><strong><a href="https://systemcrafters.net/">System Crafters</a></strong><br>Led by David Wilson, System Crafters provides tutorials and blog posts on Guile Scheme and other GNU tools.</p>
+</li>
+<li><p><strong><a href="https://lists.gnu.org/mailman/listinfo/guile-user">Guile Users Mailing List</a></strong><br>Join the Guile mailing list to ask questions and engage with the Guile Scheme community.</p>
+</li>
+<li><p><strong><a href="https://github.com/artyom-poptsov/guile-cookbook">Guile Cookbook</a></strong><br>An unofficial GitHub repository with practical code snippets and tips for Guile Scheme, covering various common use cases and tasks.</p>
+</li>
+<li><p><strong><a href="https://libera.chat/">#guile and #scheme on Libera Chat IRC</a></strong><br>A helpful IRC channel where you can connect with other Guile users for real-time support and advice.</p>
+</li>
+<li><p><strong><a href="https://Libera.chat/">#systemcrafters on Libera Chat IRC</a></strong><br>A <em>SUPER</em> helpful IRC channel not only for guile and scheme, there are a huge variety of different people here.  Tell them glenneth sent you.</p>
+</li>
+</ol>
+<h2>Next Steps</h2>
+<p>I am still refining <code>stash</code>, especially around its conflict resolution system and the way it handles symbolic links. But it&#39;s in a usable state, and I&#39;m excited to continue iterating on it. You can check out the code <a href="https://codeberg.org/glenneth/stash">on Codeberg</a>.</p>
+<p>If you&#39;re curious about Scheme and how it can be used practically, I highly recommend checking out David Wilson&#39;s course. It&#39;s been instrumental in helping me grasp the concepts I needed to build this tool.  Here&#39;s the link, again :) <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a></p>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -6,7 +6,7 @@
         <link>https://glenneth.org</link>
         <atom:link href="https://glenneth.org/feed.xml" rel="self" type="application/rss+xml" />
         <language>en-us</language>
-        <lastBuildDate>Fri, 06 Dec 2024 03:38:32 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Jan 2025 08:57:11 GMT</lastBuildDate>
         
         <item>
             <title>Aesthetic Meets Ergonomics: My Deep Dive into the Glove80 Keyboard</title>
@@ -39,6 +39,89 @@
             <pubDate>Invalid Date</pubDate>
             <author>"Glenn Thompson"</author>
             <category>["personal", "tech", "keyboards", "glove80"]</category>
+        </item>
+        
+        <item>
+            <title>From Hugo to Haunt to Custom: My Journey in Static Site Generation</title>
+            <description>A reflection on my evolving journey through static site generators - from Hugo to Haunt, and finally to building my own custom solution, highlighting the valuable lessons learned along the way.</description>
+            <content:encoded><![CDATA[<p>My journey with static site generators has been one of continuous learning and evolution. It started with Hugo, transitioned through Haunt, and has now led me to build my own custom solution. Each step of this journey has taught me valuable lessons about web development, programming languages, and the importance of understanding the tools we use.</p>
+<h2>The Hugo Beginning</h2>
+<p>Like many &quot;bloggers&quot;, I started with Hugo, a popular static site generator known for its speed and extensive theme ecosystem. Hugo served its purpose well, providing a robust platform for my blog with ready-made themes and a strong community.</p>
+<h2>The Transition to Haunt</h2>
+<p>My journey took an interesting turn when I joined the <a href="https://systemcrafters.net/community/">System Crafters Community</a>. Through David Wilson&#39;s excellent course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">Hands-On Guile Scheme for Beginners</a>, I was introduced to the world of Scheme programming. This led me to adopt GNU Guix as my operating system, which naturally led me to <a href="https://dthompson.us/projects/haunt.html">Haunt</a>, a static site generator written in Guile Scheme.</p>
+<p>The transition to Haunt was motivated by several factors:</p>
+<ul>
+<li>Alignment with my growing interest in Scheme and functional programming</li>
+<li>Integration with the GNU Guix ecosystem</li>
+<li>The opportunity to write site configuration in Scheme</li>
+<li>A desire for a simpler, more controllable setup</li>
+</ul>
+<h3>The Haunt Experience</h3>
+<p>Haunt offered a different perspective on site generation. Some highlights of my Haunt experience included:</p>
+<ul>
+<li>Writing site configuration in Scheme, which felt natural after learning Guile</li>
+<li>Creating custom templates that matched my site&#39;s aesthetic needs</li>
+<li>Learning to leverage Scheme&#39;s flexibility for site customization</li>
+<li>Being part of a community that values simplicity and transparency</li>
+</ul>
+<p>However, working with Haunt also presented challenges:</p>
+<ul>
+<li>Limited availability of ready-made templates</li>
+<li>Need to create custom solutions for common features</li>
+<li>Learning curve of Scheme for web development</li>
+</ul>
+<h2>The Move to Custom Development</h2>
+<p>As I became more comfortable with web development and gained a deeper understanding of static site generation, I felt ready for the next step: building my own static site generator. This decision wasn&#39;t about Haunt&#39;s limitations - it was about the desire to understand every aspect of my site&#39;s generation process and have complete control over its architecture.</p>
+<h2>The New Architecture</h2>
+<p>My custom solution combines the lessons learned from both Hugo and Haunt with modern web development practices:</p>
+<ul>
+<li><strong>Modern JavaScript</strong>: Using Node.js and contemporary JavaScript tools</li>
+<li><strong>Markdown Processing</strong>: Leveraging the <code>marked</code> library for flexible content processing</li>
+<li><strong>Tailwind CSS</strong>: Adopting a utility-first approach to styling</li>
+<li><strong>Simple Build Process</strong>: A straightforward build script that handles all aspects of site generation</li>
+<li><strong>Development Server</strong>: Live reload functionality for immediate feedback</li>
+</ul>
+<h2>Benefits of the Custom Solution</h2>
+<p>Building my own solution has brought several advantages:</p>
+<ol>
+<li><strong>Complete Understanding</strong>: I now understand every aspect of my site&#39;s generation</li>
+<li><strong>Faster Iterations</strong>: Quick implementation of new features</li>
+<li><strong>Modern Development</strong>: Integration with current web development tools</li>
+<li><strong>Simplified Deployment</strong>: Streamlined process for updates</li>
+<li><strong>Better Performance</strong>: Only including features I actually need</li>
+</ol>
+<h2>Learning Experience</h2>
+<p>This journey from Hugo through Haunt to a custom solution has taught me:</p>
+<ul>
+<li>The value of understanding different approaches to static site generation</li>
+<li>The importance of choosing tools that align with your learning goals</li>
+<li>How different programming paradigms (Go, Scheme, JavaScript) approach similar problems</li>
+<li>The benefits of building your own tools when the learning opportunity outweighs convenience</li>
+</ul>
+<h2>Future Improvements</h2>
+<p>While my custom solution meets my current needs, I&#39;m excited about potential improvements:</p>
+<ul>
+<li>Adding support for draft posts</li>
+<li>Implementing a tag-based navigation system</li>
+<li>Adding search functionality</li>
+<li>Improving the build process</li>
+<li>Adding image optimization</li>
+</ul>
+<h2>Conclusion</h2>
+<p>My journey from Hugo through Haunt to a custom solution reflects a common pattern in software development - starting with established tools, learning their principles, and eventually building your own solutions. Each step has been valuable:</p>
+<ul>
+<li>Hugo taught me about static site generators and their capabilities</li>
+<li>Haunt introduced me to functional programming and the beauty of Scheme</li>
+<li>Building my own solution has given me deep insights into web development</li>
+</ul>
+<p>The source code for my site generator is available on <a href="https://github.com/glenneth1/personal-website">GitHub</a>. While it may not be the most feature-rich static site generator, it&#39;s perfectly tailored to my needs and represents a significant learning journey.</p>
+<p>Remember, the goal of building your own tools isn&#39;t always to create something better than existing solutions - sometimes it&#39;s about the learning experience and creating something that perfectly fits your specific needs. Whether you&#39;re using Hugo, Haunt, or considering building your own solution, the most important thing is that it serves your purposes and helps you grow.</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2025-01-02-from-haunt-to-custom.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-01-02-from-haunt-to-custom.html</guid>
+            <pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>web, development, javascript, static-site, haunt, guile, hugo</category>
         </item>
         
         <item>

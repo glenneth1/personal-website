@@ -34,6 +34,7 @@ CONVERTED_COUNT=0
 
 # Create deploy directory if it doesn't exist
 mkdir -p "$DEPLOY_DIR"
+mkdir -p "$MD_DIR"  # Ensure local directory exists too
 
 echo "Checking for new markdown files..."
 
@@ -44,22 +45,29 @@ for md_file in "$MD_DIR"/*.md; do
     
     # Get the base name of the file
     base_name=$(basename "$md_file")
-    # Create the HTML filename in the deploy directory
+    # Create the HTML filenames
     html_file="$DEPLOY_DIR/${base_name%.md}.html"
+    local_html_file="$MD_DIR/${base_name%.md}.html"
     
     # Check if HTML file doesn't exist or markdown file is newer
     if [[ ! -f "$html_file" ]] || [[ "$md_file" -nt "$html_file" ]]; then
-        echo "Converting: $md_file to $html_file"
+        echo "Converting $base_name to HTML..."
         node src/js/md-to-html.js "$md_file" "$html_file"
+        # Also copy to local directory for development
+        cp "$html_file" "$local_html_file"
         ((CONVERTED_COUNT++))
     fi
 done
 
-if [ $CONVERTED_COUNT -eq 0 ]; then
-    echo "No new markdown files to convert."
-else
-    echo "Converted $CONVERTED_COUNT file(s)."
-fi
+echo "Converted $CONVERTED_COUNT new or modified files"
+
+# Update summaries in index.html
+echo "Updating blog post summaries in index.html..."
+npm run update-summaries
+
+# Generate RSS feed
+echo "Generating RSS feed..."
+node src/js/generate-rss.js
 
 # Run the deploy script
 echo "Running deploy script..."
@@ -70,6 +78,9 @@ if [ "$SERVE" = true ]; then
     echo "Starting local server on port $PORT..."
     echo "Visit http://localhost:$PORT to view your site"
     echo "Press Ctrl+C to stop the server"
+    
+    # Copy deploy files to root for local development
+    cp -r deploy/* .
     
     # Start live-server with specific options
     ./node_modules/.bin/live-server \

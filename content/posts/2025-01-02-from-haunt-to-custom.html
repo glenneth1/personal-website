@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A reflection on my evolving journey through static site generators - from Hugo to Haunt, and finally to building my own custom solution, highlighting the valuable lessons learned along the way.">
+    <meta property="og:title" content="From Hugo to Haunt to Custom: My Journey in Static Site Generation">
+    <meta property="og:description" content="A reflection on my evolving journey through static site generators - from Hugo to Haunt, and finally to building my own custom solution, highlighting the valuable lessons learned along the way.">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2025-01-02-from-haunt-to-custom">
+    <title>From Hugo to Haunt to Custom: My Journey in Static Site Generation - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="/dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>web, development, javascript, static-site, haunt, guile, hugo</span>
+                    <span>•</span>
+                    <time datetime="2025-01-02">January 2, 2025</time>
+                    <span>•</span>
+                    <span>4 min read</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">From Hugo to Haunt to Custom: My Journey in Static Site Generation</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2025-01-02">2025-01-02</time>
+                        <span>•</span>
+                        <span>4 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">web</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">development</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">javascript</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">static-site</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">haunt</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guile</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">hugo</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <p>My journey with static site generators has been one of continuous learning and evolution. It started with Hugo, transitioned through Haunt, and has now led me to build my own custom solution. Each step of this journey has taught me valuable lessons about web development, programming languages, and the importance of understanding the tools we use.</p>
+<h2>The Hugo Beginning</h2>
+<p>Like many &quot;bloggers&quot;, I started with Hugo, a popular static site generator known for its speed and extensive theme ecosystem. Hugo served its purpose well, providing a robust platform for my blog with ready-made themes and a strong community.</p>
+<h2>The Transition to Haunt</h2>
+<p>My journey took an interesting turn when I joined the <a href="https://systemcrafters.net/community/">System Crafters Community</a>. Through David Wilson&#39;s excellent course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">Hands-On Guile Scheme for Beginners</a>, I was introduced to the world of Scheme programming. This led me to adopt GNU Guix as my operating system, which naturally led me to <a href="https://dthompson.us/projects/haunt.html">Haunt</a>, a static site generator written in Guile Scheme.</p>
+<p>The transition to Haunt was motivated by several factors:</p>
+<ul>
+<li>Alignment with my growing interest in Scheme and functional programming</li>
+<li>Integration with the GNU Guix ecosystem</li>
+<li>The opportunity to write site configuration in Scheme</li>
+<li>A desire for a simpler, more controllable setup</li>
+</ul>
+<h3>The Haunt Experience</h3>
+<p>Haunt offered a different perspective on site generation. Some highlights of my Haunt experience included:</p>
+<ul>
+<li>Writing site configuration in Scheme, which felt natural after learning Guile</li>
+<li>Creating custom templates that matched my site&#39;s aesthetic needs</li>
+<li>Learning to leverage Scheme&#39;s flexibility for site customization</li>
+<li>Being part of a community that values simplicity and transparency</li>
+</ul>
+<p>However, working with Haunt also presented challenges:</p>
+<ul>
+<li>Limited availability of ready-made templates</li>
+<li>Need to create custom solutions for common features</li>
+<li>Learning curve of Scheme for web development</li>
+</ul>
+<h2>The Move to Custom Development</h2>
+<p>As I became more comfortable with web development and gained a deeper understanding of static site generation, I felt ready for the next step: building my own static site generator. This decision wasn&#39;t about Haunt&#39;s limitations - it was about the desire to understand every aspect of my site&#39;s generation process and have complete control over its architecture.</p>
+<h2>The New Architecture</h2>
+<p>My custom solution combines the lessons learned from both Hugo and Haunt with modern web development practices:</p>
+<ul>
+<li><strong>Modern JavaScript</strong>: Using Node.js and contemporary JavaScript tools</li>
+<li><strong>Markdown Processing</strong>: Leveraging the <code>marked</code> library for flexible content processing</li>
+<li><strong>Tailwind CSS</strong>: Adopting a utility-first approach to styling</li>
+<li><strong>Simple Build Process</strong>: A straightforward build script that handles all aspects of site generation</li>
+<li><strong>Development Server</strong>: Live reload functionality for immediate feedback</li>
+</ul>
+<h2>Benefits of the Custom Solution</h2>
+<p>Building my own solution has brought several advantages:</p>
+<ol>
+<li><strong>Complete Understanding</strong>: I now understand every aspect of my site&#39;s generation</li>
+<li><strong>Faster Iterations</strong>: Quick implementation of new features</li>
+<li><strong>Modern Development</strong>: Integration with current web development tools</li>
+<li><strong>Simplified Deployment</strong>: Streamlined process for updates</li>
+<li><strong>Better Performance</strong>: Only including features I actually need</li>
+</ol>
+<h2>Learning Experience</h2>
+<p>This journey from Hugo through Haunt to a custom solution has taught me:</p>
+<ul>
+<li>The value of understanding different approaches to static site generation</li>
+<li>The importance of choosing tools that align with your learning goals</li>
+<li>How different programming paradigms (Go, Scheme, JavaScript) approach similar problems</li>
+<li>The benefits of building your own tools when the learning opportunity outweighs convenience</li>
+</ul>
+<h2>Future Improvements</h2>
+<p>While my custom solution meets my current needs, I&#39;m excited about potential improvements:</p>
+<ul>
+<li>Adding support for draft posts</li>
+<li>Implementing a tag-based navigation system</li>
+<li>Adding search functionality</li>
+<li>Improving the build process</li>
+<li>Adding image optimization</li>
+</ul>
+<h2>Conclusion</h2>
+<p>My journey from Hugo through Haunt to a custom solution reflects a common pattern in software development - starting with established tools, learning their principles, and eventually building your own solutions. Each step has been valuable:</p>
+<ul>
+<li>Hugo taught me about static site generators and their capabilities</li>
+<li>Haunt introduced me to functional programming and the beauty of Scheme</li>
+<li>Building my own solution has given me deep insights into web development</li>
+</ul>
+<p>The source code for my site generator is available on <a href="https://github.com/glenneth1/personal-website">GitHub</a>. While it may not be the most feature-rich static site generator, it&#39;s perfectly tailored to my needs and represents a significant learning journey.</p>
+<p>Remember, the goal of building your own tools isn&#39;t always to create something better than existing solutions - sometimes it&#39;s about the learning experience and creating something that perfectly fits your specific needs. Whether you&#39;re using Hugo, Haunt, or considering building your own solution, the most important thing is that it serves your purposes and helps you grow.</p>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2024-05-15-hugo-to-haunt">
+    <title>Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="../../dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>personal, tech, keyboards, glove80</span>
+                    <span>•</span>
+                    <time datetime="2024-05-15 10:30">May 15, 2024</time>
+                    <span>•</span>
+                    <span>7 min read</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2024-05-15 10:30">2024-05-15 10:30</time>
+                        <span>•</span>
+                        <span>7 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">personal</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tech</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">keyboards</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">glove80</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h1>Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix</h1>
+<p>Hello there! I&#39;m Glenn Thompson, and today, I want to share a significant part of my recent journey into the world of Scheme, GNU Guix, and static site generation.</p>
+<h2>Discovering Scheme with System Crafters</h2>
+<p>My journey began with a desire to dive deeper into programming languages and their ecosystems. I am a member of the <a href="https://systemcrafters.net/community/">System Crafters Community</a>, and its founder, David Wilson, announced a short four week course as an introduction to Guile Scheme. The course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">Hands-On Guile Scheme for Beginners</a>, provided me with a robust introduction to Guile Scheme, a language that emphasizes simplicity and elegance. David&#39;s clear explanations and practical examples made learning Scheme both engaging and approachable.</p>
+<h2>The Move to GNU Guix</h2>
+<p>Inspired by the principles of Scheme, I decided to take a leap further into the open-source world by transitioning from Arch Linux to GNU Guix. The Guix community, particularly the folks in the <code>#systemcrafters</code> channel on <code>irc.libera.chat</code>, were incredibly supportive and instrumental in helping me navigate this new environment. Their guidance made the switch smooth and rewarding, reinforcing the power and flexibility of GNU Guix as a functional package manager and operating system.  More about that experience in another post.</p>
+<p>There are too many individuals to name here that have helped with the installation and configuration on Gnu guix to mention here.  You all have been an incredible help for which I am extremely grateful.  Thank you all , for enduring my ignorance, and for your patience and your help.</p>
+<h2>From Hugo to Haunt</h2>
+<p>As I settled into Guix, I faced a challenge: Hugo, the static site generator I previously used, was not available as a Guix package. This led me to explore alternatives and eventually discover <a href="https://dthompson.us/projects/haunt.html">Haunt</a>, a Scheme-based static site generator that aligns perfectly with my newfound appreciation for Scheme and Guix.</p>
+<h2>Overcoming Challenges with Haunt</h2>
+<p>Transitioning to Haunt wasn&#39;t without its challenges. There are no readily available templating systems available for haunt like there are for hugo, but there are plenty of examples <a href="https://awesome.haunt.page/">here</a>. One of my own primary difficulties was creating a custom template that matched my site&#39;s aesthetic requirements and functionality needs. Initially, I struggled with configuring the theme layout and ensuring the CSS was applied correctly. Another hurdle was generating the correct URLs for posts and ensuring that summaries appeared as intended on the front page.</p>
+<p>Thankfully, the Haunt manual proved to be an invaluable resource throughout this process. The comprehensive documentation provided clear guidance on using various modules, functions, and procedures. By carefully studying the examples and explanations, I was able to overcome the obstacles and achieve the desired results for my site. The manual&#39;s detailed descriptions of Haunt&#39;s inner workings were particularly helpful in understanding how to leverage the flexibility of Scheme to customize my blog.</p>
+<h2>Crafting My Own Template</h2>
+<p>Moving from Hugo to Haunt required me to create my own template and customize my site&#39;s appearance. This was an exciting opportunity to apply the skills I had learned from David&#39;s course and experiment with Scheme in a practical context.</p>
+<h4>Creating the Template</h4>
+<p>Haunt&#39;s flexibility allowed me to define my own theme layout and structure. Here&#39;s a snippet of my <code>haunt.scm</code> file, where I defined the theme layout and added custom footer content:</p>
+<pre><code class="language-scheme">(use-modules (haunt asset)
+             (haunt builder blog)
+             (haunt builder atom)
+             (haunt builder assets)
+             (haunt reader commonmark)
+             (haunt site)
+             (haunt post)
+             (sxml simple)    ; For HTML generation
+             (srfi srfi-1)
+             (srfi srfi-19))  ; For date and time procedures
+
+;; Load custom templates
+(load &quot;templates/post.scm&quot;)
+
+(define (format-date date)
+  (date-&gt;string date &quot;~Y-~m-~d&quot;))
+
+;; Define a function to generate the URL for a post
+(define (post-url post)
+  (string-append &quot;/&quot; (post-slug post) &quot;.html&quot;))
+
+;; Define a function to extract a summary from the post content
+(define (post-summary post)
+  (let ((content (post-sxml post)))
+    (if (null? content)
+        &quot;&quot;
+        (let ((first-paragraph (car content)))
+          (if (string? first-paragraph)
+              (substring first-paragraph 0 (min 200 (string-length first-paragraph)))
+              (sxml-&gt;string first-paragraph))))))
+
+;; Define the theme layout
+(define (theme-layout site title content)
+  (let ((current-year (number-&gt;string (date-year (current-date)))))
+    `(html
+      (head
+       (meta (@ (charset &quot;utf-8&quot;)))
+       (meta (@ (name &quot;viewport&quot;) (content &quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;)))
+       (link (@ (rel &quot;stylesheet&quot;) (href &quot;/assets/palenight.css&quot;)))
+       (style
+        &quot; .craftering {
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        .webring-text {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .craftering a {
+            color: #dddddd;
+        }
+        .webring-text a {
+            color: #dddddd;
+        }&quot;)
+       (title ,title))
+      (body
+       (header (h1 ,(site-title site)))
+       (main ,content)
+       (footer (@ (class &quot;bg-black bottom-0 w-100 pa3&quot;) (role &quot;contentinfo&quot;))
+               (div (@ (class &quot;flex justify-between&quot;))
+                    (div (@ (class &quot;webring-text&quot;))
+                         (p &quot;I am part of the &quot; (a (@ (href &quot;https://systemcrafters.net&quot;) (target &quot;_blank&quot;)) &quot;System Crafters&quot;) &quot; webring:&quot;))
+                    (div (@ (class &quot;craftering&quot;))
+                         (a (@ (href &quot;https://craftering.systemcrafters.net/@glenneth/previous&quot;)) &quot;←&quot;)
+                         (a (@ (href &quot;https://craftering.systemcrafters.net/&quot;)) &quot;craftering&quot;)
+                         (a (@ (href &quot;https://craftering.systemcrafters.net/@glenneth/next&quot;)) &quot;→&quot;))))))))
+
+;; Define the custom theme with a consistent layout for index
+(define my-theme
+  (theme #:name &quot;My Custom Theme&quot;
+         #:layout theme-layout
+         #:post-template post-template
+         #:collection-template
+         (lambda (site title posts prefix)
+           `(div (@ (class &quot;content&quot;))
+              (h2 ,title)
+              (ul
+                ,@(map (lambda (post)
+                         `(li
+                            (article
+                              (header
+                               (h3 (a (@ (href ,(post-url post))) ,(post-title post))))
+                              (p ,(format-date (post-date post)))
+                              (p ,(post-summary post))
+                              (p (a (@ (href ,(post-url post))) &quot;Read more...&quot;)))))
+                       posts))))))
+
+;; Site configuration
+(site #:title &quot;Just Another Personal Blog&quot;
+      #:domain &quot;glenneth.srht.site&quot;
+      #:default-metadata
+      &#39;((author . &quot;Glenn Thompson&quot;)
+        (email  . &quot;glenn@kirstol.org&quot;))
+      #:readers (list commonmark-reader)
+      #:builders (list
+                  (blog #:theme my-theme)
+                  (atom-feed)
+                  (atom-feeds-by-tag)
+                  (static-directory &quot;images&quot;)
+                  (static-directory &quot;assets&quot;)))
+</code></pre>
+<h3>Customizing the CSS</h3>
+<p>To give my site a personalized touch, I crafted a CSS stylesheet that matched my aesthetic preferences. Here’s an excerpt from my <code>palenight.css</code> file:</p>
+<pre><code class="language-css">body {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.content, header, footer, main {
+  max-width: 90%;
+  padding: 0 5%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #292d3e;
+  color: #d0d0d0;
+}
+
+a {
+  color: #82aaff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #c792ea;
+}
+
+.content {
+  background-color: #1e1e2e;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+article {
+  background-color: #282a36;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+article header {
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #6272a4;
+  font-size: 0.9em;
+}
+
+/* Additional styles for the craftering */
+.craftering {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.webring-text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.craftering a {
+  color: #dddddd;
+}
+
+.webring-text a {
+  color: #dddddd;
+}
+
+/* Additions for mobile device readability */
+
+meta {
+  name: viewport;
+  content: width=device-width, initial-scale=1, shrink-to-fit=no;
+}
+
+@media screen and (max-width: 767px) {
+  /* Customize styles for smaller screens */
+  .logo {
+    max-width: 200px;
+  }
+
+}
+</code></pre>
+<p>I use the <code>doom-palenight</code> theme in Emacs, my preferred text editor, and I wanted my site to match that aesthetic.</p>
+<h3>Publishing with Haunt and Hut</h3>
+<p>In addition to using Haunt, I adopted hut, a set of command-line tools for interacting with SourceHut, to publish my blog. This streamlined my workflow, making it easier to manage and deploy my site directly from my local environment.</p>
+<h3>Conclusion</h3>
+<p>Transitioning from Hugo to Haunt, learning Scheme, and embracing GNU Guix has been an enriching experience. It&#39;s not just about using new tools; it&#39;s about joining a community that values simplicity, transparency, and collaboration. If you&#39;re curious about Scheme or GNU Guix, I highly recommend checking out David Wilson&#39;s course on System Crafters and joining the discussions on IRC.</p>
+<p>I am not a developer of any kind, and learning Scheme has opened my eyes as to how I can craft an environment that I want to work in, and not endure a working environment that the computer is forcing upon me.</p>
+<p>Thank you for reading, and stay tuned for more updates on my journey!</p>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

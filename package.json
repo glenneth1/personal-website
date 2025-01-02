@@ -7,7 +7,8 @@
     "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
     "serve": "live-server --port=3000 --no-browser",
-    "convert": "node src/js/md-to-html.js"
+    "convert": "node src/js/md-to-html.js",
+    "update-summaries": "node -e 'require(\"./src/js/md-to-html.js\").updateIndexWithSummaries()'"
   },
   "keywords": [
     "blog",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.14",
+    "cheerio": "^1.0.0",
     "concurrently": "^8.0.1",
     "live-server": "^1.2.2",
     "marked": "^11.1.0",
