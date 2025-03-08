@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive look at my current development setup in 2025, covering everything from my GNU Guix system foundation to editor configurations, terminal tools, and deployment processes.">
+    <meta property="og:title" content="My Development Environment in 2025: From Editor to Deployment">
+    <meta property="og:description" content="A comprehensive look at my current development setup in 2025, covering everything from my GNU Guix system foundation to editor configurations, terminal tools, and deployment processes.">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2025-03-08-my-dev-environment-2025">
+    <title>My Development Environment in 2025: From Editor to Deployment - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="/dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>development, guix, tools, workflow, productivity, web</span>
+                    <span>•</span>
+                    <time datetime="2025-03-08">March 8, 2025</time>
+                    <span>•</span>
+                    <span>6 min read</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">My Development Environment in 2025: From Editor to Deployment</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime="2025-03-08">2025-03-08</time>
+                        <span>•</span>
+                        <span>6 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">development</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">guix</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">tools</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">workflow</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">productivity</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">web</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h2>Introduction</h2>
+<p>The tools we use shape how we work. Over the years, my development environment has evolved alongside my technical journey through different programming languages, paradigms, and projects. This post offers a snapshot of my current setup in early 2025, detailing the choices I&#39;ve made and why they work for me.</p>
+<h2>System Foundation: ArcoLinux with GNU Guix</h2>
+<p>My journey to <a href="https://guix.gnu.org/">GNU Guix</a> began through my exploration of Scheme programming, as I detailed in my <a href="/content/posts/2024-07-26-gnu-guix-journey.html">GNU Guix Journey</a> post. While I initially experimented with Guix System, I&#39;ve settled on a hybrid approach: running Guix as a package manager on top of ArcoLinux (an Arch-based distribution).</p>
+<h3>Current Configuration Approach</h3>
+<p>I manage my development environment using a combination of Arch&#39;s pacman, AUR, and Guix&#39;s declarative package management. My Guix configuration lives in a Git repository, allowing me to:</p>
+<ul>
+<li>Track changes to my development environment over time</li>
+<li>Reproduce my development setup on new hardware</li>
+<li>Roll back to previous package states when needed</li>
+<li>Share configuration snippets with the community</li>
+</ul>
+<h3>Key Packages and Tools</h3>
+<p>I maintain a hybrid package approach:</p>
+<p><strong>System packages (via pacman/AUR):</strong></p>
+<ul>
+<li>Base system utilities and desktop environment</li>
+<li>Graphics drivers and hardware support</li>
+<li>Some GUI applications</li>
+</ul>
+<p><strong>Development tools (via Guix):</strong></p>
+<pre><code class="language-scheme">;; My primary development tools managed by Guix
+(specifications-&gt;manifest
+ &#39;(&quot;emacs&quot; &quot;git&quot; &quot;openssh&quot; &quot;ripgrep&quot; &quot;fd&quot; &quot;exa&quot; &quot;bat&quot;
+   &quot;guile&quot; &quot;node&quot; &quot;python&quot; &quot;gcc-toolchain&quot; &quot;make&quot;
+   &quot;nss-certs&quot; &quot;glibc-locales&quot;))
+</code></pre>
+<p>This hybrid approach gives me the best of both worlds: Arch&#39;s extensive package repository and up-to-date system packages, combined with Guix&#39;s reproducible development environments.</p>
+<h3>Reproducibility Benefits</h3>
+<p>The reproducibility of Guix for development environments has been invaluable. I can:</p>
+<ul>
+<li>Spin up development environments with precise dependencies</li>
+<li>Ensure consistent behavior across machines</li>
+<li>Isolate project-specific dependencies using Guix environments</li>
+<li>Share exact environment specifications with collaborators</li>
+</ul>
+<h3>Challenges and Solutions</h3>
+<p>Working with this hybrid approach isn&#39;t without challenges:</p>
+<ul>
+<li><p><strong>Challenge</strong>: Keeping Guix packages in sync with system libraries<br><strong>Solution</strong>: Careful management of library paths and containerization when needed</p>
+</li>
+<li><p><strong>Challenge</strong>: Learning curve for Guix&#39;s declarative configuration<br><strong>Solution</strong>: Incremental adoption and community resources</p>
+</li>
+<li><p><strong>Challenge</strong>: Occasional conflicts between package managers<br><strong>Solution</strong>: Clear separation of responsibilities (system vs. development tools)</p>
+</li>
+</ul>
+<h2>Editor Environment: Emacs</h2>
+<p>After experimenting with various editors, I&#39;ve settled on Emacs as my primary development environment. Its extensibility and Scheme-based configuration language (Emacs Lisp) align well with my interests.</p>
+<h3>Configuration Approach</h3>
+<p>I use a literate configuration with Org mode, which allows me to:</p>
+<ul>
+<li>Document my configuration choices</li>
+<li>Organize settings by purpose rather than file</li>
+<li>Selectively load components based on context</li>
+<li>Share readable documentation with others</li>
+</ul>
+<h3>Key Extensions</h3>
+<p>My most valuable Emacs extensions include:</p>
+<ul>
+<li><strong>Magit</strong>: Git interface that has transformed my version control workflow</li>
+<li><strong>LSP Mode</strong>: Language server integration for intelligent code assistance</li>
+<li><strong>Org Mode</strong>: For notes, task management, and literate programming</li>
+<li><strong>Projectile</strong>: Project navigation and management</li>
+<li><strong>Company</strong>: Completion framework</li>
+<li><strong>Consult/Vertico/Marginalia</strong>: Modern completion UI</li>
+<li><strong>Tree-sitter</strong>: Improved syntax highlighting and structural editing</li>
+</ul>
+<h3>Language-Specific Setups</h3>
+<p>For my primary languages:</p>
+<ul>
+<li><strong>Scheme/Guile</strong>: Geiser for REPL integration</li>
+<li><strong>JavaScript/TypeScript</strong>: TypeScript LSP, prettier, eslint integration</li>
+<li><strong>Python</strong>: Pyright LSP, black formatting</li>
+<li><strong>Web Development</strong>: Web mode, emmet, css-mode</li>
+</ul>
+<h3>Productivity Enhancements</h3>
+<p>Some productivity boosters in my setup:</p>
+<ul>
+<li>Custom keybindings for frequent operations</li>
+<li>Snippets for common code patterns</li>
+<li>Template generation for new projects</li>
+<li>Integration with system notifications</li>
+</ul>
+<h2>Terminal and CLI Tools</h2>
+<p>While Emacs handles many tasks, I still rely heavily on terminal tools for specific workflows.</p>
+<h3>Shell Configuration</h3>
+<p>I use Zsh with a custom configuration that provides:</p>
+<ul>
+<li>Intuitive aliases</li>
+<li>Helpful prompts with Git integration</li>
+<li>Command history management</li>
+<li>Directory navigation shortcuts</li>
+</ul>
+<h3>Custom Scripts and Utilities</h3>
+<p>I&#39;ve developed several custom scripts to streamline repetitive tasks:</p>
+<ul>
+<li>Project initialization templates</li>
+<li>Deployment automation</li>
+<li>System maintenance routines</li>
+<li>Content management for this blog</li>
+</ul>
+<h3>Task Automation</h3>
+<p>For task automation, I use a combination of:</p>
+<ul>
+<li>Shell scripts for simple operations</li>
+<li>Guile scripts for more complex logic</li>
+<li>Make for build processes</li>
+<li>Cron for scheduled tasks</li>
+</ul>
+<h3>Version Control Workflow</h3>
+<p>My Git workflow relies on:</p>
+<ul>
+<li>Branch-per-feature approach</li>
+<li>Interactive rebasing for clean history</li>
+<li>Commit message templates</li>
+<li>Hooks for quality checks</li>
+</ul>
+<h2>Web Development Stack</h2>
+<p>As the creator of this website, my web development setup has been refined through experience.</p>
+<h3>Local Development Server</h3>
+<p>For local development, I use:</p>
+<ul>
+<li>Live-server for static sites</li>
+<li>Custom Node.js servers for API development</li>
+<li>Docker containers for complex dependencies</li>
+</ul>
+<h3>Build Tools and Processes</h3>
+<p>My build process typically involves:</p>
+<ul>
+<li>Tailwind CSS for styling</li>
+<li>Minimal JavaScript bundling</li>
+<li>Custom static site generation (as detailed in my <a href="/content/posts/2025-01-02-from-haunt-to-custom.html">previous post</a>)</li>
+<li>Automated optimization steps</li>
+</ul>
+<h3>Testing Approach</h3>
+<p>For testing, I employ:</p>
+<ul>
+<li>Jest for JavaScript unit tests</li>
+<li>Cypress for end-to-end testing</li>
+<li>Manual testing across devices and browsers</li>
+<li>Accessibility validation tools</li>
+</ul>
+<h3>Browser Tools and Extensions</h3>
+<p>Essential browser tools include:</p>
+<ul>
+<li>Firefox Developer Edition as my primary browser</li>
+<li>Chrome for cross-browser testing</li>
+<li>DevTools for performance analysis</li>
+<li>React and Redux DevTools</li>
+<li>Accessibility checkers</li>
+</ul>
+<h2>Deployment Pipeline</h2>
+<p>My approach to deployment emphasizes security and reliability.</p>
+<h3>Secure Deployment Process</h3>
+<p>As you might have noticed from my <a href="/content/posts/2025-03-08-my-dev-environment-2025.html">.env.gpg file</a>, I take security seriously:</p>
+<ul>
+<li>Credentials stored in GPG-encrypted files</li>
+<li>Separate development and production configurations</li>
+<li>Principle of least privilege for service accounts</li>
+<li>Regular security audits</li>
+</ul>
+<h3>Automation Scripts</h3>
+<p>My deployment is automated through:</p>
+<ul>
+<li>Custom shell scripts for build and deploy</li>
+<li>Validation steps before deployment</li>
+<li>Rollback capabilities</li>
+<li>Notification systems for success/failure</li>
+</ul>
+<h3>CI/CD Considerations</h3>
+<p>While not using a formal CI/CD pipeline for this personal site, I follow similar principles:</p>
+<ul>
+<li>Pre-commit checks for code quality</li>
+<li>Automated testing before deployment</li>
+<li>Consistent build environments</li>
+<li>Deployment approval steps</li>
+</ul>
+<h3>Monitoring and Analytics</h3>
+<p>For site monitoring, I use:</p>
+<ul>
+<li>Simple analytics for privacy-respecting visitor tracking</li>
+<li>Uptime monitoring</li>
+<li>Performance metrics collection</li>
+<li>Error logging and alerting</li>
+</ul>
+<h2>Future Improvements</h2>
+<p>My environment continues to evolve. Areas I&#39;m exploring include:</p>
+<ul>
+<li>Further integration between Emacs and system tools</li>
+<li>More comprehensive test automation</li>
+<li>Expanded use of Guix channels for package management</li>
+<li>Improved mobile development workflow</li>
+</ul>
+<h2>Conclusion</h2>
+<p>A development environment is deeply personal, reflecting both technical needs and individual preferences. Mine has evolved through years of experimentation, learning, and refinement.</p>
+<p>The most important lesson I&#39;ve learned is that tools should serve your workflow, not dictate it. Be willing to experiment, but also recognize when a tool is working well enough that further optimization yields diminishing returns.</p>
+<p>I hope sharing my setup provides some inspiration for your own environment. I&#39;d love to hear about your setup and what tools have made the biggest difference in your workflow.</p>
+<p>What aspects of your development environment have you found most valuable? Are there tools or approaches you think I should consider? Let me know!</p>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
