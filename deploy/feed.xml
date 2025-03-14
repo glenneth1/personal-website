@@ -6,7 +6,7 @@
         <link>https://glenneth.org</link>
         <atom:link href="https://glenneth.org/feed.xml" rel="self" type="application/rss+xml" />
         <language>en-us</language>
-        <lastBuildDate>Sat, 08 Mar 2025 10:36:20 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 13 Mar 2025 04:58:18 GMT</lastBuildDate>
         
         <item>
             <title>Aesthetic Meets Ergonomics: My Deep Dive into the Glove80 Keyboard</title>
@@ -39,6 +39,88 @@
             <pubDate>Invalid Date</pubDate>
             <author>"Glenn Thompson"</author>
             <category>["personal", "tech", "keyboards", "glove80"]</category>
+        </item>
+        
+        <item>
+            <title>Lessons Learned: One Year with a Custom Static Site Generator</title>
+            <description>In this post, I'll share the key lessons I've learned and insights I've gained from building and maintaining my own static site generator. While the technical details are interesting, the real value has been in the broader lessons about software development, user experience, and the balance between complexity and simplicity.</description>
+            <content:encoded><![CDATA[<p>It&#39;s been just over a year since I <a href="/content/posts/2025-01-02-from-haunt-to-custom.html">transitioned from Haunt to my own custom static site generator</a> for this website. What started as an experiment to gain more control over my publishing workflow has evolved into a valuable learning experience that has shaped how I approach web development projects.</p>
+<p>In this post, I&#39;ll share the key lessons I&#39;ve learned and insights I&#39;ve gained from building and maintaining my own static site generator. While the technical details are interesting, the real value has been in the broader lessons about software development, user experience, and the balance between complexity and simplicity.</p>
+<h2>The Journey of Evolution</h2>
+<h3>From Simple Beginnings</h3>
+<p>When I first built my static site generator, it was remarkably simple - just the essential features needed to convert my writing into a website. No extra features, no complex configurations, just the basics.</p>
+<p>Today, the system has evolved considerably, but not through grand design or elaborate planning. Instead, it grew organically based on real needs and actual usage. This organic growth taught me valuable lessons about software development.</p>
+<h3>Lesson 1: Features Should Emerge from Usage</h3>
+<p>Many of the features in my static site generator emerged from actual writing and publishing needs:</p>
+<ol>
+<li><p><strong>The Draft System</strong><br>When I found myself working on multiple posts simultaneously, I needed a way to keep unfinished posts separate from published content. This led to the draft system, which now helps me manage my writing workflow effectively.</p>
+</li>
+<li><p><strong>Tag Organization</strong><br>As my collection of posts grew, I needed a way to organize related content. The tag system emerged naturally from this need, rather than being built upfront based on assumptions about how I might want to organize content.</p>
+</li>
+<li><p><strong>Content Validation</strong><br>After accidentally publishing a post with a malformed date and another with a duplicate title, I added validation checks. These weren&#39;t part of the initial design but came from real-world publishing mishaps.</p>
+</li>
+</ol>
+<h3>Lesson 2: Simplicity Drives Performance</h3>
+<p>One of the most surprising lessons was how simplicity led to better performance:</p>
+<ol>
+<li><p><strong>Static HTML Generation</strong><br>By generating plain HTML files, the site loads quickly without any client-side processing. There&#39;s no JavaScript framework, no hydration, and no complex build process - just simple, fast HTML.</p>
+</li>
+<li><p><strong>Incremental Builds</strong><br>The build system only processes files that have changed. This means that even with hundreds of posts, updates are nearly instantaneous because only the necessary files are rebuilt.</p>
+</li>
+<li><p><strong>Minimal JavaScript</strong><br>By keeping JavaScript to a minimum and focusing on progressive enhancement, the site remains fast and accessible, even on slower connections.</p>
+</li>
+</ol>
+<h3>Lesson 3: Developer Experience Matters</h3>
+<p>A good developer experience has proven crucial for maintaining motivation to write and publish:</p>
+<ol>
+<li><p><strong>Smart Port Management</strong><br>After encountering port conflicts with other services, I added automatic port detection and fallback. The system now checks if a port is in use and automatically finds the next available one, eliminating the frustration of manual port configuration.</p>
+</li>
+<li><p><strong>Clear Error Messages</strong><br>When something goes wrong (like a failed CSS build or HTML conversion), the system provides clear, actionable error messages. This immediate feedback helps quickly identify and fix issues during the development process.</p>
+</li>
+<li><p><strong>Automated Validation</strong><br>The build system validates the environment before starting, checking for required directories and dependencies. These checks catch common setup issues early, making the development process smoother.</p>
+</li>
+</ol>
+<h3>Lesson 4: Content Drives Development</h3>
+<p>Perhaps the most important lesson has been letting content needs drive development:</p>
+<ol>
+<li><p><strong>Markdown Features</strong><br>I only added support for additional Markdown features (like tables and task lists) when I actually needed them in my writing. This prevented feature bloat and kept the system focused.</p>
+</li>
+<li><p><strong>RSS Feed</strong><br>The RSS feed wasn&#39;t part of the initial design but was added when the content volume grew enough to warrant it. This is a pattern I&#39;ve seen repeatedly - features are most valuable when they solve real, existing needs.</p>
+</li>
+<li><p><strong>Summary Generation</strong><br>The way post summaries are generated has evolved based on the actual content I write. Initially, it was a simple character count, but it now intelligently extracts meaningful previews based on content structure.</p>
+</li>
+</ol>
+<h2>Looking Forward</h2>
+<p>This project has taught me that the best software often evolves gradually in response to real needs rather than being built all at once from a grand design. It&#39;s a lesson that applies well beyond static site generators - it&#39;s about building software that serves actual needs rather than imagined ones.</p>
+<p>Just today, while writing this post, I encountered and solved several development workflow issues. Instead of being frustrated by these challenges, I saw them as opportunities to improve the system. The resulting changes - like automatic port detection and better error handling - weren&#39;t part of any grand plan. They emerged naturally from real usage and made the system better in practical, meaningful ways.</p>
+<p>The system isn&#39;t perfect, and it probably never will be. But it&#39;s continuously improving in ways that matter for my writing and publishing workflow. That, I&#39;ve learned, is far more valuable than technical perfection.</p>
+<p>If you&#39;re considering building your own tools, remember:</p>
+<ol>
+<li>Start simple and let features emerge from actual usage</li>
+<li>Focus on the experience - both for users and developers</li>
+<li>Let real needs guide development</li>
+<li>Embrace incremental improvements</li>
+<li>Value simplicity - it often leads to better performance and maintainability</li>
+<li>Use real-world problems as opportunities for improvement</li>
+</ol>
+<p>These lessons have influenced not just how I approach this project, but how I think about software development in general. Sometimes, the best insights come from the simplest projects - and often, they come right in the middle of writing about them.</p>
+<h2>Looking Back and Forward</h2>
+<p>Reflecting on this journey, the most valuable insight has been understanding that great software evolves naturally from real needs. Every feature in my static site generator—from the draft system to the validation checks—emerged from actual usage rather than upfront planning.</p>
+<p>This experience has fundamentally changed how I approach software development. Instead of trying to build the perfect system from the start, I&#39;ve learned to:</p>
+<ol>
+<li>Start with the simplest solution that works</li>
+<li>Let real usage guide feature development</li>
+<li>Focus on maintainability over complexity</li>
+<li>Prioritize the developer experience</li>
+<li>Keep performance in mind at every step</li>
+</ol>
+<p>These principles have not only made my static site generator better but have also influenced how I approach every new project. Sometimes the best insights come from the simplest projects, and often they come right in the middle of writing about them.</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2025-03-12-lessons-learned-custom-ssg.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-03-12-lessons-learned-custom-ssg.html</guid>
+            <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>[web, development, javascript, static-site, lessons]</category>
         </item>
         
         <item>
