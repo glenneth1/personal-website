@@ -280,7 +280,7 @@ async function updateIndexWithSummaries() {
         // Create the HTML for blog posts
         const postsHtml = posts.map(post => `
                     <article class="bg-base-darker p-6 rounded-lg shadow-lg border border-palenight-400/20 hover:border-accent-purple/40 transition-colors">
-                        <div class="flex items-center gap-2 text-accent-yellow text-sm mb-2 font-bold">
+                        <div class="flex flex-wrap items-center gap-2 text-accent-yellow text-sm mb-2 font-bold">
                             <span>Tech</span>
                             ${post.tags.map(tag => `<span>•</span><span>${tag}</span>`).join('')}
                             <span>•</span>
@@ -292,7 +292,7 @@ async function updateIndexWithSummaries() {
                             </a>
                         </h3>
                         <p class="text-palenight-100 mb-4">${post.summary}</p>
-                        <div class="flex gap-2">
+                        <div class="flex flex-wrap gap-2">
                             ${post.tags.map(tag => `<span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">${tag}</span>`).join('')}
                         </div>
                     </article>
