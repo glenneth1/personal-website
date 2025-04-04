@@ -6,7 +6,7 @@
         <link>https://glenneth.org</link>
         <atom:link href="https://glenneth.org/feed.xml" rel="self" type="application/rss+xml" />
         <language>en-us</language>
-        <lastBuildDate>Thu, 13 Mar 2025 04:58:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Apr 2025 15:28:36 GMT</lastBuildDate>
         
         <item>
             <title>Aesthetic Meets Ergonomics: My Deep Dive into the Glove80 Keyboard</title>
@@ -39,6 +39,41 @@
             <pubDate>Invalid Date</pubDate>
             <author>"Glenn Thompson"</author>
             <category>["personal", "tech", "keyboards", "glove80"]</category>
+        </item>
+        
+        <item>
+            <title>One Year of Craftering: Building Connections in the System Crafters Community</title>
+            <description>My First Pull Request</description>
+            <content:encoded><![CDATA[<p>Next Thursday, 03-APR-2025, marks the first anniversary of the <a href="https://craftering.shom.dev/">Craftering webring</a>, a vibrant community initiative started by <a href="https://shom.dev">shom</a> that connects personal websites and blogs within the System Crafters community. As one of the members of this webring, I&#39;ve had the privilege of being part of this journey from its early days.</p>
+<h2>My First Pull Request</h2>
+<p>Joining Craftering was actually my first experience with the pull request workflow on Codeberg. As someone new to contributing to open source projects, I was initially intimidated by the process. However, shom took the time to walk me through each step, providing clear guidance and encouragement. This hands-on experience with git and PR workflows proved invaluable, making the technical aspects of contribution much less daunting.</p>
+<p>As shom <a href="https://shom.dev/posts/20250401_how-i-accidentally-got-better-at-self-hosting-and-foss-contributing">recently reflected</a>, this kind of supportive onboarding was an intentional part of Craftering&#39;s design - creating opportunities for community members to learn and grow together through practical experience.</p>
+<h2>The Power of Connected Personal Spaces</h2>
+<p>The Craftering webring represents more than just a collection of links - it&#39;s a testament to the enduring value of personal websites and the importance of community-driven content. In an era dominated by social media platforms and algorithmic feeds, webrings offer a refreshing return to the web&#39;s roots: direct connections between individually crafted spaces.</p>
+<h2>Community Impact and Discoveries</h2>
+<p>Being part of the Craftering webring has enriched my own blogging experience in several ways:</p>
+<ol>
+<li><p><strong>Diverse Perspectives</strong>: Through the webring, I&#39;ve discovered fellow creators sharing their experiences with everything from Emacs configurations to system design principles.</p>
+</li>
+<li><p><strong>Technical Cross-Pollination</strong>: Reading other members&#39; blogs has introduced me to new tools and approaches. For instance, my recent <a href="/content/posts/2025-01-02-from-haunt-to-custom.html">transition to a custom static site generator</a> was partly inspired by discussions and posts from the community.</p>
+</li>
+<li><p><strong>Consistent Motivation</strong>: Knowing that my blog is part of an interconnected community has encouraged more regular writing and sharing.</p>
+</li>
+</ol>
+<h2>Technical Integration and RSS</h2>
+<p>One of the strengths of the Craftering webring is its embrace of RSS feeds, making it easy to follow updates from all community members. The webring&#39;s <a href="https://craftering.shom.dev/Craftering.opml">OPML file</a> allows for quick subscription to all member feeds, creating a genuine sense of connection through content updates.</p>
+<h2>Looking Forward</h2>
+<p>As we celebrate this first year, it&#39;s exciting to see how the webring has grown and evolved. From the initial members to our current diverse group, each addition has brought new perspectives and valuable contributions to our community.</p>
+<p>The success of Craftering demonstrates that the spirit of the early web - decentralized, personal, and community-driven - is very much alive. It shows that there&#39;s still tremendous value in maintaining personal spaces on the web, connected through shared interests and mutual respect for individual expression.</p>
+<h3>Join the Ring</h3>
+<p>If you maintain a personal website and are interested in connecting with like-minded individuals, consider <a href="https://codeberg.org/SystemCrafters/craftering">joining the Craftering webring</a>. The process is straightforward, and you&#39;ll be joining a supportive community of creators and thinkers who value personal expression and technical craftsmanship.</p>
+<p>Here&#39;s to another year of crafting, sharing, and building connections in our corner of the web!</p>
+]]></content:encoded>
+            <link>https://glenneth.org/content/posts/2025-04-04-one-year-of-craftering.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-04-04-one-year-of-craftering.html</guid>
+            <pubDate>Wed, 02 Apr 2025 00:00:00 GMT</pubDate>
+            <author>Glenn Thompson</author>
+            <category>[community, webring, systemcrafters, reflection]</category>
         </item>
         
         <item>
