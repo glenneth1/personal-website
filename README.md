@@ -32,9 +32,14 @@ Visit the live site at [https://glenneth.org](https://glenneth.org)
    ```
 3. Start the development server:
    ```bash
-   ./serve.sh
+   # Option 1: Build and serve with auto-reload
+   ./build.sh --serve
+   
+   # Option 2: Development mode with CSS watching
+   npm run dev
    ```
-   This will start a live-server instance with auto-reload on port 3001.
+   - `./build.sh --serve` starts a live-server on port 9000 (or next available port)
+   - `npm run dev` runs Tailwind CSS in watch mode + live-server on port 3000
 
 ## Content Management
 ### Adding New Blog Posts

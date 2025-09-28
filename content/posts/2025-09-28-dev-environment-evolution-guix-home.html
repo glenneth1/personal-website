@@ -1,17 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-    <channel>
-        <title>Glenn Thompson's Blog</title>
-        <description>Personal blog about programming, technology, and other interests</description>
-        <link>https://glenneth.org</link>
-        <atom:link href="https://glenneth.org/feed.xml" rel="self" type="application/rss+xml" />
-        <language>en-us</language>
-        <lastBuildDate>Sun, 28 Sep 2025 08:21:15 GMT</lastBuildDate>
-        
-        <item>
-            <title>Development Environment Evolution: Embracing Guix Home and Enhanced Emacs Workflow</title>
-            <description>"Six months after my comprehensive development environment overview, I share the significant evolution to Guix Home and enhanced Emacs configurations that have transformed my daily workflow."</description>
-            <content:encoded><![CDATA[<h2>Introduction</h2>
+<!DOCTYPE html>
+<html lang="en" class="bg-base-bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""Six months after my comprehensive development environment overview, I share the significant evolution to Guix Home and enhanced Emacs configurations that have transformed my daily workflow."">
+    <meta property="og:title" content=""Development Environment Evolution: Embracing Guix Home and Enhanced Emacs Workflow"">
+    <meta property="og:description" content=""Six months after my comprehensive development environment overview, I share the significant evolution to Guix Home and enhanced Emacs configurations that have transformed my daily workflow."">
+    <meta property="og:url" content="https://glenneth.orgcontent/posts/2025-09-28-dev-environment-evolution-guix-home">
+    <title>"Development Environment Evolution: Embracing Guix Home and Enhanced Emacs Workflow" - Glenn Thompson</title>
+    <link rel="alternate" type="application/rss+xml" title="Glenn Thompson's Blog" href="/feed.xml" />
+    <link href="/dist/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .prose-palenight {
+            --tw-prose-body: #bfc7d5;
+            --tw-prose-headings: #ffd580;
+            --tw-prose-links: #82aaff;
+            --tw-prose-code: #c792ea;
+            --tw-prose-pre-bg: #1b1e2b;
+        }
+        .prose h2 {
+            color: var(--tw-prose-headings);
+            font-family: Merriweather, serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose p {
+            margin-bottom: 1rem;
+            line-height: 1.625;
+        }
+        .prose a {
+            color: var(--tw-prose-links);
+            text-decoration: none;
+        }
+        .prose a:hover {
+            color: #89ddff;
+        }
+        .prose code {
+            color: var(--tw-prose-code);
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .prose pre {
+            background-color: var(--tw-prose-pre-bg);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        .prose ul, .prose ol {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        .prose ul {
+            list-style-type: disc;
+        }
+        .prose ol {
+            list-style-type: decimal;
+        }
+    </style>
+</head>
+<body class="bg-base-bg text-palenight-50">
+    <nav class="bg-base-darker/80 backdrop-blur-sm shadow-sm border-b border-palenight-400/20 mb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="text-accent-yellow font-serif text-xl font-bold">Glenn Thompson</a>
+                <div class="flex items-center gap-2 text-accent-yellow text-sm font-bold">
+                    <span>["development", "guix", "guix-home", "emacs", "workflow", "productivity", "evolution"]</span>
+                    <span>•</span>
+                    <time datetime=""2025-09-28 10:05"">Invalid Date</time>
+                    <span>•</span>
+                    <span>8 min read</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="content text-palenight-100 space-y-6">
+                <header class="mb-8">
+                    <h1 class="text-4xl font-serif font-bold text-accent-yellow">"Development Environment Evolution: Embracing Guix Home and Enhanced Emacs Workflow"</h1>
+                    <div class="flex items-center gap-4 text-palenight-300 mt-4">
+                        <time datetime=""2025-09-28 10:05"">"2025-09-28 10:05"</time>
+                        <span>•</span>
+                        <span>8 min read</span>
+                        <span>•</span>
+                        <span>By Glenn Thompson</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">["development"</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">"guix"</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">"guix-home"</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">"emacs"</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">"workflow"</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">"productivity"</span><span class="text-accent-yellow px-2 py-1 rounded-full bg-base-bg text-xs">"evolution"]</span>
+                    </div>
+                </header>
+
+                <article class="prose prose-palenight max-w-none">
+                    <h2>Introduction</h2>
 <p>Six months ago, I shared a detailed look at my <a href="/content/posts/2025-03-08-my-dev-environment-2025.html">development environment in 2025</a>, covering my hybrid approach with ArcoLinux, Guix package management, and Emacs-centered workflow. Since then, my setup has undergone a significant evolution driven by both choice and necessity.</p>
 <p>The most significant change has been a transition to <strong>WSL2 on Windows 11</strong> for my work environment, necessitated by corporate requirements. Rather than seeing this as a limitation, I&#39;ve embraced it as an opportunity to refine my development approach, adopting <strong>Guix Home</strong> for complete environment management and building a custom Emacs installation from the master branch.</p>
 <p>This evolution has taught me valuable lessons about adaptability and the power of declarative configuration in maintaining consistency across different underlying systems.</p>
@@ -159,12 +245,29 @@
 <p>For anyone considering similar changes, I&#39;d recommend starting small and gradually expanding your declarative configuration. The initial learning curve is worth the long-term benefits of having a truly reproducible, version-controlled development environment.</p>
 <p>The combination of Guix Home for environment management and a refined Emacs configuration has created a development setup that feels both powerful and effortless. It&#39;s a foundation I&#39;m confident will serve me well as my projects and requirements continue to evolve.</p>
 <p>What aspects of environment management do you find most challenging? Have you experimented with declarative configuration approaches? I&#39;d love to hear about your experiences and any questions you might have about making similar transitions.</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2025-09-28-dev-environment-evolution-guix-home.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-09-28-dev-environment-evolution-guix-home.html</guid>
-            <pubDate>Invalid Date</pubDate>
-            <author>Glenn Thompson</author>
-            <category>["development", "guix", "guix-home", "emacs", "workflow", "productivity", "evolution"]</category>
-        </item>
-    </channel>
-</rss>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-base-darker text-palenight-200 py-12 border-t border-palenight-400/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-palenight-300">&copy; 2024 Glenn Thompson. All rights reserved.</p>
+                <div class="webring-text mt-6">
+                    <p class="text-palenight-300">I am part of the <a href="https://systemcrafters.net" target="_blank" class="text-accent-blue hover:text-accent-cyan">System Crafters</a> webring:</p>
+                </div>
+                <div class="craftering mt-2 flex items-center justify-center gap-4 text-accent-blue">
+                    <a href="https://craftering.systemcrafters.net/@glenneth/previous" class="hover:text-accent-cyan">Previous</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth" class="hover:text-accent-cyan">Random</a>
+                    <a href="https://craftering.systemcrafters.net/@glenneth/next" class="hover:text-accent-cyan">Next</a>
+                </div>
+                <p class="text-palenight-300 mt-2">
+                    <a href="mailto:glenn@glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenn@glenneth.org</a> | 
+                    <a href="https://glenneth.org" class="text-accent-blue hover:text-accent-cyan transition-colors">glenneth.org</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

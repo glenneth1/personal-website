@@ -223,15 +223,28 @@ async function updateIndexWithSummaries() {
                 
                 // Extract metadata
                 const metadata = {};
-                content.replace(/^---\n([\s\S]*?)\n---\n/, (_, frontMatter) => {
-                    frontMatter.split('\n').forEach(line => {
-                        const [key, ...valueParts] = line.split(':');
-                        if (key && valueParts.length > 0) {
-                            metadata[key.trim()] = valueParts.join(':').trim();
+                // More flexible regex to handle different line endings
+                const frontMatterMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+                if (frontMatterMatch) {
+                    const frontMatter = frontMatterMatch[1];
+                    frontMatter.split(/\r?\n/).forEach(line => {
+                        const colonIndex = line.indexOf(':');
+                        if (colonIndex > 0) {
+                            const key = line.substring(0, colonIndex).trim();
+                            let value = line.substring(colonIndex + 1).trim();
+                            
+                            // Remove quotes if present
+                            if ((value.startsWith('"') && value.endsWith('"')) || 
+                                (value.startsWith("'") && value.endsWith("'"))) {
+                                value = value.slice(1, -1);
+                            }
+                            
+                            if (key && value) {
+                                metadata[key] = value;
+                            }
                         }
                     });
-                    return '';
-                });
+                }
                 
                 // Extract summary
                 const summary = extractSummary(content);
@@ -239,18 +252,45 @@ async function updateIndexWithSummaries() {
                 // Parse and format the date
                 let formattedDate = '';
                 let isoDate = '';
+                
+                if (!metadata.date) {
+                    console.warn(`No date found for ${file}`);
+                    continue;
+                }
+                
                 try {
-                    // Handle date formats like "2024-04-08 16:50" or "2024-04-08"
-                    const dateStr = metadata.date.split(' ')[0];
+                    let dateStr = '';
+                    
+                    // Handle different date formats
+                    if (typeof metadata.date === 'string') {
+                        // String format: "2024-04-08 16:50" or "2024-04-08"
+                        dateStr = metadata.date.split(' ')[0];
+                    } else if (typeof metadata.date === 'number') {
+                        // Number format: 2025-04-02 (YAML parsed as number)
+                        dateStr = metadata.date.toString();
+                    } else if (metadata.date instanceof Date) {
+                        // Date object
+                        dateStr = metadata.date.toISOString().split('T')[0];
+                    } else {
+                        // Fallback: convert to string and extract date part
+                        dateStr = String(metadata.date).split(' ')[0];
+                    }
+                    
                     const date = new Date(dateStr);
-                    formattedDate = date.toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                    });
-                    isoDate = dateStr;
+                    if (!isNaN(date.getTime())) {
+                        formattedDate = date.toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                        isoDate = dateStr;
+                    } else {
+                        console.warn(`Invalid date format for ${file}: ${metadata.date} (type: ${typeof metadata.date})`);
+                        continue;
+                    }
                 } catch (e) {
                     console.error(`Error parsing date for ${file}:`, e);
+                    continue;
                 }
                 
                 // Parse tags

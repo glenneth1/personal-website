@@ -6,991 +6,165 @@
         <link>https://glenneth.org</link>
         <atom:link href="https://glenneth.org/feed.xml" rel="self" type="application/rss+xml" />
         <language>en-us</language>
-        <lastBuildDate>Thu, 13 Mar 2025 04:58:18 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Sep 2025 08:21:15 GMT</lastBuildDate>
         
         <item>
-            <title>Aesthetic Meets Ergonomics: My Deep Dive into the Glove80 Keyboard</title>
-            <description>As my career trajectory veered from being an integral member of an electrical engineering team to assuming the role of Deputy Project Manager, the nature of my daily activities underwent a significant transformation. The hands-on tasks of yesteryears were gradually replaced by a deluge of documentations—writing, reviewing, and endless typing. This shift brought with it an unwelcome companion: discomfort in my hands and wrists, a stark reminder of the ergonomic pitfalls of conventional keyboards. It was in this context that my quest for a more ergonomic typing solution began, leading me towards the world of ALICE layout keyboards, with the [Q10 Pro by Keychron](https://www.keychron.com/products/keychron-q10-pro-alice-layout-qmk-via-wireless-custom-mechanical-keyboard) being my initial foray into this new realm.</description>
-            <content:encoded><![CDATA[<h2>In the quest for the ultimate ergonomic keyboard, aesthetics often take a backseat to functionality. Yet, when I first laid eyes on the Glove80, I was struck by its elegant design—a refreshing departure from the utilitarian look typical of many ergonomic keyboards. Unlike the retro vibes of the Kinesis Advantage or the DIY aesthetics of most Dactyls, the Glove80 boasts a modern, sleek appearance that complements the contemporary design language of Apple, Google, and LG devices. With its clean lines and visually appealing legends, the Glove80 not only promises ergonomic comfort but does so with style, standing out amidst a sea of competitors.</h2>
-<p>As my career trajectory veered from being an integral member of an electrical engineering team to assuming the role of Deputy Project Manager, the nature of my daily activities underwent a significant transformation. The hands-on tasks of yesteryears were gradually replaced by a deluge of documentations—writing, reviewing, and endless typing. This shift brought with it an unwelcome companion: discomfort in my hands and wrists, a stark reminder of the ergonomic pitfalls of conventional keyboards. It was in this context that my quest for a more ergonomic typing solution began, leading me towards the world of ALICE layout keyboards, with the <a href="https://www.keychron.com/products/keychron-q10-pro-alice-layout-qmk-via-wireless-custom-mechanical-keyboard"><strong>Q10 Pro</strong> by Keychron</a> being my initial foray into this new realm.</p>
-<p>However, the relief was partial, and the shadow of wrist strain persisted, urging me to delve deeper into the ergonomic keyboard universe. My search for a truly ergonomic solution brought me to the doorstep of the <a href="https://www.moergo.com"><strong>Glove80</strong> by MoErgo</a>. Boasting a unique split design, concave key wells, and a commitment to ergonomics that seemed almost tailor-made for my situation, the Glove80 held the promise of being the oasis I was desperately seeking in the desert of my wrist discomfort.</p>
-<p>This journey from an ALICE layout keyboard user to a Glove80 enthusiast was not just about finding a better typing tool; it was about embracing a healthier typing posture and redefining my interaction with computers. After a month of integrating the Glove80 into my workflow, I&#39;m ready to share my insights and experiences. This review will explore the initial adaptation period, the impact on my wrist health, and whether the Glove80 lives up to its promise as an ergonomic game-changer.</p>
-<h3>First Impressions: Feel and Experience</h3>
-<p>Upon beginning my typing journey with the Glove80, two aspects immediately stood out. The unique choc spacing, combined with finger-specific curves for each key column, facilitated effortless access to the bottom and number rows, as well as several function keys—without the need to move my hands. This ease of reach extended to the thumb keys, thoughtfully laid out in an arc to match the natural movement of my thumbs. Additionally, the keyboard&#39;s low profile on the desk encouraged a neutral wrist position, enhancing comfort during long typing sessions. These features converged to create a typing experience that was not just comfortable but intuitively aligned with natural hand movements.</p>
-<h4>The Details That Matter</h4>
-<h5>Ergonomics at Its Core</h5>
-<p>The hallmark of the Glove80 is its ergonomics, designed to seamlessly integrate with the user&#39;s hand movements. After fine-tuning the tenting and tilting angles—made possible by the adjustable feet on each half of the keyboard—my hands naturally fell into the optimal typing position. The thoughtfully designed key layout meant that reaching for higher rows required merely straightening or curling my fingers, aided by the keyboard&#39;s choc spacing. Each column&#39;s unique height and curve catered to the different lengths of my fingers, further minimizing strain.</p>
-<h5>Key Innovations</h5>
-<p>The Glove80 introduces keycaps with a novel MCC profile, featuring raised sides and a central cylindrical channel, made from a slick POM material. This design supports the natural sliding of fingers across keys, reducing the need to lift hands while typing. The keyboard&#39;s thumb clusters are another highlight, offering six easily accessible keys per hand. This ergonomic layout ensures that most keys are within reach without stretching, a testament to the keyboard&#39;s user-centric design.</p>
-<h5>Beyond Typing: Features and Flexibility</h5>
-<ul>
-<li><strong>Tenting and Adjustability:</strong> The Glove80&#39;s customizable tenting angles, enhanced by sturdy locking nuts, ensure a tailored typing experience that can be finely adjusted to individual preferences.</li>
-<li><strong>Comfortable Palm Rest:</strong> The integrated, detachable palm rest offers additional comfort, catering to different typing styles with ease.</li>
-<li><strong>Switch Selection:</strong> While the standard Kailh choc switches are adequate, enthusiasts might prefer customizing their keyboard with preferred switches for an optimized typing feel. I opted for the lighter Kailh Choc V1, Red Pro Linear 35gf switches.</li>
-<li><strong>Keycaps:</strong> The high-quality POM keycaps, combined with attractive and durable legends, enhance the keyboard&#39;s tactile and visual appeal.</li>
-<li><strong>Tech-Savvy Features:</strong> From its easy-to-use firmware updates via a web interface to seamless Bluetooth connectivity and impressive battery life, the Glove80 is designed for a modern, wireless world.</li>
-<li><strong>RGB Lighting:</strong> While currently limited in customization, the RGB LEDs offer aesthetic versatility to match any setup.</li>
-</ul>
-<h3>Concluding Thoughts</h3>
-<p>The Glove80 keyboard represents a significant leap forward in ergonomic design, marrying aesthetics with unmatched comfort and functionality. Its thoughtful features—from the infinitely adjustable tenting to the innovative keycap design—set a new standard for what ergonomic keyboards can be. While there&#39;s room for improvement in switch selection and RGB customization, these are minor quibbles in an otherwise outstanding product. For those in search of ergonomic excellence without compromising on style or performance, the Glove80 is an investment worth making, promising a typing experience that&#39;s not just comfortable but truly enjoyable.</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2024-04-08-glove80-review.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-04-08-glove80-review.html</guid>
-            <pubDate>Invalid Date</pubDate>
-            <author>"Glenn Thompson"</author>
-            <category>["personal", "tech", "keyboards", "glove80"]</category>
-        </item>
-        
-        <item>
-            <title>Lessons Learned: One Year with a Custom Static Site Generator</title>
-            <description>In this post, I'll share the key lessons I've learned and insights I've gained from building and maintaining my own static site generator. While the technical details are interesting, the real value has been in the broader lessons about software development, user experience, and the balance between complexity and simplicity.</description>
-            <content:encoded><![CDATA[<p>It&#39;s been just over a year since I <a href="/content/posts/2025-01-02-from-haunt-to-custom.html">transitioned from Haunt to my own custom static site generator</a> for this website. What started as an experiment to gain more control over my publishing workflow has evolved into a valuable learning experience that has shaped how I approach web development projects.</p>
-<p>In this post, I&#39;ll share the key lessons I&#39;ve learned and insights I&#39;ve gained from building and maintaining my own static site generator. While the technical details are interesting, the real value has been in the broader lessons about software development, user experience, and the balance between complexity and simplicity.</p>
-<h2>The Journey of Evolution</h2>
-<h3>From Simple Beginnings</h3>
-<p>When I first built my static site generator, it was remarkably simple - just the essential features needed to convert my writing into a website. No extra features, no complex configurations, just the basics.</p>
-<p>Today, the system has evolved considerably, but not through grand design or elaborate planning. Instead, it grew organically based on real needs and actual usage. This organic growth taught me valuable lessons about software development.</p>
-<h3>Lesson 1: Features Should Emerge from Usage</h3>
-<p>Many of the features in my static site generator emerged from actual writing and publishing needs:</p>
-<ol>
-<li><p><strong>The Draft System</strong><br>When I found myself working on multiple posts simultaneously, I needed a way to keep unfinished posts separate from published content. This led to the draft system, which now helps me manage my writing workflow effectively.</p>
-</li>
-<li><p><strong>Tag Organization</strong><br>As my collection of posts grew, I needed a way to organize related content. The tag system emerged naturally from this need, rather than being built upfront based on assumptions about how I might want to organize content.</p>
-</li>
-<li><p><strong>Content Validation</strong><br>After accidentally publishing a post with a malformed date and another with a duplicate title, I added validation checks. These weren&#39;t part of the initial design but came from real-world publishing mishaps.</p>
-</li>
-</ol>
-<h3>Lesson 2: Simplicity Drives Performance</h3>
-<p>One of the most surprising lessons was how simplicity led to better performance:</p>
-<ol>
-<li><p><strong>Static HTML Generation</strong><br>By generating plain HTML files, the site loads quickly without any client-side processing. There&#39;s no JavaScript framework, no hydration, and no complex build process - just simple, fast HTML.</p>
-</li>
-<li><p><strong>Incremental Builds</strong><br>The build system only processes files that have changed. This means that even with hundreds of posts, updates are nearly instantaneous because only the necessary files are rebuilt.</p>
-</li>
-<li><p><strong>Minimal JavaScript</strong><br>By keeping JavaScript to a minimum and focusing on progressive enhancement, the site remains fast and accessible, even on slower connections.</p>
-</li>
-</ol>
-<h3>Lesson 3: Developer Experience Matters</h3>
-<p>A good developer experience has proven crucial for maintaining motivation to write and publish:</p>
-<ol>
-<li><p><strong>Smart Port Management</strong><br>After encountering port conflicts with other services, I added automatic port detection and fallback. The system now checks if a port is in use and automatically finds the next available one, eliminating the frustration of manual port configuration.</p>
-</li>
-<li><p><strong>Clear Error Messages</strong><br>When something goes wrong (like a failed CSS build or HTML conversion), the system provides clear, actionable error messages. This immediate feedback helps quickly identify and fix issues during the development process.</p>
-</li>
-<li><p><strong>Automated Validation</strong><br>The build system validates the environment before starting, checking for required directories and dependencies. These checks catch common setup issues early, making the development process smoother.</p>
-</li>
-</ol>
-<h3>Lesson 4: Content Drives Development</h3>
-<p>Perhaps the most important lesson has been letting content needs drive development:</p>
-<ol>
-<li><p><strong>Markdown Features</strong><br>I only added support for additional Markdown features (like tables and task lists) when I actually needed them in my writing. This prevented feature bloat and kept the system focused.</p>
-</li>
-<li><p><strong>RSS Feed</strong><br>The RSS feed wasn&#39;t part of the initial design but was added when the content volume grew enough to warrant it. This is a pattern I&#39;ve seen repeatedly - features are most valuable when they solve real, existing needs.</p>
-</li>
-<li><p><strong>Summary Generation</strong><br>The way post summaries are generated has evolved based on the actual content I write. Initially, it was a simple character count, but it now intelligently extracts meaningful previews based on content structure.</p>
-</li>
-</ol>
-<h2>Looking Forward</h2>
-<p>This project has taught me that the best software often evolves gradually in response to real needs rather than being built all at once from a grand design. It&#39;s a lesson that applies well beyond static site generators - it&#39;s about building software that serves actual needs rather than imagined ones.</p>
-<p>Just today, while writing this post, I encountered and solved several development workflow issues. Instead of being frustrated by these challenges, I saw them as opportunities to improve the system. The resulting changes - like automatic port detection and better error handling - weren&#39;t part of any grand plan. They emerged naturally from real usage and made the system better in practical, meaningful ways.</p>
-<p>The system isn&#39;t perfect, and it probably never will be. But it&#39;s continuously improving in ways that matter for my writing and publishing workflow. That, I&#39;ve learned, is far more valuable than technical perfection.</p>
-<p>If you&#39;re considering building your own tools, remember:</p>
-<ol>
-<li>Start simple and let features emerge from actual usage</li>
-<li>Focus on the experience - both for users and developers</li>
-<li>Let real needs guide development</li>
-<li>Embrace incremental improvements</li>
-<li>Value simplicity - it often leads to better performance and maintainability</li>
-<li>Use real-world problems as opportunities for improvement</li>
-</ol>
-<p>These lessons have influenced not just how I approach this project, but how I think about software development in general. Sometimes, the best insights come from the simplest projects - and often, they come right in the middle of writing about them.</p>
-<h2>Looking Back and Forward</h2>
-<p>Reflecting on this journey, the most valuable insight has been understanding that great software evolves naturally from real needs. Every feature in my static site generator—from the draft system to the validation checks—emerged from actual usage rather than upfront planning.</p>
-<p>This experience has fundamentally changed how I approach software development. Instead of trying to build the perfect system from the start, I&#39;ve learned to:</p>
-<ol>
-<li>Start with the simplest solution that works</li>
-<li>Let real usage guide feature development</li>
-<li>Focus on maintainability over complexity</li>
-<li>Prioritize the developer experience</li>
-<li>Keep performance in mind at every step</li>
-</ol>
-<p>These principles have not only made my static site generator better but have also influenced how I approach every new project. Sometimes the best insights come from the simplest projects, and often they come right in the middle of writing about them.</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2025-03-12-lessons-learned-custom-ssg.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-03-12-lessons-learned-custom-ssg.html</guid>
-            <pubDate>Thu, 13 Mar 2025 00:00:00 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>[web, development, javascript, static-site, lessons]</category>
-        </item>
-        
-        <item>
-            <title>My Development Environment in 2025: From Editor to Deployment</title>
-            <description>A comprehensive look at my current development setup in 2025, covering everything from my GNU Guix system foundation to editor configurations, terminal tools, and deployment processes.</description>
+            <title>Development Environment Evolution: Embracing Guix Home and Enhanced Emacs Workflow</title>
+            <description>"Six months after my comprehensive development environment overview, I share the significant evolution to Guix Home and enhanced Emacs configurations that have transformed my daily workflow."</description>
             <content:encoded><![CDATA[<h2>Introduction</h2>
-<p>The tools we use shape how we work. Over the years, my development environment has evolved alongside my technical journey through different programming languages, paradigms, and projects. This post offers a snapshot of my current setup in early 2025, detailing the choices I&#39;ve made and why they work for me.</p>
-<h2>System Foundation: ArcoLinux with GNU Guix</h2>
-<p>My journey to <a href="https://guix.gnu.org/">GNU Guix</a> began through my exploration of Scheme programming, as I detailed in my <a href="/content/posts/2024-07-26-gnu-guix-journey.html">GNU Guix Journey</a> post. While I initially experimented with Guix System, I&#39;ve settled on a hybrid approach: running Guix as a package manager on top of ArcoLinux (an Arch-based distribution).</p>
-<h3>Current Configuration Approach</h3>
-<p>I manage my development environment using a combination of Arch&#39;s pacman, AUR, and Guix&#39;s declarative package management. My Guix configuration lives in a Git repository, allowing me to:</p>
+<p>Six months ago, I shared a detailed look at my <a href="/content/posts/2025-03-08-my-dev-environment-2025.html">development environment in 2025</a>, covering my hybrid approach with ArcoLinux, Guix package management, and Emacs-centered workflow. Since then, my setup has undergone a significant evolution driven by both choice and necessity.</p>
+<p>The most significant change has been a transition to <strong>WSL2 on Windows 11</strong> for my work environment, necessitated by corporate requirements. Rather than seeing this as a limitation, I&#39;ve embraced it as an opportunity to refine my development approach, adopting <strong>Guix Home</strong> for complete environment management and building a custom Emacs installation from the master branch.</p>
+<p>This evolution has taught me valuable lessons about adaptability and the power of declarative configuration in maintaining consistency across different underlying systems.</p>
+<h2>The Guix Home Revolution</h2>
+<h3>From Hybrid to Unified</h3>
+<p>In March, I described my hybrid approach using both pacman/AUR and Guix for different aspects of my system. While this worked well, I found myself constantly managing the boundary between system and user packages, dealing with occasional conflicts, and maintaining separate configuration files.</p>
+<p><strong>Guix Home</strong> changed everything. Now I can declaratively manage:</p>
 <ul>
-<li>Track changes to my development environment over time</li>
-<li>Reproduce my development setup on new hardware</li>
-<li>Roll back to previous package states when needed</li>
-<li>Share configuration snippets with the community</li>
+<li>All my development tools and applications</li>
+<li>Shell configuration and environment variables  </li>
+<li>Dotfiles and configuration files</li>
+<li>Services and background processes</li>
+<li>Desktop environment customizations</li>
 </ul>
-<h3>Key Packages and Tools</h3>
-<p>I maintain a hybrid package approach:</p>
-<p><strong>System packages (via pacman/AUR):</strong></p>
-<ul>
-<li>Base system utilities and desktop environment</li>
-<li>Graphics drivers and hardware support</li>
-<li>Some GUI applications</li>
-</ul>
-<p><strong>Development tools (via Guix):</strong></p>
-<pre><code class="language-scheme">;; My primary development tools managed by Guix
-(specifications-&gt;manifest
- &#39;(&quot;emacs&quot; &quot;git&quot; &quot;openssh&quot; &quot;ripgrep&quot; &quot;fd&quot; &quot;exa&quot; &quot;bat&quot;
-   &quot;guile&quot; &quot;node&quot; &quot;python&quot; &quot;gcc-toolchain&quot; &quot;make&quot;
-   &quot;nss-certs&quot; &quot;glibc-locales&quot;))
-</code></pre>
-<p>This hybrid approach gives me the best of both worlds: Arch&#39;s extensive package repository and up-to-date system packages, combined with Guix&#39;s reproducible development environments.</p>
-<h3>Reproducibility Benefits</h3>
-<p>The reproducibility of Guix for development environments has been invaluable. I can:</p>
-<ul>
-<li>Spin up development environments with precise dependencies</li>
-<li>Ensure consistent behavior across machines</li>
-<li>Isolate project-specific dependencies using Guix environments</li>
-<li>Share exact environment specifications with collaborators</li>
-</ul>
-<h3>Challenges and Solutions</h3>
-<p>Working with this hybrid approach isn&#39;t without challenges:</p>
-<ul>
-<li><p><strong>Challenge</strong>: Keeping Guix packages in sync with system libraries<br><strong>Solution</strong>: Careful management of library paths and containerization when needed</p>
-</li>
-<li><p><strong>Challenge</strong>: Learning curve for Guix&#39;s declarative configuration<br><strong>Solution</strong>: Incremental adoption and community resources</p>
-</li>
-<li><p><strong>Challenge</strong>: Occasional conflicts between package managers<br><strong>Solution</strong>: Clear separation of responsibilities (system vs. development tools)</p>
-</li>
-</ul>
-<h2>Editor Environment: Emacs</h2>
-<p>After experimenting with various editors, I&#39;ve settled on Emacs as my primary development environment. Its extensibility and Scheme-based configuration language (Emacs Lisp) align well with my interests.</p>
-<h3>Configuration Approach</h3>
-<p>I use a literate configuration with Org mode, which allows me to:</p>
-<ul>
-<li>Document my configuration choices</li>
-<li>Organize settings by purpose rather than file</li>
-<li>Selectively load components based on context</li>
-<li>Share readable documentation with others</li>
-</ul>
-<h3>Key Extensions</h3>
-<p>My most valuable Emacs extensions include:</p>
-<ul>
-<li><strong>Magit</strong>: Git interface that has transformed my version control workflow</li>
-<li><strong>LSP Mode</strong>: Language server integration for intelligent code assistance</li>
-<li><strong>Org Mode</strong>: For notes, task management, and literate programming</li>
-<li><strong>Projectile</strong>: Project navigation and management</li>
-<li><strong>Company</strong>: Completion framework</li>
-<li><strong>Consult/Vertico/Marginalia</strong>: Modern completion UI</li>
-<li><strong>Tree-sitter</strong>: Improved syntax highlighting and structural editing</li>
-</ul>
-<h3>Language-Specific Setups</h3>
-<p>For my primary languages:</p>
-<ul>
-<li><strong>Scheme/Guile</strong>: Geiser for REPL integration</li>
-<li><strong>JavaScript/TypeScript</strong>: TypeScript LSP, prettier, eslint integration</li>
-<li><strong>Python</strong>: Pyright LSP, black formatting</li>
-<li><strong>Web Development</strong>: Web mode, emmet, css-mode</li>
-</ul>
-<h3>Productivity Enhancements</h3>
-<p>Some productivity boosters in my setup:</p>
-<ul>
-<li>Custom keybindings for frequent operations</li>
-<li>Snippets for common code patterns</li>
-<li>Template generation for new projects</li>
-<li>Integration with system notifications</li>
-</ul>
-<h2>Terminal and CLI Tools</h2>
-<p>While Emacs handles many tasks, I still rely heavily on terminal tools for specific workflows.</p>
-<h3>Shell Configuration</h3>
-<p>I use Zsh with a custom configuration that provides:</p>
-<ul>
-<li>Intuitive aliases</li>
-<li>Helpful prompts with Git integration</li>
-<li>Command history management</li>
-<li>Directory navigation shortcuts</li>
-</ul>
-<h3>Custom Scripts and Utilities</h3>
-<p>I&#39;ve developed several custom scripts to streamline repetitive tasks:</p>
-<ul>
-<li>Project initialization templates</li>
-<li>Deployment automation</li>
-<li>System maintenance routines</li>
-<li>Content management for this blog</li>
-</ul>
-<h3>Task Automation</h3>
-<p>For task automation, I use a combination of:</p>
-<ul>
-<li>Shell scripts for simple operations</li>
-<li>Guile scripts for more complex logic</li>
-<li>Make for build processes</li>
-<li>Cron for scheduled tasks</li>
-</ul>
-<h3>Version Control Workflow</h3>
-<p>My Git workflow relies on:</p>
-<ul>
-<li>Branch-per-feature approach</li>
-<li>Interactive rebasing for clean history</li>
-<li>Commit message templates</li>
-<li>Hooks for quality checks</li>
-</ul>
-<h2>Web Development Stack</h2>
-<p>As the creator of this website, my web development setup has been refined through experience.</p>
-<h3>Local Development Server</h3>
-<p>For local development, I use:</p>
-<ul>
-<li>Live-server for static sites</li>
-<li>Custom Node.js servers for API development</li>
-<li>Docker containers for complex dependencies</li>
-</ul>
-<h3>Build Tools and Processes</h3>
-<p>My build process typically involves:</p>
-<ul>
-<li>Tailwind CSS for styling</li>
-<li>Minimal JavaScript bundling</li>
-<li>Custom static site generation (as detailed in my <a href="/content/posts/2025-01-02-from-haunt-to-custom.html">previous post</a>)</li>
-<li>Automated optimization steps</li>
-</ul>
-<h3>Testing Approach</h3>
-<p>For testing, I employ:</p>
-<ul>
-<li>Jest for JavaScript unit tests</li>
-<li>Cypress for end-to-end testing</li>
-<li>Manual testing across devices and browsers</li>
-<li>Accessibility validation tools</li>
-</ul>
-<h3>Browser Tools and Extensions</h3>
-<p>Essential browser tools include:</p>
-<ul>
-<li>Firefox Developer Edition as my primary browser</li>
-<li>Chrome for cross-browser testing</li>
-<li>DevTools for performance analysis</li>
-<li>React and Redux DevTools</li>
-<li>Accessibility checkers</li>
-</ul>
-<h2>Deployment Pipeline</h2>
-<p>My approach to deployment emphasizes security and reliability.</p>
-<h3>Secure Deployment Process</h3>
-<p>As you might have noticed from my <a href="/content/posts/2025-03-08-my-dev-environment-2025.html">.env.gpg file</a>, I take security seriously:</p>
-<ul>
-<li>Credentials stored in GPG-encrypted files</li>
-<li>Separate development and production configurations</li>
-<li>Principle of least privilege for service accounts</li>
-<li>Regular security audits</li>
-</ul>
-<h3>Automation Scripts</h3>
-<p>My deployment is automated through:</p>
-<ul>
-<li>Custom shell scripts for build and deploy</li>
-<li>Validation steps before deployment</li>
-<li>Rollback capabilities</li>
-<li>Notification systems for success/failure</li>
-</ul>
-<h3>CI/CD Considerations</h3>
-<p>While not using a formal CI/CD pipeline for this personal site, I follow similar principles:</p>
-<ul>
-<li>Pre-commit checks for code quality</li>
-<li>Automated testing before deployment</li>
-<li>Consistent build environments</li>
-<li>Deployment approval steps</li>
-</ul>
-<h3>Monitoring and Analytics</h3>
-<p>For site monitoring, I use:</p>
-<ul>
-<li>Simple analytics for privacy-respecting visitor tracking</li>
-<li>Uptime monitoring</li>
-<li>Performance metrics collection</li>
-<li>Error logging and alerting</li>
-</ul>
-<h2>Future Improvements</h2>
-<p>My environment continues to evolve. Areas I&#39;m exploring include:</p>
-<ul>
-<li>Further integration between Emacs and system tools</li>
-<li>More comprehensive test automation</li>
-<li>Expanded use of Guix channels for package management</li>
-<li>Improved mobile development workflow</li>
-</ul>
-<h2>Conclusion</h2>
-<p>A development environment is deeply personal, reflecting both technical needs and individual preferences. Mine has evolved through years of experimentation, learning, and refinement.</p>
-<p>The most important lesson I&#39;ve learned is that tools should serve your workflow, not dictate it. Be willing to experiment, but also recognize when a tool is working well enough that further optimization yields diminishing returns.</p>
-<p>I hope sharing my setup provides some inspiration for your own environment. I&#39;d love to hear about your setup and what tools have made the biggest difference in your workflow.</p>
-<p>What aspects of your development environment have you found most valuable? Are there tools or approaches you think I should consider? Let me know!</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2025-03-08-my-dev-environment-2025.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-03-08-my-dev-environment-2025.html</guid>
-            <pubDate>Sat, 08 Mar 2025 00:00:00 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>development, guix, tools, workflow, productivity, web</category>
-        </item>
-        
-        <item>
-            <title>From Hugo to Haunt to Custom: My Journey in Static Site Generation</title>
-            <description>A reflection on my evolving journey through static site generators - from Hugo to Haunt, and finally to building my own custom solution, highlighting the valuable lessons learned along the way.</description>
-            <content:encoded><![CDATA[<p>My journey with static site generators has been one of continuous learning and evolution. It started with Hugo, transitioned through Haunt, and has now led me to build my own custom solution. Each step of this journey has taught me valuable lessons about web development, programming languages, and the importance of understanding the tools we use.</p>
-<h2>The Hugo Beginning</h2>
-<p>Like many &quot;bloggers&quot;, I started with Hugo, a popular static site generator known for its speed and extensive theme ecosystem. Hugo served its purpose well, providing a robust platform for my blog with ready-made themes and a strong community.</p>
-<h2>The Transition to Haunt</h2>
-<p>My journey took an interesting turn when I joined the <a href="https://systemcrafters.net/community/">System Crafters Community</a>. Through David Wilson&#39;s excellent course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">Hands-On Guile Scheme for Beginners</a>, I was introduced to the world of Scheme programming. This led me to adopt GNU Guix as my operating system, which naturally led me to <a href="https://dthompson.us/projects/haunt.html">Haunt</a>, a static site generator written in Guile Scheme.</p>
-<p>The transition to Haunt was motivated by several factors:</p>
-<ul>
-<li>Alignment with my growing interest in Scheme and functional programming</li>
-<li>Integration with the GNU Guix ecosystem</li>
-<li>The opportunity to write site configuration in Scheme</li>
-<li>A desire for a simpler, more controllable setup</li>
-</ul>
-<h3>The Haunt Experience</h3>
-<p>Haunt offered a different perspective on site generation. Some highlights of my Haunt experience included:</p>
-<ul>
-<li>Writing site configuration in Scheme, which felt natural after learning Guile</li>
-<li>Creating custom templates that matched my site&#39;s aesthetic needs</li>
-<li>Learning to leverage Scheme&#39;s flexibility for site customization</li>
-<li>Being part of a community that values simplicity and transparency</li>
-</ul>
-<p>However, working with Haunt also presented challenges:</p>
-<ul>
-<li>Limited availability of ready-made templates</li>
-<li>Need to create custom solutions for common features</li>
-<li>Learning curve of Scheme for web development</li>
-</ul>
-<h2>The Move to Custom Development</h2>
-<p>As I became more comfortable with web development and gained a deeper understanding of static site generation, I felt ready for the next step: building my own static site generator. This decision wasn&#39;t about Haunt&#39;s limitations - it was about the desire to understand every aspect of my site&#39;s generation process and have complete control over its architecture.</p>
-<h2>The New Architecture</h2>
-<p>My custom solution combines the lessons learned from both Hugo and Haunt with modern web development practices:</p>
-<ul>
-<li><strong>Modern JavaScript</strong>: Using Node.js and contemporary JavaScript tools</li>
-<li><strong>Markdown Processing</strong>: Leveraging the <code>marked</code> library for flexible content processing</li>
-<li><strong>Tailwind CSS</strong>: Adopting a utility-first approach to styling</li>
-<li><strong>Simple Build Process</strong>: A straightforward build script that handles all aspects of site generation</li>
-<li><strong>Development Server</strong>: Live reload functionality for immediate feedback</li>
-</ul>
-<h2>Benefits of the Custom Solution</h2>
-<p>Building my own solution has brought several advantages:</p>
-<ol>
-<li><strong>Complete Understanding</strong>: I now understand every aspect of my site&#39;s generation</li>
-<li><strong>Faster Iterations</strong>: Quick implementation of new features</li>
-<li><strong>Modern Development</strong>: Integration with current web development tools</li>
-<li><strong>Simplified Deployment</strong>: Streamlined process for updates</li>
-<li><strong>Better Performance</strong>: Only including features I actually need</li>
-</ol>
-<h2>Learning Experience</h2>
-<p>This journey from Hugo through Haunt to a custom solution has taught me:</p>
-<ul>
-<li>The value of understanding different approaches to static site generation</li>
-<li>The importance of choosing tools that align with your learning goals</li>
-<li>How different programming paradigms (Go, Scheme, JavaScript) approach similar problems</li>
-<li>The benefits of building your own tools when the learning opportunity outweighs convenience</li>
-</ul>
-<h2>Future Improvements</h2>
-<p>While my custom solution meets my current needs, I&#39;m excited about potential improvements:</p>
-<ul>
-<li>Adding support for draft posts</li>
-<li>Implementing a tag-based navigation system</li>
-<li>Adding search functionality</li>
-<li>Improving the build process</li>
-<li>Adding image optimization</li>
-</ul>
-<h2>Conclusion</h2>
-<p>My journey from Hugo through Haunt to a custom solution reflects a common pattern in software development - starting with established tools, learning their principles, and eventually building your own solutions. Each step has been valuable:</p>
-<ul>
-<li>Hugo taught me about static site generators and their capabilities</li>
-<li>Haunt introduced me to functional programming and the beauty of Scheme</li>
-<li>Building my own solution has given me deep insights into web development</li>
-</ul>
-<p>The source code for my site generator is available on <a href="https://github.com/glenneth1/personal-website">GitHub</a>. While it may not be the most feature-rich static site generator, it&#39;s perfectly tailored to my needs and represents a significant learning journey.</p>
-<p>Remember, the goal of building your own tools isn&#39;t always to create something better than existing solutions - sometimes it&#39;s about the learning experience and creating something that perfectly fits your specific needs. Whether you&#39;re using Hugo, Haunt, or considering building your own solution, the most important thing is that it serves your purposes and helps you grow.</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2025-01-02-from-haunt-to-custom.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-01-02-from-haunt-to-custom.html</guid>
-            <pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>web, development, javascript, static-site, haunt, guile, hugo</category>
-        </item>
-        
-        <item>
-            <title>Beyond Theory: Building Practical Tools with Guile Scheme</title>
-            <description>Introduction</description>
-            <content:encoded><![CDATA[<h1>Beyond Theory: Building Practical Tools with Guile Scheme</h1>
-<h2>Introduction</h2>
-<p>A few months ago, I shared my journey into learning Scheme through building <code>stash</code>, a symlink manager. Since then, I&#39;ve discovered that the gap between learning Scheme and applying it to real-world problems is where the most valuable lessons emerge. This post explores what I&#39;ve learned about building practical tools with Guile Scheme, sharing both successes and challenges along the way.</p>
-<h2>The Power of Modular Design</h2>
-<p>One of the most important lessons I learned was the value of modular design. Breaking down a program into focused, single-responsibility modules not only makes the code more maintainable but also helps in reasoning about the program&#39;s behavior. Here&#39;s how I structured <code>stash</code>:</p>
-<pre><code class="language-scheme">(use-modules (ice-9 getopt-long)
-             (stash help)         ;; Help module
-             (stash colors)       ;; ANSI colors
-             (stash log)          ;; Logging module
-             (stash paths)        ;; Path handling module
-             (stash conflict)     ;; Conflict resolution module
-             (stash file-ops))    ;; File and symlink operations module
-</code></pre>
-<p>Each module has a specific responsibility:</p>
-<ul>
-<li><code>colors.scm</code>: Handles ANSI color formatting for terminal output</li>
-<li><code>conflict.scm</code>: Manages conflict resolution when files already exist</li>
-<li><code>file-ops.scm</code>: Handles file system operations</li>
-<li><code>help.scm</code>: Provides usage information</li>
-<li><code>log.scm</code>: Manages logging operations</li>
-<li><code>paths.scm</code>: Handles path manipulation and normalization</li>
-</ul>
-<h2>Robust Path Handling</h2>
-<p>One of the first challenges in building a file management tool is handling paths correctly. Here&#39;s how I approached it:</p>
-<pre><code class="language-scheme">(define (expand-home path)
-  &quot;Expand ~ to the user&#39;s home directory.&quot;
-  (if (string-prefix? &quot;~&quot; path)
-      (string-append (getenv &quot;HOME&quot;) (substring path 1))
-      path))
+<h3>Current Guix Home Configuration</h3>
+<p>My <code>home-configuration.scm</code> has become the single source of truth for my development environment, particularly focused on Scheme/Guile development:</p>
+<pre><code class="language-scheme">;; Guix Home configuration for Glenn&#39;s Scheme development environment
 
-(define (concat-path base path)
-  &quot;Concatenate two paths, ensuring there are no double slashes.&quot;
-  (if (string-suffix? &quot;/&quot; base)
-      (string-append (string-drop-right base 1) &quot;/&quot; path)
-      (string-append base &quot;/&quot; path)))
+(use-modules (gnu home)
+             (gnu packages)
+             (gnu services)
+             (gnu home services)
+             (gnu home services shells)
+             (gnu home services guix)
+             (gnu home services mcron)
+             (guix gexp))
 
-(define (ensure-config-path target-dir)
-  &quot;Ensure that the target directory has .config appended, avoiding double slashes.&quot;
-  (let ((target-dir (expand-home target-dir)))
-    (if (string-suffix? &quot;/&quot; target-dir)
-        (set! target-dir (string-drop-right target-dir 1)))
-    (if (not (string-suffix? &quot;/.config&quot; target-dir))
-        (string-append target-dir &quot;/.config&quot;)
-        target-dir)))
-</code></pre>
-<p>This approach ensures that:</p>
-<ul>
-<li>Home directory references (<code>~</code>) are properly expanded</li>
-<li>Path concatenation doesn&#39;t create double slashes</li>
-<li>Configuration paths are consistently structured</li>
-</ul>
-<h2>Interactive Conflict Resolution</h2>
-<p>Real-world tools often need to handle conflicts. I implemented an interactive conflict resolution system:</p>
-<pre><code class="language-scheme">(define (prompt-user-for-action)
-  &quot;Prompt the user to decide how to handle a conflict: overwrite (o), skip (s), or cancel (c).&quot;
-  (display (color-message 
-    &quot;A conflict was detected. Choose action - Overwrite (o), Skip (s), or Cancel (c): &quot; 
-    yellow-text))
-  (let ((response (read-line)))
-    (cond
-      ((string-ci=? response &quot;o&quot;) &#39;overwrite)
-      ((string-ci=? response &quot;s&quot;) &#39;skip)
-      ((string-ci=? response &quot;c&quot;) &#39;cancel)
-      (else
-       (display &quot;Invalid input. Please try again.\n&quot;)
-       (prompt-user-for-action)))))
-</code></pre>
-<p>This provides a user-friendly interface for resolving conflicts while maintaining data safety.</p>
-<h2>Logging for Debugging and Auditing</h2>
-<p>Proper logging is crucial for debugging and auditing. I implemented a simple but effective logging system:</p>
-<pre><code class="language-scheme">(define (current-timestamp)
-  &quot;Return the current date and time as a formatted string.&quot;
-  (let* ((time (current-time))
-         (seconds (time-second time)))
-    (strftime &quot;%Y-%m-%d-%H-%M-%S&quot; (localtime seconds))))
+(home-environment
+  ;; Packages to install in the home environment
+  (packages (specifications-&gt;packages 
+             &#39;(;; System essentials
+               &quot;glibc-locales&quot;
+               
+               ;; Scheme/Guile development environment
+               &quot;guile-next&quot;        ; Latest Guile development version
+               &quot;guile-hoot&quot;        ; Scheme to WebAssembly compiler
+               &quot;guile-goblins&quot;     ; Distributed programming environment
+               &quot;guile-lib&quot;         ; Useful Guile libraries
+               &quot;guile-reader&quot;      ; Reader extensions for Guile
+               &quot;guile-json&quot;        ; JSON support for Guile
+               
+               ;; Development tools  
+               ;; Note: Using custom-built Emacs 31.0.50 installation
+               &quot;git&quot;               ; Version control
+               &quot;make&quot;              ; Build system
+               &quot;gcc-toolchain&quot;     ; C compiler and tools
+               &quot;pkg-config&quot;        ; Package configuration
+               &quot;texinfo&quot;           ; Documentation system
+               &quot;rlwrap&quot;)))         ; Readline wrapper for better REPL experience
 
-(define (log-action message)
-  &quot;Log an action with a timestamp to the stash.log file.&quot;
-  (let ((log-port (open-file &quot;stash.log&quot; &quot;a&quot;)))
-    (display (color-message 
-      (string-append &quot;[&quot; (current-timestamp) &quot;] &quot; message) 
-      green-text) log-port)
-    (newline log-port)
-    (close-port log-port)))
+  ;; Services for the home environment
+  (services
+   (list
+    ;; Set up environment variables for Scheme development
+    (simple-service &#39;scheme-dev-env-vars
+                    home-environment-variables-service-type
+                    &#39;((&quot;EDITOR&quot; . &quot;emacs&quot;)
+                      (&quot;GUILE_LOAD_PATH&quot; . &quot;$HOME/.guix-home/profile/share/guile/site/3.0:$GUILE_LOAD_PATH&quot;)
+                      (&quot;GUILE_LOAD_COMPILED_PATH&quot; . &quot;$HOME/.guix-home/profile/lib/guile/3.0/site-ccache:$GUILE_LOAD_COMPILED_PATH&quot;)
+                      (&quot;GUIX_LOCPATH&quot; . &quot;$HOME/.guix-home/profile/lib/locale&quot;)
+                      (&quot;GUILE_AUTO_COMPILE&quot; . &quot;1&quot;)
+                      (&quot;GUILE_WARN_DEPRECATED&quot; . &quot;detailed&quot;)))
+
+    ;; Add a simple mcron job for keeping system updated
+    (simple-service &#39;update-reminder
+                    home-mcron-service-type
+                    (list #~(job &quot;0 12 * * 0&quot;  ; Every Sunday at noon
+                                &quot;echo &#39;Consider running: guix pull &amp;&amp; guix home reconfigure ~/.config/guix/home-configuration.scm&#39;&quot;))))))
 </code></pre>
-<p>This logging system:</p>
+<h3>Benefits Realized</h3>
+<p>The transition to Guix Home has delivered on its promises:</p>
+<p><strong>Complete Reproducibility</strong>: I can now recreate my entire user environment on any machine with a single command: <code>guix home reconfigure home-configuration.scm</code></p>
+<p><strong>Atomic Updates</strong>: Changes to my environment are atomic - either they work completely or roll back cleanly. No more broken states from partial updates.</p>
+<p><strong>Version Control Everything</strong>: My entire environment configuration lives in Git, with meaningful commit messages tracking every change to my setup.</p>
+<p><strong>Effortless Rollbacks</strong>: When an update breaks something, <code>guix home roll-back</code> instantly restores the previous working state.</p>
+<p><strong>Dependency Isolation</strong>: Each application gets exactly the dependencies it needs, eliminating conflicts between different tools requiring different library versions.</p>
+<h2>Enhanced Emacs Workflow</h2>
+<h3>Custom Emacs Build from Master</h3>
+<p>One of the most significant changes in my setup has been building Emacs from the master branch rather than relying on distribution packages. This decision was driven by several factors:</p>
 <ul>
-<li>Timestamps each action</li>
-<li>Uses color coding for better readability</li>
-<li>Maintains a persistent log file</li>
-<li>Properly handles file operations</li>
+<li><strong>Latest Features</strong>: Access to cutting-edge features and improvements before they reach stable releases</li>
+<li><strong>WSL2 Optimization</strong>: Better integration with the WSL2 environment through custom compilation flags</li>
+<li><strong>Performance Tuning</strong>: Ability to optimize the build for my specific use case and hardware</li>
 </ul>
-<h2>File Operations with Safety</h2>
-<p>When dealing with file system operations, safety is paramount. Here&#39;s how I handle moving directories:</p>
-<pre><code class="language-scheme">(define (move-source-to-target source-dir target-dir)
-  &quot;Move the entire source directory to the target directory, ensuring .config in the target path.&quot;
-  (let* ((target-dir (ensure-config-path target-dir))
-         (source-dir (expand-home source-dir))
-         (source-name (basename source-dir))
-         (target-source-dir (concat-path target-dir source-name)))
-    (if (not (file-exists? target-dir))
-        (mkdir target-dir #o755))
-    (if (file-exists? target-source-dir)
-        (handle-conflict target-source-dir source-dir delete-directory log-action)
-        (begin
-          (rename-file source-dir target-source-dir)
-          (display (format #f &quot;Moved ~a to ~a\n&quot; source-dir target-source-dir))
-          (log-action (format #f &quot;Moved ~a to ~a&quot; source-dir target-source-dir))))
-    target-source-dir))
-</code></pre>
-<p>This implementation:</p>
+<p>Building Emacs 31.0.50 from source on WSL2 Ubuntu has given me a more responsive and feature-rich editing environment, particularly for Scheme development where the latest improvements in language support make a noticeable difference.</p>
+<h3>Configuration Management Evolution</h3>
+<p>While I was already using Emacs extensively in March, my configuration approach has matured significantly. I&#39;ve moved from a monolithic configuration to a modular, feature-based system that&#39;s easier to maintain and debug.</p>
+<h3>New Emacs Enhancements</h3>
+<p><strong>Improved LSP Integration</strong>: My language server setup now provides more consistent and reliable code intelligence across all my projects.</p>
+<p><strong>Enhanced Org Mode Workflow</strong>: I&#39;ve integrated Org mode more deeply into my daily workflow for:</p>
 <ul>
-<li>Ensures paths are properly formatted</li>
-<li>Creates necessary directories</li>
-<li>Handles conflicts gracefully</li>
-<li>Logs all operations</li>
-<li>Returns the new path for further operations</li>
+<li>Project planning and tracking</li>
+<li>Meeting notes and documentation</li>
+<li>Time tracking and productivity analysis</li>
+<li>Knowledge management and linking</li>
 </ul>
+<p><strong>Better Terminal Integration</strong>: Using <code>vterm</code> and <code>multi-vterm</code>, I now have seamless terminal integration within Emacs, reducing context switching.</p>
+<p><strong>Refined Completion System</strong>: My completion setup with Vertico, Consult, and Marginalia has been fine-tuned for faster, more intuitive navigation.</p>
+<h3>Development Workflow Improvements</h3>
+<p><strong>Project Management</strong>: Using <code>projectile</code> with enhanced project templates and automated setup scripts.</p>
+<p><strong>Code Quality</strong>: Integrated formatting, linting, and testing directly into my editing workflow with immediate feedback.</p>
+<p><strong>Documentation</strong>: Streamlined documentation generation and maintenance using Org mode&#39;s export capabilities.</p>
+<h2>Workflow Integration Benefits</h2>
+<h3>Seamless Environment Switching</h3>
+<p>With Guix Home managing my entire environment, switching between different project contexts has become effortless. Each project can specify its exact dependencies, and Guix ensures they&#39;re available without affecting other projects.</p>
+<h3>Consistent Across Machines</h3>
+<p>Whether I&#39;m working on my desktop, laptop, or a remote server, my environment is identical. This consistency has eliminated the &quot;works on my machine&quot; problem entirely.</p>
+<h3>Simplified Onboarding</h3>
+<p>Setting up a new development machine now takes minutes instead of hours. Clone my configuration repository, run <code>guix home reconfigure</code>, and everything is ready.</p>
+<h2>Challenges and Solutions</h2>
+<h3>Learning Curve</h3>
+<p><strong>Challenge</strong>: Guix Home&#39;s declarative approach required rethinking how I manage my environment.</p>
+<p><strong>Solution</strong>: Incremental migration, starting with simple configurations and gradually adding complexity as I became more comfortable with the system.</p>
+<h3>Documentation Gaps</h3>
+<p><strong>Challenge</strong>: Guix Home is relatively new, with fewer examples and tutorials compared to traditional dotfile management.</p>
+<p><strong>Solution</strong>: Active participation in the Guix community, reading source code, and documenting my own discoveries.</p>
+<h3>Integration Complexity</h3>
+<p><strong>Challenge</strong>: Some applications required custom integration work to play nicely with Guix Home.</p>
+<p><strong>Solution</strong>: Creating custom service definitions and contributing them back to the community when possible.</p>
+<h2>Performance and Productivity Impact</h2>
+<p>The move to Guix Home has had measurable impacts on my productivity:</p>
+<ul>
+<li><strong>Reduced Setup Time</strong>: New project environments spin up in seconds</li>
+<li><strong>Fewer Context Switches</strong>: Everything I need is consistently available</li>
+<li><strong>Less Debugging</strong>: Reproducible environments mean fewer environment-related issues</li>
+<li><strong>Improved Focus</strong>: Less time managing tools means more time creating</li>
+</ul>
+<h2>Future Directions</h2>
+<p>Looking ahead, I&#39;m exploring:</p>
+<p><strong>Custom Guix Channels</strong>: Creating personal channels for specialized tools and configurations not yet in the main Guix repository.</p>
+<p><strong>Advanced Service Integration</strong>: Developing more sophisticated service definitions for complex development workflows.</p>
+<p><strong>Cross-Machine Synchronization</strong>: Using Guix Home with remote development servers and cloud environments.</p>
+<p><strong>Community Contributions</strong>: Sharing useful service definitions and configurations with the broader Guix community.</p>
 <h2>Lessons Learned</h2>
-<h3>What Worked Well</h3>
-<ol>
-<li><strong>Modular Design</strong>: Breaking the code into focused modules made it easier to maintain and test</li>
-<li><strong>Functional Approach</strong>: Using pure functions where possible made the code more predictable</li>
-<li><strong>Interactive Interface</strong>: Providing clear user prompts and colored output improved usability</li>
-<li><strong>Robust Logging</strong>: Detailed logging helped with debugging and understanding program flow</li>
-</ol>
-<h3>Challenges Faced</h3>
-<ol>
-<li><strong>Path Handling</strong>: Dealing with different path formats and edge cases required careful attention</li>
-<li><strong>Error States</strong>: Managing various error conditions while keeping the code clean</li>
-<li><strong>User Interface</strong>: Balancing between automation and user control</li>
-<li><strong>Documentation</strong>: Writing clear documentation that helps users understand the tool</li>
-</ol>
-<h2>Moving Forward</h2>
-<p>Building <code>stash</code> has taught me that while functional programming principles are valuable, pragmatism is equally important. The key is finding the right balance between elegant functional code and practical solutions.</p>
-<h2>Resources</h2>
-<ol>
-<li><a href="https://www.gnu.org/software/guile/manual/">Guile Manual</a></li>
-<li><a href="/content/posts/scheme-journey.html">My Previous Scheme Journey Post</a></li>
-<li><a href="https://systemcrafters.net/community">System Crafters Community</a></li>
-<li><a href="https://codeberg.org/glenneth/stash">Stash on Codeberg</a></li>
-</ol>
-<p>The code examples in this post are from my actual implementation of <code>stash</code>. Feel free to explore, use, and improve upon them!</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2024-12-03-practical-scheme.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-12-03-practical-scheme.html</guid>
-            <pubDate>Tue, 03 Dec 2024 07:00:00 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>tech, guile, scheme, development, functional-programming</category>
-        </item>
-        
-        <item>
-            <title>A Journey into Scheme</title>
-            <description>The course took me through the basics of Scheme, from simple expressions to more complex concepts like functions, recursion, and working with files. This structured learning environment gave me the confidence to start building stash.</description>
-            <content:encoded><![CDATA[<h1>My Journey into Scheme: Building a Simple Symlink Manager with Guile Scheme</h1>
-<h2>Introduction</h2>
-<p>I&#39;ve spent my career as an electrical engineer, not a software developer. However, my recent journey in to GNU/Liniux required a tool for managing symlinks, and that&#39;s how I began learning Scheme—specifically Guile Scheme. I&#39;m writing this post to share how I built <code>stash</code>, a utility that mimics GNU Stow&#39;s functionality, and how my learning journey was shaped by David Wilson&#39;s &quot;Hands-On Guile Scheme for Beginners&quot; course from System Crafters, more about this below.</p>
-<h2>How I Started with Scheme</h2>
-<p>My programming background was <em>VERY</em> limited, I produce documents in (La)Tex but I decided to take the plunge into learning Scheme, thanks to a course led by David Wilson from System Crafters. The course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a>, was incredibly helpful in making Scheme accessible even for someone like me, without a traditional programming background.  I know (La)Tex isn&#39;t a programming language, it&#39;s typesetting.  But how hard can it be?  Right?</p>
-<p>The course took me through the basics of Scheme, from simple expressions to more complex concepts like functions, recursion, and working with files. This structured learning environment gave me the confidence to start building <code>stash</code>.</p>
-<p>The course was &quot;instructor-led&quot; with live meet-up sessions weekly.  David has since made this course on-demand, and will be, if not already, available at the above link.  Highly recommended if you are interested in taking your first steps with scheme.</p>
-<h2>Why Build Stash?</h2>
-<p>After completing David Wilson&#39;s course, I wanted to put my newly found Guile Scheme skills into practice with a real project. It wasn&#39;t enough just to understand the language conceptually—I needed to build something tangible that solved a problem I encountered regularly in my workflow. Writing <code>stash</code> gave me that opportunity. It allowed me to apply what I&#39;d learned while also deepening my understanding of file manipulation, command-line tools, and conflict resolution—all within the Guile Scheme environment.</p>
-<p>After migrating to GNU/Linux and speaking with other <a href="https://systemcrafters.net/community">System Crafters Community</a> members, I found I needed a way to manage symbolic links and organize directories. Existing tools like GNU Stow helped, but I wanted to learn how such tools are built. I decided to write my own version using Guile Scheme to enhance my understanding of the language and to have more control over the functionality.</p>
-<p>The goal of <code>stash</code> is simple: allow users to move directories and create symlinks with conflict resolution, offering options to overwrite, back up, skip, or cancel the operation.</p>
-<h2>Breaking Down Stash</h2>
-<p>The core of <code>stash</code> revolves around:</p>
-<ol>
-<li><strong>Moving Directories</strong>: Using Scheme&#39;s file manipulation functions, I learned how to move directories and files around. </li>
-<li><strong>Creating Symlinks</strong>: I implemented functions to create symlinks to the moved directories, ensuring that the original structure remains accessible.</li>
-<li><strong>Conflict Resolution</strong>: One of the key features I wanted was handling conflicts when a file or symlink already exists at the target location. This required prompting the user for input and responding accordingly (backup, overwrite, skip, or cancel).</li>
-</ol>
-<p>Here&#39;s an excerpt of the core functionality that handles moving a source directory and creating a symlink:</p>
-<pre><code class="language-scheme">;;; Helper function to move source to target
-(define (move-source-to-target source-dir target-dir)
-  &quot;Move the entire source directory to the target directory.&quot;
-  (let* ((source-dir (expand-home source-dir))
-         (target-dir (expand-home target-dir))
-         (source-name (basename source-dir))
-         (target-source-dir (string-append target-dir &quot;/&quot; source-name)))
-    (if (file-exists? target-source-dir)
-        ;; Conflict handling here...
-        ...)
-    (rename-file source-dir target-source-dir)
-    (display (format #f &quot;Moved ~a to ~a\n&quot; source-dir target-source-dir))))
-</code></pre>
-<h2>What I Learned</h2>
-<p>This project taught me a lot about not just Scheme, but programming in general:</p>
-<ul>
-<li><strong>File and Directory Manipulation</strong>: Scheme&#39;s file handling functions were different from what I had experienced before, but they allowed for powerful manipulation of file systems.</li>
-<li><strong>Command-Line Utilities</strong>: Scheme isn&#39;t just a language for academic exercises; you can write real, useful command-line tools with it.</li>
-<li><strong>Problem Solving</strong>: From parsing command-line arguments to resolving conflicts with existing files, every part of the program required careful thought and consideration of edge cases.</li>
-</ul>
-<h2>Guile Scheme Support Resources</h2>
-<ol>
-<li><p><strong><a href="https://www.gnu.org/software/guile/docs/">Guile Scheme Documentation</a></strong><br>The official documentation for Guile Scheme, which includes tutorials, references, and the Guile Manual.</p>
-</li>
-<li><p><strong><a href="https://www.gnu.org/software/guile/manual/html_node/">Guile Reference Manual</a></strong><br>A comprehensive manual covering core language concepts, libraries, and functions available in Guile Scheme.</p>
-</li>
-<li><p><strong><a href="http://community.schemewiki.org/">Scheme Wiki</a></strong><br>A community-maintained wiki that covers various Scheme dialects, including Guile Scheme, with tutorials, guides, and general information on Scheme programming.</p>
-</li>
-<li><p><strong><a href="http://schemers.org/">Guile at Schemers.org</a></strong><br>A site dedicated to Scheme with resources, libraries, tools, and documentation for Scheme and its implementations, including Guile.</p>
-</li>
-<li><p><strong><a href="https://systemcrafters.net/">System Crafters</a></strong><br>Led by David Wilson, System Crafters provides tutorials and blog posts on Guile Scheme and other GNU tools.</p>
-</li>
-<li><p><strong><a href="https://lists.gnu.org/mailman/listinfo/guile-user">Guile Users Mailing List</a></strong><br>Join the Guile mailing list to ask questions and engage with the Guile Scheme community.</p>
-</li>
-<li><p><strong><a href="https://github.com/artyom-poptsov/guile-cookbook">Guile Cookbook</a></strong><br>An unofficial GitHub repository with practical code snippets and tips for Guile Scheme, covering various common use cases and tasks.</p>
-</li>
-<li><p><strong><a href="https://libera.chat/">#guile and #scheme on Libera Chat IRC</a></strong><br>A helpful IRC channel where you can connect with other Guile users for real-time support and advice.</p>
-</li>
-<li><p><strong><a href="https://Libera.chat/">#systemcrafters on Libera Chat IRC</a></strong><br>A <em>SUPER</em> helpful IRC channel not only for guile and scheme, there are a huge variety of different people here.  Tell them glenneth sent you.</p>
-</li>
-</ol>
-<h2>Next Steps</h2>
-<p>I am still refining <code>stash</code>, especially around its conflict resolution system and the way it handles symbolic links. But it&#39;s in a usable state, and I&#39;m excited to continue iterating on it. You can check out the code <a href="https://codeberg.org/glenneth/stash">on Codeberg</a>.</p>
-<p>If you&#39;re curious about Scheme and how it can be used practically, I highly recommend checking out David Wilson&#39;s course. It&#39;s been instrumental in helping me grasp the concepts I needed to build this tool.  Here&#39;s the link, again :) <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">&quot;Hands-On Guile Scheme for Beginners&quot;</a></p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2024-09-24-scheme-journey.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-09-24-scheme-journey.html</guid>
-            <pubDate>Tue, 24 Sep 2024 06:30:00 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>personal, tech, guile, scheme, gnu, development</category>
-        </item>
-        
-        <item>
-            <title>A Journey Through GNU Guix: From Installation to Returning to Arch Linux</title>
-            <description>As a long-time user of Arch Linux, I decided to explore the world of GNU Guix to see if it could better suit my needs, especially with my growing interest in functional package management. The journey was insightful, filled with learning experiences, but ultimately led me back to the reliable shores of Arch. Here's a detailed account of my venture into GNU Guix, adding non-GNU channels, dealing with Nvidia drivers, running SwayWM, and the eventual retreat to Arch.</description>
-            <content:encoded><![CDATA[<h1>A Journey Through GNU Guix: From Installation to Returning to Arch Linux</h1>
-<p>As a long-time user of Arch Linux, I decided to explore the world of GNU Guix to see if it could better suit my needs, especially with my growing interest in functional package management. The journey was insightful, filled with learning experiences, but ultimately led me back to the reliable shores of Arch. Here&#39;s a detailed account of my venture into GNU Guix, adding non-GNU channels, dealing with Nvidia drivers, running SwayWM, and the eventual retreat to Arch.</p>
-<h2>Installation of GNU Guix</h2>
-<p>The installation process of GNU Guix was straightforward, thanks to the well-documented guide provided on their official website. Here&#39;s a quick rundown of the steps I followed:</p>
-<ol>
-<li><strong>Downloading the Installation Image</strong>: I started by downloading the latest ISO image from the <a href="https://guix.gnu.org/">GNU Guix website</a>.</li>
-<li><strong>Creating a Bootable USB</strong>: Using <code>dd</code>, I created a bootable USB stick to install GNU Guix on my system.</li>
-<li><strong>Booting into the Installer</strong>: Booting from the USB was smooth, and I was greeted with the GNU Guix installer. The installer&#39;s simplicity reminded me of early days with Arch, where a minimalistic approach is preferred.</li>
-<li><strong>Partitioning and Setting Up File Systems</strong>: I partitioned my drive using <code>fdisk</code> and set up my file systems. I opted for ext4 for simplicity.</li>
-<li><strong>Configuring the System</strong>: Following the partition setup, I proceeded to configure my system by selecting the required packages and services. I decided to go with the Sway window manager as it&#39;s my preferred choice on Arch.</li>
-</ol>
-<h2>System Configuration</h2>
-<p>During the installation process a window appears informing you that the <code>config.scm</code> file is located at <code>/etc/config.scm</code>. The first time I installed gnu guix on my work laptop I missed this message (pilot error) and I had to ask in the <a href="https://systemcrafters.net">System Crafters</a> IRC channel at <code>irc.libera.chat</code>, <code>#systemcrafters</code>. Come and join. It&#39;s a great place to be and the community there are an absolute treasure. Use your favourite IRC client or join through the webchat <a href="https://web.libera.chat/?channel=#systemcrafters">here</a>. We would be glad to see you. Tell them glenneth sent you :).</p>
-<p>My point is, I missed some vital information, so to the guix manual online it was. This can be found <a href="https://guix.gnu.org/manual/devel/en/guix.html">here</a>. This link will take you to the dev version of the manual. Something else they don&#39;t tell you. This version has a little more detail than the standard manual, and I believe details extra features and may even be a little more up to date.</p>
-<h2>Adding Non-GNU Channels</h2>
-<p>One of the standout features of GNU Guix is the ability to add non-GNU channels to access a wider array of software packages. Here&#39;s how I did it:</p>
-<ol>
-<li><strong>Editing Channels</strong>: I edited the <code>~/.config/guix/channels.scm</code> file to include non-GNU channels.<pre><code class="language-scheme">(cons* (channel
-        (name &#39;non-gnu)
-        (url &quot;https://example.com/non-gnu-channel.git&quot;))
-       %default-channels)
-</code></pre>
-</li>
-<li><strong>Updating Channels</strong>: Running <code>guix pull</code> updated my system to include packages from the non-GNU channel.</li>
-</ol>
-<h2>Installing Nvidia Drivers</h2>
-<p>Being a gamer and someone who requires GPU acceleration for certain tasks, Nvidia drivers were a must. Here&#39;s the process I followed:</p>
-<ol>
-<li><strong>Adding Nvidia Channel</strong>: Added a channel that includes Nvidia drivers.</li>
-<li><strong>Installing Drivers</strong>: Installed the drivers using <code>guix package -i nvidia-driver</code>.</li>
-<li><strong>Configuring the System</strong>: I had to manually configure Xorg to use the Nvidia drivers, which involved editing the Xorg configuration files.</li>
-</ol>
-<h2>Creating My Home Environment</h2>
-<p>To personalize my setup further, I used <code>guix home import</code> to create my own home environment and add packages. This allowed me to have a consistent environment across different machines. I also edited the <code>config.scm</code> file to include the latest Linux kernels and Nvidia drivers.</p>
-<p>Additionally, I used the <code>syncthing home-service-type</code> in my <code>home-configuration.scm</code> file to install and configure Syncthing. This setup ensured my files were always in sync across devices, which is crucial for my workflow.</p>
-<h2>GNOME</h2>
-<p>All was good and I had a solid desktop environment running, even though it was gnome desktop. I had never used gnome, and I am more at home with a keyboard driven workflow. I had come from hyprland on Arch and wanted to get back to that workflow. The option I was presented with, in order to continue using wayland, pipewire etc. was SwayWM.</p>
-<h2>Sway</h2>
-<p>Installing SwayWM and it&#39;s dependencies and nice to haves was relatively straightforward. add the required packages, sway, swaybg, swayidle, swaylock, to my home-configuration.scm gile and run <code>guix home reconfigure</code> easy! The packages were installed and we were good to go.</p>
-<p>The first issue I encountered was that sway does not run with the proprietary nvidia drivers, this was on the work laptop. I could get it to run but only after adding the <code>--unsupported-gpu</code> flag to <code>exec sway</code>. Lo and behold, we had a default sway window manager running.</p>
-<h2>Challenges with SwayWM and SMB Shares</h2>
-<p>With the system set up, I ran into a major roadblock: accessing SMB shares in a file manager while running SwayWM.</p>
-<ol>
-<li><strong>Thunar and GNOME Files</strong>: Neither Thunar nor the GNOME Files application could access SMB shares. This was crucial for my workflow as I frequently access network shares.</li>
-<li><strong>Troubleshooting</strong>: I tried various solutions, including installing additional packages and tweaking configurations, but nothing seemed to work.</li>
-<li><strong>Community Support</strong>: I reached out to the GNU Guix community for help. While they were supportive, the solutions provided didn&#39;t resolve my issues.</li>
-</ol>
-<p>To ensure that the problem was not hardware-related, I went out and purchased a Lenovo ThinkPad E16 Gen 1. I upgraded the RAM to 48GB and installed a Lenovo 2TB SSD to make it my personal laptop. However, even on this new setup, I faced the same issues accessing SMB shares and some networking services just wouldn&#39;t work.</p>
-<p>I tried deleting the <code>gdm</code> login manager in my system configuration file, but after rebooting it was still showing the gnome login window. This was after reading somewhere online that sway was not on friendly terms with the gdm login manager.</p>
-<h2>Returning to Arch Linux</h2>
-<p>After several days of troubleshooting and not being able to access my SMB shares reliably, I made the difficult decision to revert to Arch Linux. The steps were:</p>
-<ol>
-<li><strong>Reinstalling Arch</strong>: I reinstalled Arch Linux using my tried-and-tested setup process.</li>
-<li><strong>Configuring SwayWM</strong>: Set up SwayWM and ensured all my applications were running smoothly.</li>
-<li><strong>Accessing SMB Shares</strong>: Accessing SMB shares was seamless, just as it was before my experiment with GNU Guix.</li>
-</ol>
+<h3>Embrace Gradual Migration</h3>
+<p>Don&#39;t try to convert everything at once. Start with core tools and gradually expand your Guix Home configuration as you become more comfortable with the system.</p>
+<h3>Document Everything</h3>
+<p>Keep detailed notes about your configuration choices. The declarative nature of Guix Home makes it easy to forget why you made certain decisions.</p>
+<h3>Engage with the Community</h3>
+<p>The Guix community is incredibly helpful and knowledgeable. Don&#39;t hesitate to ask questions and share your experiences.</p>
+<h3>Version Control is Essential</h3>
+<p>Treat your Guix Home configuration like any other important code - use meaningful commit messages, create branches for experiments, and maintain good version control hygiene.</p>
 <h2>Conclusion</h2>
-<p>I am still running GNU guix on the work laptop, I had to cave on my personal laptop and revert to Arch. My journey with GNU Guix was both enlightening and challenging. While I appreciate the functional package management and the philosophy behind GNU Guix, certain practical issues, like accessing SMB shares, were deal-breakers for my workflow. Arch Linux continues to be my go-to distribution, providing the flexibility and reliability I need for my daily tasks. So, at the moment I am using my personal laptop for work and still trying to figure out the issues I am having on my work laptop. But, to be honest, I prefer working on the thinkpad over working on the MSI laptop that work handed out :).</p>
-<p>If you&#39;re an enthusiast looking to explore new package management paradigms, I highly recommend giving GNU Guix a try. Just be prepared for a few hiccups along the way, and always have a backup plan!</p>
-<hr>
-<p>Feel free to share your thoughts and experiences with GNU Guix or any other distributions you&#39;ve tried. Let&#39;s keep the conversation going!</p>
-<h2>Shameless plug</h2>
-<p>Go <a href="https://systemcrafters.net/community/">here</a> to find all the ways you can engage with the SystemCrafters community. It&#39;s a great place to hang out and discuss all thing craftery. You will also notice the Craftering ring that I am a part of. Click the links and see blogs by some of the community members. Always interesting to read what other Crafters are up to.</p>
-<p>Thanks for taking the time to read my blog post. It is greatly appreciated, and I hope you come back.</p>
-<p>Happy Hacking!!</p>
+<p>The evolution from my March setup to the current Guix Home-based environment represents more than just a tool change - it&#39;s a fundamental shift in how I think about development environment management. The move from imperative to declarative configuration has brought a level of reliability and reproducibility that has transformed my daily workflow.</p>
+<p>For anyone considering similar changes, I&#39;d recommend starting small and gradually expanding your declarative configuration. The initial learning curve is worth the long-term benefits of having a truly reproducible, version-controlled development environment.</p>
+<p>The combination of Guix Home for environment management and a refined Emacs configuration has created a development setup that feels both powerful and effortless. It&#39;s a foundation I&#39;m confident will serve me well as my projects and requirements continue to evolve.</p>
+<p>What aspects of environment management do you find most challenging? Have you experimented with declarative configuration approaches? I&#39;d love to hear about your experiences and any questions you might have about making similar transitions.</p>
 ]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2024-07-26-gnu-guix-journey.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-07-26-gnu-guix-journey.html</guid>
-            <pubDate>Fri, 26 Jul 2024 07:30:00 GMT</pubDate>
+            <link>https://glenneth.org/content/posts/2025-09-28-dev-environment-evolution-guix-home.html</link>
+            <guid isPermaLink="true">https://glenneth.org/content/posts/2025-09-28-dev-environment-evolution-guix-home.html</guid>
+            <pubDate>Invalid Date</pubDate>
             <author>Glenn Thompson</author>
-            <category>personal, tech, gnu, guix, swaywm, nvidia</category>
-        </item>
-        
-        <item>
-            <title>Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix</title>
-            <description>Hello there! I'm Glenn Thompson, and today, I want to share a significant part of my recent journey into the world of Scheme, GNU Guix, and static site generation.</description>
-            <content:encoded><![CDATA[<h1>Transitioning from Hugo to Haunt: Embracing Scheme and GNU Guix</h1>
-<p>Hello there! I&#39;m Glenn Thompson, and today, I want to share a significant part of my recent journey into the world of Scheme, GNU Guix, and static site generation.</p>
-<h2>Discovering Scheme with System Crafters</h2>
-<p>My journey began with a desire to dive deeper into programming languages and their ecosystems. I am a member of the <a href="https://systemcrafters.net/community/">System Crafters Community</a>, and its founder, David Wilson, announced a short four week course as an introduction to Guile Scheme. The course, <a href="https://systemcrafters.net/courses/hands-on-guile-scheme-beginners/">Hands-On Guile Scheme for Beginners</a>, provided me with a robust introduction to Guile Scheme, a language that emphasizes simplicity and elegance. David&#39;s clear explanations and practical examples made learning Scheme both engaging and approachable.</p>
-<h2>The Move to GNU Guix</h2>
-<p>Inspired by the principles of Scheme, I decided to take a leap further into the open-source world by transitioning from Arch Linux to GNU Guix. The Guix community, particularly the folks in the <code>#systemcrafters</code> channel on <code>irc.libera.chat</code>, were incredibly supportive and instrumental in helping me navigate this new environment. Their guidance made the switch smooth and rewarding, reinforcing the power and flexibility of GNU Guix as a functional package manager and operating system.  More about that experience in another post.</p>
-<p>There are too many individuals to name here that have helped with the installation and configuration on Gnu guix to mention here.  You all have been an incredible help for which I am extremely grateful.  Thank you all , for enduring my ignorance, and for your patience and your help.</p>
-<h2>From Hugo to Haunt</h2>
-<p>As I settled into Guix, I faced a challenge: Hugo, the static site generator I previously used, was not available as a Guix package. This led me to explore alternatives and eventually discover <a href="https://dthompson.us/projects/haunt.html">Haunt</a>, a Scheme-based static site generator that aligns perfectly with my newfound appreciation for Scheme and Guix.</p>
-<h2>Overcoming Challenges with Haunt</h2>
-<p>Transitioning to Haunt wasn&#39;t without its challenges. There are no readily available templating systems available for haunt like there are for hugo, but there are plenty of examples <a href="https://awesome.haunt.page/">here</a>. One of my own primary difficulties was creating a custom template that matched my site&#39;s aesthetic requirements and functionality needs. Initially, I struggled with configuring the theme layout and ensuring the CSS was applied correctly. Another hurdle was generating the correct URLs for posts and ensuring that summaries appeared as intended on the front page.</p>
-<p>Thankfully, the Haunt manual proved to be an invaluable resource throughout this process. The comprehensive documentation provided clear guidance on using various modules, functions, and procedures. By carefully studying the examples and explanations, I was able to overcome the obstacles and achieve the desired results for my site. The manual&#39;s detailed descriptions of Haunt&#39;s inner workings were particularly helpful in understanding how to leverage the flexibility of Scheme to customize my blog.</p>
-<h2>Crafting My Own Template</h2>
-<p>Moving from Hugo to Haunt required me to create my own template and customize my site&#39;s appearance. This was an exciting opportunity to apply the skills I had learned from David&#39;s course and experiment with Scheme in a practical context.</p>
-<h4>Creating the Template</h4>
-<p>Haunt&#39;s flexibility allowed me to define my own theme layout and structure. Here&#39;s a snippet of my <code>haunt.scm</code> file, where I defined the theme layout and added custom footer content:</p>
-<pre><code class="language-scheme">(use-modules (haunt asset)
-             (haunt builder blog)
-             (haunt builder atom)
-             (haunt builder assets)
-             (haunt reader commonmark)
-             (haunt site)
-             (haunt post)
-             (sxml simple)    ; For HTML generation
-             (srfi srfi-1)
-             (srfi srfi-19))  ; For date and time procedures
-
-;; Load custom templates
-(load &quot;templates/post.scm&quot;)
-
-(define (format-date date)
-  (date-&gt;string date &quot;~Y-~m-~d&quot;))
-
-;; Define a function to generate the URL for a post
-(define (post-url post)
-  (string-append &quot;/&quot; (post-slug post) &quot;.html&quot;))
-
-;; Define a function to extract a summary from the post content
-(define (post-summary post)
-  (let ((content (post-sxml post)))
-    (if (null? content)
-        &quot;&quot;
-        (let ((first-paragraph (car content)))
-          (if (string? first-paragraph)
-              (substring first-paragraph 0 (min 200 (string-length first-paragraph)))
-              (sxml-&gt;string first-paragraph))))))
-
-;; Define the theme layout
-(define (theme-layout site title content)
-  (let ((current-year (number-&gt;string (date-year (current-date)))))
-    `(html
-      (head
-       (meta (@ (charset &quot;utf-8&quot;)))
-       (meta (@ (name &quot;viewport&quot;) (content &quot;width=device-width, initial-scale=1.0, shrink-to-fit=no&quot;)))
-       (link (@ (rel &quot;stylesheet&quot;) (href &quot;/assets/palenight.css&quot;)))
-       (style
-        &quot; .craftering {
-            margin: auto;
-            width: 50%;
-            text-align: center;
-        }
-        .webring-text {
-            text-align: center;
-            margin-bottom: 20px;
-            color: white;
-        }
-        .craftering a {
-            color: #dddddd;
-        }
-        .webring-text a {
-            color: #dddddd;
-        }&quot;)
-       (title ,title))
-      (body
-       (header (h1 ,(site-title site)))
-       (main ,content)
-       (footer (@ (class &quot;bg-black bottom-0 w-100 pa3&quot;) (role &quot;contentinfo&quot;))
-               (div (@ (class &quot;flex justify-between&quot;))
-                    (div (@ (class &quot;webring-text&quot;))
-                         (p &quot;I am part of the &quot; (a (@ (href &quot;https://systemcrafters.net&quot;) (target &quot;_blank&quot;)) &quot;System Crafters&quot;) &quot; webring:&quot;))
-                    (div (@ (class &quot;craftering&quot;))
-                         (a (@ (href &quot;https://craftering.systemcrafters.net/@glenneth/previous&quot;)) &quot;←&quot;)
-                         (a (@ (href &quot;https://craftering.systemcrafters.net/&quot;)) &quot;craftering&quot;)
-                         (a (@ (href &quot;https://craftering.systemcrafters.net/@glenneth/next&quot;)) &quot;→&quot;))))))))
-
-;; Define the custom theme with a consistent layout for index
-(define my-theme
-  (theme #:name &quot;My Custom Theme&quot;
-         #:layout theme-layout
-         #:post-template post-template
-         #:collection-template
-         (lambda (site title posts prefix)
-           `(div (@ (class &quot;content&quot;))
-              (h2 ,title)
-              (ul
-                ,@(map (lambda (post)
-                         `(li
-                            (article
-                              (header
-                               (h3 (a (@ (href ,(post-url post))) ,(post-title post))))
-                              (p ,(format-date (post-date post)))
-                              (p ,(post-summary post))
-                              (p (a (@ (href ,(post-url post))) &quot;Read more...&quot;)))))
-                       posts))))))
-
-;; Site configuration
-(site #:title &quot;Just Another Personal Blog&quot;
-      #:domain &quot;glenneth.srht.site&quot;
-      #:default-metadata
-      &#39;((author . &quot;Glenn Thompson&quot;)
-        (email  . &quot;glenn@kirstol.org&quot;))
-      #:readers (list commonmark-reader)
-      #:builders (list
-                  (blog #:theme my-theme)
-                  (atom-feed)
-                  (atom-feeds-by-tag)
-                  (static-directory &quot;images&quot;)
-                  (static-directory &quot;assets&quot;)))
-</code></pre>
-<h3>Customizing the CSS</h3>
-<p>To give my site a personalized touch, I crafted a CSS stylesheet that matched my aesthetic preferences. Here’s an excerpt from my <code>palenight.css</code> file:</p>
-<pre><code class="language-css">body {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.content, header, footer, main {
-  max-width: 90%;
-  padding: 0 5%;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-body {
-  background-color: #292d3e;
-  color: #d0d0d0;
-}
-
-a {
-  color: #82aaff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #c792ea;
-}
-
-.content {
-  background-color: #1e1e2e;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-article {
-  background-color: #282a36;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-article header {
-  margin-bottom: 10px;
-}
-
-.date {
-  color: #6272a4;
-  font-size: 0.9em;
-}
-
-/* Additional styles for the craftering */
-.craftering {
-  margin: auto;
-  width: 50%;
-  text-align: center;
-}
-
-.webring-text {
-  text-align: center;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.craftering a {
-  color: #dddddd;
-}
-
-.webring-text a {
-  color: #dddddd;
-}
-
-/* Additions for mobile device readability */
-
-meta {
-  name: viewport;
-  content: width=device-width, initial-scale=1, shrink-to-fit=no;
-}
-
-@media screen and (max-width: 767px) {
-  /* Customize styles for smaller screens */
-  .logo {
-    max-width: 200px;
-  }
-
-}
-</code></pre>
-<p>I use the <code>doom-palenight</code> theme in Emacs, my preferred text editor, and I wanted my site to match that aesthetic.</p>
-<h3>Publishing with Haunt and Hut</h3>
-<p>In addition to using Haunt, I adopted hut, a set of command-line tools for interacting with SourceHut, to publish my blog. This streamlined my workflow, making it easier to manage and deploy my site directly from my local environment.</p>
-<h3>Conclusion</h3>
-<p>Transitioning from Hugo to Haunt, learning Scheme, and embracing GNU Guix has been an enriching experience. It&#39;s not just about using new tools; it&#39;s about joining a community that values simplicity, transparency, and collaboration. If you&#39;re curious about Scheme or GNU Guix, I highly recommend checking out David Wilson&#39;s course on System Crafters and joining the discussions on IRC.</p>
-<p>I am not a developer of any kind, and learning Scheme has opened my eyes as to how I can craft an environment that I want to work in, and not endure a working environment that the computer is forcing upon me.</p>
-<p>Thank you for reading, and stay tuned for more updates on my journey!</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2024-05-15-hugo-to-haunt.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-05-15-hugo-to-haunt.html</guid>
-            <pubDate>Wed, 15 May 2024 07:30:00 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>personal, tech, keyboards, glove80</category>
-        </item>
-        
-        <item>
-            <title>A Rollercoaster Week:  From Amman to Newcastle, and back again</title>
-            <description>The Journey Begins</description>
-            <content:encoded><![CDATA[<p>Two weeks ago was a whirlwind of events, taking me from the conforting embrace of Amman, Jordan to the vibrant streets of Newcastle, England. It was a journey filled with highs and lows, professional achievements, and personal challenges.</p>
-<h2>The Journey Begins</h2>
-<p>It all started on a Monday morning in Amman as I embarked on a journey to attend a Quality Control (QC) conference in Newcastle. The anticipation of presenting my work at an international forum filled me with excitement and nerves. The conference was scheduled for just one day, but the impact it had on me would last much longer.</p>
-<h2>A Successful Presentation</h2>
-<p>Tuesday arrived, and with it came the day of the conference. Armed with a PowerPoint presentation comprising over 130 slides, I delved into four hours of intense presenting. Despite the pressure, the conference was a resounding success. My project received positive feedback, and I felt a sense of accomplishment as I shared my work with colleagues from around the world.</p>
-<h2>The Toll of Travel</h2>
-<p>However, as I returned to Amman on Wednesday, I couldn&#39;t shake off a sense of exhaustion. Little did I know that the toll of travel would soon manifest itself in a most unexpected manner. </p>
-<p>Thursday morning greeted me with heavy flu-like symptoms. It hit me like a ton of bricks. The combination of jet lag, long hours of presenting, and exposure to new environments had taken its toll on my immune system. I was bedridden, grappling with a chesty cough that seemed relentless.</p>
-<h2>The Show Must Go On</h2>
-<p>Despite my illness, there was no time for rest. The following week demanded my presence at a site meeting where I was tasked with condensing my extensive slide deck into a concise presentation of just 12 slides. The challenge was daunting, but I tackled it with determination.</p>
-<h2>Reflecting on the Journey</h2>
-<p>As I look back on the rollercoaster week that was, I&#39;m struck by the juxtaposition of success and struggle. From the heights of presenting at an international conference to the lows of battling illness, it was a journey that tested my resilience and resolve.</p>
-<p>But through it all, one thing remains clear: adversity only serves to make us stronger. Each obstacle we overcome, whether professional or personal, contributes to our growth and development.</p>
-<p>So here&#39;s to the rollercoaster weeks, the ones filled with ups and downs, twists and turns. For it is in those moments of challenge that we discover the true extent of our capabilities.</p>
-<p>As I upload this blog post using Hugo, I do so with a renewed sense of gratitude for the journey and all it has taught me. Here&#39;s to embracing the ride, wherever it may take us.</p>
-]]></content:encoded>
-            <link>https://glenneth.org/content/posts/2024-05-01-amman-newcastle-journey.html</link>
-            <guid isPermaLink="true">https://glenneth.org/content/posts/2024-05-01-amman-newcastle-journey.html</guid>
-            <pubDate>Wed, 01 May 2024 14:40:58 GMT</pubDate>
-            <author>Glenn Thompson</author>
-            <category>work, travel</category>
+            <category>["development", "guix", "guix-home", "emacs", "workflow", "productivity", "evolution"]</category>
         </item>
     </channel>
 </rss>
